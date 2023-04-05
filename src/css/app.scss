@@ -3,3 +3,19 @@
 @import "tailwindcss/utilities";
 
 @import 'modern-normalize/modern-normalize.css';
+
+@font-face {
+  font-family: "Astro";
+  src: url("../assets/fonts/Astro/Astro.otf");
+}
+
+@font-face {
+  font-family: "Opinion Pro Extended";
+  src: url("../assets/fonts/Opinion Pro/Opinion Pro Extended Light.otf");
+  weigth: bold;
+}
+
+@font-face {
+  font-family: "Opinion Pro Condensed";
+  src: url("../assets/fonts/Opinion Pro/Opinion Pro Condensed Light.otf");
+}

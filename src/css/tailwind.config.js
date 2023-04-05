@@ -6,6 +6,13 @@ module.exports = {
     "./src/components/**/*.cr",
   ],
   theme: {
+    extend: {
+      fontFamily: {
+        title: ['Astro', 'sans-serif'],
+        subtitle: ['Opinion Pro Extended', 'sans-serif'],
+        'text-body': ['Opinion Pro Condensed', 'sans'],
+      },
+    },
   },
   plugins: [],
 }
