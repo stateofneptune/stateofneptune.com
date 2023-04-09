@@ -1,17 +1,8 @@
 class Shared::Footer < BaseComponent
   def render
-    footer class: "bg-eerie-black font-text-body" do
+    footer class: "font-text-body" do
       section class: "p-2" do
-        mount NavBar, elements: [
-          NavBar::Element.new("https://www.instagram.com/stateofneptune/", "fab fa-instagram"),
-          NavBar::Element.new("https://www.facebook.com/stateofneptune/", "fab fa-facebook"),
-          NavBar::Element.new("https://twitter.com/stateofneptune", "fab fa-twitter"),
-          NavBar::Element.new("https://stateofneptune.bandcamp.com/", "fab fa-bandcamp"),
-          NavBar::Element.new("https://open.spotify.com/artist/5FhQX1j6F5axsMOc1UiDmW", "fab fa-spotify"),
-          NavBar::Element.new("https://www.deezer.com/us/artist/158840862", "fab fa-deezer"),
-          NavBar::Element.new("https://www.youtube.com/@stateofneptune1864", "fab fa-youtube"),
-          NavBar::Element.new("mailto:stateofneptune@gmail.com", "fas fa-envelope"),
-        ]
+        mount NavBar, elements: NAV_ELEMENTS
 
         render_copyright
       end
@@ -23,6 +14,17 @@ class Shared::Footer < BaseComponent
       text "© 2023 State Of Neptune – All Rights Reserved"
     end
   end
+
+  private NAV_ELEMENTS = [
+    NavBar::Element.new("https://www.instagram.com/stateofneptune/", "fab fa-instagram"),
+    NavBar::Element.new("https://www.facebook.com/stateofneptune/", "fab fa-facebook"),
+    NavBar::Element.new("https://twitter.com/stateofneptune", "fab fa-twitter"),
+    NavBar::Element.new("https://stateofneptune.bandcamp.com/", "fab fa-bandcamp"),
+    NavBar::Element.new("https://open.spotify.com/artist/5FhQX1j6F5axsMOc1UiDmW", "fab fa-spotify"),
+    NavBar::Element.new("https://www.deezer.com/us/artist/158840862", "fab fa-deezer"),
+    NavBar::Element.new("https://www.youtube.com/@stateofneptune1864", "fab fa-youtube"),
+    NavBar::Element.new("mailto:stateofneptune@gmail.com", "fas fa-envelope"),
+  ]
 
   class NavBar < BaseComponent
     needs elements : Array(Element)
@@ -47,7 +49,7 @@ class Shared::Footer < BaseComponent
 
     def render_element(element : Element)
       div class: "h-12 w-12 min-w-[2rem] flex justify-center items-center" do
-        a class: "text-lg transition hover:text-persian-blue", href: element.href, target: "_blank" do
+        a class: "text-md md:text-lg transition-all hover:text-persian-blue", href: element.href, target: "_blank" do
           i class: element.fa_class
         end
       end
