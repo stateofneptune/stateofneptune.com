@@ -1,28 +1,37 @@
 class Shared::Header < BaseComponent
   def render
-    header class: "font-title text-4xl bg-eerie-black sticky top-0 w-full" do
-      section class: "p-4 flex justify-between self-baseline" do
-        div class: "h-12 flex items-center" do
-          link "STATE OF NEPTUNE",
-            class: "text-5xl transition-all md:text-4xl hover:text-persian-blue",
-            to: Home::Index
-        end
+    header class: "top-0 w-full transition-all p-2 md:p-4 md:flex md:flex-col md:gap-4 md:justify-between" do
+      div class: "relative flex justify-center items-center" do
+        render_logo
+      end
 
-        nav class: "font-subtitle text-2xl hidden transition-all md:flex" do
-          ul class: "flex justify-center items-center gap-8" do
-            page_references = [
-              {"HOME", Home::Index},
-              {"MUSIC", Music::Index},
-              {"VIDEOS", Videos::Index},
-              {"STAGES", Stages::Index},
-            ]
+      render_navigation_bar
+    end
+  end
 
-            page_references.each do |page_title, page|
-              div class: "h-12 flex items-center" do
-                link page_title, class: "transition hover:text-persian-blue", to: page
-              end
-            end
-          end
+  def render_logo
+    a href: "/" do
+      figure do
+        img src: asset("images/logo/state-of-neptune-wht-inline.png"),
+          class: "transition-all h-10 md:h-12 lg:h-14"
+      end
+    end
+  end
+
+  private NAV_PAGE_REFS = [
+    {Home::Index, "Home"},
+    {Music::Index, "Music"},
+    {Videos::Index, "Videos"},
+    {Stages::Index, "Stages"},
+  ]
+
+  def render_navigation_bar
+    nav class: "hidden flex justify-center md:block font-subtitle" do
+      ul class: "flex justify-center transition-all gap-12 lg:gap-14" do
+        NAV_PAGE_REFS.each do |page, page_title|
+          link page_title, to: page,
+            class: "transition-all data-[selected=true]:text-persian-blue hover:text-persian-blue",
+            data_selected: current_page? page
         end
       end
     end
