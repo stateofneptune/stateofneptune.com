@@ -23,6 +23,7 @@ class Shared::Footer < BaseComponent
     {"https://www.youtube.com/@stateofneptune1864", "fab fa-youtube"},
     {"https://open.spotify.com/artist/5FhQX1j6F5axsMOc1UiDmW", "fab fa-spotify"},
     {"https://stateofneptune.bandcamp.com/", "fab fa-bandcamp"},
+    {"https://music.apple.com/pl/artist/state-of-neptune/1570636107", "fab fa-itunes-note"},
     {"https://www.deezer.com/us/artist/158840862", "fab fa-deezer"},
     {"mailto:stateofneptune@gmail.com", "fas fa-envelope"},
   ]
