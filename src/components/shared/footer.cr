@@ -29,7 +29,7 @@ class Shared::Footer < BaseComponent
 
   def render_navigation_bar_elements
     NAV_ELEMENTS.each do |href, fa_class|
-      div class: "h-12 w-12 min-w-[2rem] transition-all flex justify-center items-center" do
+      div class: "h-10 w-10 md:h-12 md:w-12 min-w-[2rem] transition-all flex justify-center items-center" do
         a class: "text-md md:text-lg transition-all hover:text-accent", href: href, target: "_blank" do
           i class: fa_class
         end
