@@ -2,8 +2,10 @@
 module.exports = {
   content: [
     "./src/css/**/*.scss",
+    "./src/js/**/*.js",
     "./src/pages/**/*.cr",
     "./src/components/**/*.cr",
+    "./src/svgs/**/*.svg",
   ],
   theme: {
     extend: {

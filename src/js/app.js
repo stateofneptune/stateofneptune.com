@@ -4,3 +4,4 @@
 // Though it says "Rails" it actually works with any framework.
 require("@rails/ujs").start();
 
+require("./menu.js").mount()

@@ -2,10 +2,19 @@ class Shared::Header < BaseComponent
   def render
     header class: "top-0 w-full bg-deep-bg transition-all p-2 md:p-4 md:flex md:flex-col md:gap-4 md:justify-between" do
       div class: "relative flex justify-center items-center" do
+        render_menu_open_button
         render_logo
       end
 
       render_navigation_bar
+    end
+  end
+
+  def render_menu_open_button
+    div class: "absolute left-0 md:hidden" do
+      button id: "menu-open-button", class: "w-8 h-8 text-body transition" do
+        inline_svg "menu.svg", false
+      end
     end
   end
 

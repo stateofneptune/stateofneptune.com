@@ -20,6 +20,7 @@ abstract class MainLayout
 
       body class: "bg-deep-bg text-body" do
         mount Shared::Header
+        mount Shared::Menu
 
         main do
           content
