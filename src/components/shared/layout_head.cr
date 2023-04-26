@@ -4,7 +4,7 @@ class Shared::LayoutHead < BaseComponent
   def render
     head do
       utf8_charset
-      title "State Of Neptune - Official Website - #{@page_title}"
+      title "State Of Neptune - #{@page_title}"
       css_link asset("css/app.css")
 
       js_link asset("js/app.js"), defer: "true"
