@@ -10,10 +10,6 @@ class Shared::LayoutHead < BaseComponent
       js_link asset("js/app.js"), defer: "true"
       js_link "https://kit.fontawesome.com/a83a491fe5.js", crossorigin: "anonymous"
 
-      empty_tag "link", rel: "preconnect", href: "https://fonts.googleapis.com"
-      empty_tag "link", rel: "preconnect", href: "https://fonts.gstatic.com"
-      empty_tag "link", href: "https://fonts.googleapis.com/css2?family=Six+Caps&family=Yeseva+One&display=swap", rel: "stylesheet"
-
       csrf_meta_tags
       responsive_meta_tag
 
