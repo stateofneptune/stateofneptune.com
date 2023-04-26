@@ -1,7 +1,7 @@
-  const menu = document.querySelector('#menu');
-  const menuBackdrop = document.querySelector('#menu-backdrop');
-  const menuOpenButton = document.querySelector('#menu-open-button');
-  const menuCloseButton = document.querySelector('#menu-close-button');
+const menu = document.querySelector('#menu');
+const menuBackdrop = document.querySelector('#menu-backdrop');
+const menuOpenButton = document.querySelector('#menu-open-button');
+const menuCloseButton = document.querySelector('#menu-close-button');
 
 function mount() {
   if (menuOpenButton) {
@@ -22,6 +22,7 @@ function openMenu() {
   menuBackdrop.dataset.menuOpen = 'true';
   menuOpenButton.dataset.menuOpen = 'true';
   menuCloseButton.dataset.menuOpen = 'true';
+  document.body.dataset.menuOpen = 'true'
 }
 
 function closeMenu() {
@@ -29,6 +30,7 @@ function closeMenu() {
   menuBackdrop.dataset.menuOpen = 'false';
   menuOpenButton.dataset.menuOpen = 'false';
   menuCloseButton.dataset.menuOpen = 'false';
+  document.body.dataset.menuOpen = 'false'
 }
 
-module.exports = { mount };
+export { mount };

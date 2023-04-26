@@ -18,7 +18,7 @@ abstract class MainLayout
     html lang: "en-US", class: "scroll-smooth" do
       mount Shared::LayoutHead, page_title: page_title
 
-      body class: "bg-deep-bg text-body" do
+      body class: "bg-deep-bg text-body data-[menu-open=true]:overflow-hidden", data_menu_open: false do
         mount Shared::Header
         mount Shared::Menu
 
