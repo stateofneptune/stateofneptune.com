@@ -6,7 +6,7 @@ class Shared::Menu < BaseComponent
 
   def render_menu
     div id: "menu", data_menu_open: false, tabindex: -1,
-      class: "fixed inset-0 w-64 h-[100lhv] p-2 bg-deep-bg data-[menu-open=false]:-translate-x-full \
+      class: "fixed inset-0 w-64 h-[100lhv] bg-deep-bg data-[menu-open=false]:-translate-x-full \
         data-[menu-open=true]:transform-none transition" do
       render_menu_close_button
       render_navigation_bar
@@ -20,7 +20,7 @@ class Shared::Menu < BaseComponent
   end
 
   def render_menu_close_button
-    div class: "mb-6" do
+    div class: "p-2 mb-4" do
       button id: "menu-close-button", data_menu_open: false,
         class: "w-8 h-8 text-body/0 data-[menu-open=true]:text-body/100 data-[menu-open=false]:transition-none delay-500 duration-1000" do
         inline_svg "close.svg", false
@@ -36,8 +36,8 @@ class Shared::Menu < BaseComponent
   ]
 
   def render_navigation_bar
-    nav class: "font-subtitle p-2" do
-      ul class: "flex flex-col gap-4" do
+    nav class: "font-subtitle" do
+      ul class: "flex flex-col" do
         render_navigation_bar_elements
       end
     end
@@ -45,7 +45,7 @@ class Shared::Menu < BaseComponent
 
   def render_navigation_bar_elements
     NAV_PAGE_REFS.each do |page, page_title|
-      link page_title, to: page, class: "transition-all hover:text-accent"
+      link page_title, to: page, class: "p-3 transition-all hover:text-accent"
     end
   end
 end
