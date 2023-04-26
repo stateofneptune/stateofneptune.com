@@ -12,12 +12,13 @@ module.exports = {
       fontFamily: {
         title: ['Astro', 'sans-serif'],
         subtitle: ['Opinion Pro Extended', 'sans-serif'],
-        'text-body': ['Opinion Pro Condensed', 'sans'],
+        body: ['Opinion Pro Condensed', 'sans'],
       },
       colors: {
-        'cosmic-latte': "#FFF9EB",
-        'persian-blue': "#0292FE",
-        'eerie-black': "#212221",
+        'deep-bg': "#000000",
+        'accent': "#0292FE",
+        'body': "#FFF9EB",
+        'dim': "#B3AEA4"
       },
     },
   },
