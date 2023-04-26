@@ -15,7 +15,7 @@ abstract class MainLayout
   def render
     html_doctype
 
-    html lang: "en-US" do
+    html lang: "en-US", class: "scroll-smooth" do
       mount Shared::LayoutHead, page_title: page_title
 
       body class: "bg-deep-bg text-body" do
