@@ -6,7 +6,7 @@ class Shared::Menu < BaseComponent
 
   def render_menu
     div id: "menu", data_menu_open: false, tabindex: -1,
-      class: "fixed inset-0 w-64 h-[100lhv] bg-deep-bg data-[menu-open=false]:-translate-x-full \
+      class: "fixed inset-0 z-10 w-64 h-[100lhv] bg-deep-bg data-[menu-open=false]:-translate-x-full \
         data-[menu-open=true]:transform-none transition" do
       render_menu_close_button
       render_navigation_bar
@@ -15,7 +15,7 @@ class Shared::Menu < BaseComponent
 
   def render_menu_backdrop
     div id: "menu-backdrop", data_menu_open: false,
-      class: "fixed inset-0 w-[100lwv] h-[100lhv] bg-deep-bg/0 invisible data-[menu-open=true]:visible \
+      class: "fixed inset-0 z-10 w-[100lwv] h-[100lhv] bg-deep-bg/0 invisible data-[menu-open=true]:visible \
         data-[menu-open=true]:bg-deep-bg/70 transition-all"
   end
 
