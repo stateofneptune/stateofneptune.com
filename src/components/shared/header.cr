@@ -28,12 +28,16 @@ class Shared::Header < BaseComponent
   def render_navigation_bar
     nav class: "hidden flex justify-center md:block font-subtitle" do
       ul class: "flex justify-center transition-all gap-12 lg:gap-14" do
-        NAV_PAGE_REFS.each do |page, page_title|
-          link page_title, to: page,
-            class: "transition-all data-[selected=true]:text-accent hover:text-accent",
-            data_selected: current_page? page
-        end
+        render_navigation_bar_elements
       end
+    end
+  end
+
+  def render_navigation_bar_elements
+    NAV_PAGE_REFS.each do |page, page_title|
+      link page_title, to: page,
+        class: "transition-all data-[selected=true]:text-accent hover:text-accent",
+        data_selected: current_page? page
     end
   end
 end
