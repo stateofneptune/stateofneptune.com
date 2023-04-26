@@ -1,6 +1,6 @@
 class Shared::Header < BaseComponent
   def render
-    header class: "top-0 w-full transition-all p-2 md:p-4 md:flex md:flex-col md:gap-4 md:justify-between" do
+    header class: "top-0 w-full bg-deep-bg transition-all p-2 md:p-4 md:flex md:flex-col md:gap-4 md:justify-between" do
       div class: "relative flex justify-center items-center" do
         render_logo
       end
@@ -30,7 +30,7 @@ class Shared::Header < BaseComponent
       ul class: "flex justify-center transition-all gap-12 lg:gap-14" do
         NAV_PAGE_REFS.each do |page, page_title|
           link page_title, to: page,
-            class: "transition-all data-[selected=true]:text-persian-blue hover:text-persian-blue",
+            class: "transition-all data-[selected=true]:text-accent hover:text-accent",
             data_selected: current_page? page
         end
       end

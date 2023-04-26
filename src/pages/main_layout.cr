@@ -18,7 +18,7 @@ abstract class MainLayout
     html lang: "en-US" do
       mount Shared::LayoutHead, page_title: page_title
 
-      body class: "bg-eerie-black text-cosmic-latte" do
+      body class: "bg-deep-bg text-body" do
         mount Shared::Header
 
         main do

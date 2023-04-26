@@ -1,6 +1,6 @@
 class Shared::Footer < BaseComponent
   def render
-    footer class: "font-text-body" do
+    footer class: "bg-deep-bg font-body" do
       section class: "p-2" do
         render_navigation_bar
         render_copyright
@@ -39,7 +39,7 @@ class Shared::Footer < BaseComponent
   end
 
   def render_copyright
-    div class: "flex text-center justify-center" do
+    div class: "flex text-dim text-center justify-center" do
       text "© 2023 State Of Neptune – All Rights Reserved"
     end
   end
