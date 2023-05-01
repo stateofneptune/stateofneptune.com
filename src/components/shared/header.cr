@@ -13,7 +13,7 @@ class Shared::Header < BaseComponent
   def render_menu_open_button
     div class: "absolute left-0 md:hidden" do
       button id: "menu-open-button", class: "w-8 h-8 text-body transition" do
-        inline_svg "menu.svg", false
+        inline_svg "menu-3-burger-icon.svg", false
       end
     end
   end

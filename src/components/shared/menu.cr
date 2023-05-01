@@ -24,7 +24,7 @@ class Shared::Menu < BaseComponent
       button id: "menu-close-button", data_menu_open: false,
         class: "w-8 h-8 text-body/0 data-[menu-open=true]:text-body/100 data-[menu-open=false]:duration-0 \
           data-[menu-open=false]:delay-150 delay-500 duration-1000" do
-        inline_svg "close.svg", false
+        inline_svg "menu-close-icon.svg", false
       end
     end
   end
