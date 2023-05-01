@@ -37,8 +37,8 @@ class Shared::Menu < BaseComponent
   ]
 
   def render_navigation_bar
-    nav class: "font-subtitle" do
-      ul class: "flex flex-col" do
+    nav do
+      ul do
         render_navigation_bar_elements
       end
     end
@@ -46,7 +46,7 @@ class Shared::Menu < BaseComponent
 
   def render_navigation_bar_elements
     NAV_PAGE_REFS.each do |page, page_title|
-      link page_title, to: page, class: "p-3 transition-all hover:bg-zinc-900"
+      link page_title, to: page, class: "block font-subtitle p-3 transition-all hover:bg-zinc-900"
     end
   end
 end
