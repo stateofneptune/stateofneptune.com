@@ -7,7 +7,7 @@ class Shared::Menu < BaseComponent
   def render_menu
     div id: "menu", data_menu_open: false, tabindex: -1,
       class: "fixed left-0 top-0 z-10 w-64 h-[100lvh] bg-deep-bg -translate-x-full \
-        data-[menu-open=true]:translate-x-0 transition" do
+        data-[menu-open=true]:translate-x-0 transition duration-300" do
       render_menu_close_button
       render_navigation_bar
     end
@@ -16,14 +16,14 @@ class Shared::Menu < BaseComponent
   def render_menu_backdrop
     div id: "menu-backdrop", data_menu_open: false,
       class: "fixed inset-0 z-10 bg-deep-bg/0 invisible data-[menu-open=true]:visible \
-        data-[menu-open=true]:bg-deep-bg/70 transition-all"
+        data-[menu-open=true]:bg-deep-bg/70 ease-out transition-all duration-300"
   end
 
   def render_menu_close_button
     div class: "p-2 mb-4" do
       button id: "menu-close-button", data_menu_open: false,
-        class: "w-8 h-8 text-body/0 data-[menu-open=true]:text-body/100 data-[menu-open=false]:duration-0 \
-          data-[menu-open=false]:delay-150 delay-500 duration-1000" do
+        class: "w-8 h-8 text-body/0 data-[menu-open=true]:text-body/100 transition delay-300 \
+          duration-0 data-[menu-open=true]:duration-1000" do
         inline_svg "menu-close-icon.svg", false
       end
     end
