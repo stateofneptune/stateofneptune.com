@@ -14,5 +14,6 @@ abstract class BrowserAction < Lucky::Action
   # Remove this include if you want to use the FLoC tracking.
   include Lucky::SecureHeaders::DisableFLoC
 
+  disable_cookies
   accepted_formats [:html, :json], default: :html
 end

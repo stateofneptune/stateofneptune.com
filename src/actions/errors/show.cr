@@ -3,6 +3,8 @@
 # https://luckyframework.org/guides/http-and-routing/error-handling
 class Errors::Show < Lucky::ErrorAction
   DEFAULT_MESSAGE = "Something went wrong."
+
+  disable_cookies
   default_format :html
   dont_report [Lucky::RouteNotFoundError, Avram::RecordNotFoundError]
 
