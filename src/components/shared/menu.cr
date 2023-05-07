@@ -6,7 +6,7 @@ class Shared::Menu < BaseComponent
 
   def render_menu
     div id: "menu", data_menu_open: false, tabindex: -1,
-      class: "fixed right-0 top-0 z-10 w-64 h-[100lvh] bg-deep-bg translate-x-full \
+      class: "fixed right-0 top-0 z-10 w-full h-[100lvh] bg-deep-bg/90 backdrop-blur-sm translate-x-full \
         data-[menu-open=true]:translate-x-0 transition duration-300" do
       render_menu_close_button
       render_navigation_bar
