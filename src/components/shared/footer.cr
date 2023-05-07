@@ -36,7 +36,7 @@ class Shared::Footer < BaseComponent
     end
 
     li do
-      mount NavElement, href: "https://twitter.com/stateofneptune", fa_class: "fab fa-twitter"
+      mount NavElement, href: "https://twitter.com/stateofneptune", fa_class: "fab fa-twitter",
         hidden: true, show_above_md: true
     end
 
@@ -53,17 +53,17 @@ class Shared::Footer < BaseComponent
     end
 
     li do
-      mount NavElement, href: "https://music.apple.com/pl/artist/state-of-neptune/1570636107", fa_class: "fab fa-itunes-note"
+      mount NavElement, href: "https://music.apple.com/pl/artist/state-of-neptune/1570636107", fa_class: "fab fa-itunes-note",
         hidden: true, show_above_lg: true
     end
 
     li do
-      mount NavElement, href: "https://music.amazon.com/artists/B09RCQG8XZ/state-of-neptune", fa_class: "fab fa-amazon"
+      mount NavElement, href: "https://music.amazon.com/artists/B09RCQG8XZ/state-of-neptune", fa_class: "fab fa-amazon",
         hidden: true, show_above_lg: true
     end
 
     li do
-      mount NavElement, href: "https://www.deezer.com/us/artist/158840862", fa_class: "fab fa-deezer"
+      mount NavElement, href: "https://www.deezer.com/us/artist/158840862", fa_class: "fab fa-deezer",
         hidden: true, show_above_lg: true
     end
 
