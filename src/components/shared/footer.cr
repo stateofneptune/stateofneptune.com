@@ -6,6 +6,11 @@ class Shared::Footer < BaseComponent
       div class: "flex justify-center items-center text-dim text-center" do
         text "© 2023 State Of Neptune – All Rights Reserved"
       end
+
+      div class: "flex justify-center items-center text-center" do
+        link "Privacy policy", to: Privacy::Index,
+          class: "underline-offset-2 hover:underline decoration-accent"
+      end
     end
   end
 
