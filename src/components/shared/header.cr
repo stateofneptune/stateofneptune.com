@@ -36,20 +36,22 @@ class Shared::Header < BaseComponent
   end
 
   def render_navigation_bar_elements
+    class_name = "transition-all data-[selected=true]:text-accent hover:text-accent"
+
     li do
-      mount NavElement, page: Home::Index, label: "Home"
+      mount Shared::NavElement, page: Home::Index, label: "Home", class_name: class_name
     end
 
     li do
-      mount NavElement, page: Music::Index, label: "Music"
+      mount Shared::NavElement, page: Music::Index, label: "Music", class_name: class_name
     end
 
     li do
-      mount NavElement, page: Videos::Index, label: "Videos"
+      mount Shared::NavElement, page: Videos::Index, label: "Videos", class_name: class_name
     end
 
     li do
-      mount NavElement, page: Stages::Index, label: "Stages"
+      mount Shared::NavElement, page: Stages::Index, label: "Stages", class_name: class_name
     end
   end
 end
