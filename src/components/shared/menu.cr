@@ -6,7 +6,7 @@ class Shared::Menu < BaseComponent
 
   def render_menu
     div id: "menu", data_menu_open: false, tabindex: -1,
-      class: "fixed left-0 top-0 z-10 w-64 h-[100lvh] bg-deep-bg -translate-x-full \
+      class: "fixed right-0 top-0 z-10 w-64 h-[100lvh] bg-deep-bg translate-x-full \
         data-[menu-open=true]:translate-x-0 transition duration-300" do
       render_menu_close_button
       render_navigation_bar
@@ -20,7 +20,7 @@ class Shared::Menu < BaseComponent
   end
 
   def render_menu_close_button
-    div class: "p-2 mb-4" do
+    div class: "p-2 mb-4 flex justify-end" do
       button id: "menu-close-button", data_menu_open: false,
         class: "w-8 h-8 text-body/0 data-[menu-open=true]:text-body/100 transition delay-300 \
           duration-0 data-[menu-open=true]:duration-1000" do
