@@ -29,13 +29,6 @@ class Shared::Menu < BaseComponent
     end
   end
 
-  private NAV_PAGE_REFS = [
-    {Home::Index, "Home"},
-    {Music::Index, "Music"},
-    {Videos::Index, "Videos"},
-    {Stages::Index, "Stages"},
-  ]
-
   def render_navigation_bar
     nav do
       ul do
@@ -45,8 +38,22 @@ class Shared::Menu < BaseComponent
   end
 
   def render_navigation_bar_elements
-    NAV_PAGE_REFS.each do |page, page_title|
-      link page_title, to: page, class: "block font-subtitle p-3 transition-all hover:bg-zinc-900/70"
+    class_name = "block font-subtitle p-3 transition-all hover:bg-zinc-900/70"
+
+    li do
+      mount Shared::NavElement, page: Home::Index, label: "Home", class_name: class_name
+    end
+
+    li do
+      mount Shared::NavElement, page: Music::Index, label: "Music", class_name: class_name
+    end
+
+    li do
+      mount Shared::NavElement, page: Videos::Index, label: "Videos", class_name: class_name
+    end
+
+    li do
+      mount Shared::NavElement, page: Stages::Index, label: "Stages", class_name: class_name
     end
   end
 end
