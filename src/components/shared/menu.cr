@@ -38,7 +38,7 @@ class Shared::Menu < BaseComponent
   end
 
   def render_navigation_bar_elements
-    class_name = "block font-subtitle p-3 transition-all hover:bg-zinc-900/70"
+    class_name = "block p-3 font-subtitle text-lg text-center transition hover:bg-zinc-900/70"
 
     li do
       mount Shared::NavElement, page: Home::Index, label: "Home", class_name: class_name
