@@ -1,5 +1,5 @@
 class Contact::Index < BrowserAction
   get "/contact" do
-    plain_text "Render something in Contact::Index"
+    html Contact::IndexPage
   end
 end

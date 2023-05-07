@@ -55,5 +55,9 @@ class Shared::Menu < BaseComponent
     #li do
     #  mount Shared::NavElement, page: Stages::Index, label: "Stages", class_name: class_name
     #end
+
+    li do
+      mount Shared::NavElement, page: Contact::Index, label: "Contact", class_name: class_name
+    end
   end
 end
