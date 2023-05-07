@@ -27,15 +27,8 @@ class Shared::Header < BaseComponent
     end
   end
 
-  private NAV_PAGE_REFS = [
-    {Home::Index, "Home"},
-    {Music::Index, "Music"},
-    {Videos::Index, "Videos"},
-    {Stages::Index, "Stages"},
-  ]
-
   def render_navigation_bar
-    nav class: "hidden flex justify-center md:block font-subtitle" do
+    nav class: "hidden md:flex justify-center font-subtitle" do
       ul class: "flex justify-center transition-all gap-12 lg:gap-14" do
         render_navigation_bar_elements
       end
@@ -43,10 +36,20 @@ class Shared::Header < BaseComponent
   end
 
   def render_navigation_bar_elements
-    NAV_PAGE_REFS.each do |page, page_title|
-      link page_title, to: page,
-        class: "transition-all data-[selected=true]:text-accent hover:text-accent",
-        data_selected: current_page? page
+    li do
+      mount NavElement, page: Home::Index, label: "Home"
+    end
+
+    li do
+      mount NavElement, page: Music::Index, label: "Music"
+    end
+
+    li do
+      mount NavElement, page: Videos::Index, label: "Videos"
+    end
+
+    li do
+      mount NavElement, page: Stages::Index, label: "Stages"
     end
   end
 end
