@@ -1,6 +1,6 @@
 class Shared::Footer < BaseComponent
   def render
-    footer class: "p-4 bg-deep-bg font-body" do
+    footer class: "absolute bottom-0 w-full p-4 bg-deep-bg font-body" do
       render_navigation_bar
 
       div class: "flex justify-center items-center text-dim text-center" do
