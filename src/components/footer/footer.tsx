@@ -4,12 +4,12 @@ import { Link } from "@builder.io/qwik-city";
 export default component$(() => {
   return (
     <>
-      <footer class="mt-auto py-4 font-body overflow-x-hidden">
+      <footer class="mt-auto overflow-x-hidden py-4 font-body">
         <nav>
           <ul class="flex items-center justify-center">
-            <li class="h-10 w-10 md:h-12 md:w-12 min-w-[2rem] flex justify-center items-center transition-all">
+            <li class="flex h-10 w-10 min-w-[2rem] items-center justify-center transition-all md:h-12 md:w-12">
               <a
-                class="text-md md:text-lg transition-all hover:text-accent"
+                class="text-md transition-all hover:text-accent md:text-lg"
                 href="https://www.instagram.com/stateofneptune/"
                 target="_blank"
               >
@@ -17,9 +17,9 @@ export default component$(() => {
               </a>
             </li>
 
-            <li class="h-10 w-10 md:h-12 md:w-12 min-w-[2rem] flex justify-center items-center transition-all">
+            <li class="flex h-10 w-10 min-w-[2rem] items-center justify-center transition-all md:h-12 md:w-12">
               <a
-                class="text-md md:text-lg transition-all hover:text-accent"
+                class="text-md transition-all hover:text-accent md:text-lg"
                 href="https://www.facebook.com/stateofneptune/"
                 target="_blank"
               >
@@ -27,9 +27,9 @@ export default component$(() => {
               </a>
             </li>
 
-            <li class="h-10 w-10 md:h-12 md:w-12 min-w-[2rem] flex justify-center items-center transition-all">
+            <li class="flex h-10 w-10 min-w-[2rem] items-center justify-center transition-all md:h-12 md:w-12">
               <a
-                class="text-md md:text-lg transition-all hover:text-accent"
+                class="text-md transition-all hover:text-accent md:text-lg"
                 href="https://www.tiktok.com/@stateofneptune"
                 target="_blank"
               >
@@ -37,9 +37,9 @@ export default component$(() => {
               </a>
             </li>
 
-            <li class="h-10 w-10 md:h-12 md:w-12 min-w-[2rem] transition-all hidden md:flex md:justify-center md:items-center">
+            <li class="hidden h-10 w-10 min-w-[2rem] transition-all md:flex md:h-12 md:w-12 md:items-center md:justify-center">
               <a
-                class="text-md md:text-lg transition-all hover:text-accent"
+                class="text-md transition-all hover:text-accent md:text-lg"
                 href="https://twitter.com/stateofneptune"
                 target="_blank"
               >
@@ -47,9 +47,9 @@ export default component$(() => {
               </a>
             </li>
 
-            <li class="h-10 w-10 md:h-12 md:w-12 min-w-[2rem] flex justify-center items-center transition-all">
+            <li class="flex h-10 w-10 min-w-[2rem] items-center justify-center transition-all md:h-12 md:w-12">
               <a
-                class="text-md md:text-lg transition-all hover:text-accent"
+                class="text-md transition-all hover:text-accent md:text-lg"
                 href="https://www.youtube.com/@stateofneptune1864"
                 target="_blank"
               >
@@ -57,9 +57,9 @@ export default component$(() => {
               </a>
             </li>
 
-            <li class="h-10 w-10 md:h-12 md:w-12 min-w-[2rem] flex justify-center items-center transition-all">
+            <li class="flex h-10 w-10 min-w-[2rem] items-center justify-center transition-all md:h-12 md:w-12">
               <a
-                class="text-md md:text-lg transition-all hover:text-accent"
+                class="text-md transition-all hover:text-accent md:text-lg"
                 href="https://open.spotify.com/artist/5FhQX1j6F5axsMOc1UiDmW"
                 target="_blank"
               >
@@ -67,9 +67,9 @@ export default component$(() => {
               </a>
             </li>
 
-            <li class="h-10 w-10 md:h-12 md:w-12 min-w-[2rem] flex justify-center items-center transition-all">
+            <li class="flex h-10 w-10 min-w-[2rem] items-center justify-center transition-all md:h-12 md:w-12">
               <a
-                class="text-md md:text-lg transition-all hover:text-accent"
+                class="text-md transition-all hover:text-accent md:text-lg"
                 href="https://stateofneptune.bandcamp.com/"
                 target="_blank"
               >
@@ -77,9 +77,9 @@ export default component$(() => {
               </a>
             </li>
 
-            <li class="h-10 w-10 md:h-12 md:w-12 min-w-[2rem] transition-all hidden lg:flex lg:justify-center lg:items-center">
+            <li class="hidden h-10 w-10 min-w-[2rem] transition-all md:h-12 md:w-12 lg:flex lg:items-center lg:justify-center">
               <a
-                class="text-md md:text-lg transition-all hover:text-accent"
+                class="text-md transition-all hover:text-accent md:text-lg"
                 href="https://music.apple.com/pl/artist/state-of-neptune/1570636107"
                 target="_blank"
               >
@@ -87,9 +87,9 @@ export default component$(() => {
               </a>
             </li>
 
-            <li class="h-10 w-10 md:h-12 md:w-12 min-w-[2rem] transition-all hidden lg:flex lg:justify-center lg:items-center">
+            <li class="hidden h-10 w-10 min-w-[2rem] transition-all md:h-12 md:w-12 lg:flex lg:items-center lg:justify-center">
               <a
-                class="text-md md:text-lg transition-all hover:text-accent"
+                class="text-md transition-all hover:text-accent md:text-lg"
                 href="https://music.amazon.com/artists/B09RCQG8XZ/state-of-neptune"
                 target="_blank"
               >
@@ -97,9 +97,9 @@ export default component$(() => {
               </a>
             </li>
 
-            <li class="h-10 w-10 md:h-12 md:w-12 min-w-[2rem] transition-all hidden lg:flex lg:justify-center lg:items-center">
+            <li class="hidden h-10 w-10 min-w-[2rem] transition-all md:h-12 md:w-12 lg:flex lg:items-center lg:justify-center">
               <a
-                class="text-md md:text-lg transition-all hover:text-accent"
+                class="text-md transition-all hover:text-accent md:text-lg"
                 href="https://www.deezer.com/us/artist/158840862"
                 target="_blank"
               >
@@ -107,10 +107,11 @@ export default component$(() => {
               </a>
             </li>
 
-            <li class="h-10 w-10 md:h-12 md:w-12 min-w-[2rem] flex justify-center items-center transition-all">
+            <li class="flex h-10 w-10 min-w-[2rem] items-center justify-center transition-all md:h-12 md:w-12">
               <a
-                class="text-md md:text-lg transition-all hover:text-accent"
-                href="mailto:stateofneptune@gmail.com">
+                class="text-md transition-all hover:text-accent md:text-lg"
+                href="mailto:stateofneptune@gmail.com"
+              >
                 <i class="fas fa-envelope"></i>
               </a>
             </li>
