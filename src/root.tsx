@@ -32,7 +32,7 @@ export default component$(() => {
       <body
         lang="en"
         class={[
-          "flex min-h-[100dvh] flex-col bg-deep-bg text-body",
+          "flex min-h-[100dvh] flex-col scroll-smooth bg-deep-bg text-body",
           menuStore.open && "overflow-hidden",
         ]}
       >
