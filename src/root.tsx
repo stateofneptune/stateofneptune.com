@@ -29,7 +29,13 @@ export default component$(() => {
         <link rel="manifest" href="/manifest.json" />
         <RouterHead />
       </head>
-      <body lang="en" class="flex min-h-[100dvh] flex-col bg-deep-bg text-body">
+      <body
+        lang="en"
+        class={[
+          "flex min-h-[100dvh] flex-col bg-deep-bg text-body",
+          menuStore.open && "overflow-hidden",
+        ]}
+      >
         <RouterOutlet />
         <ServiceWorkerRegister />
       </body>
