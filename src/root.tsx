@@ -1,4 +1,8 @@
-import { component$ } from "@builder.io/qwik";
+import {
+  component$,
+  useContextProvider,
+  useStore,
+} from "@builder.io/qwik";
 
 import {
   QwikCityProvider,
@@ -6,11 +10,18 @@ import {
   ServiceWorkerRegister,
 } from "@builder.io/qwik-city";
 
+import { MenuContext, MenuContextStore } from "./contexts/menu-context";
 import { RouterHead } from "./components/router-head/router-head";
 
 import "./global.css";
 
 export default component$(() => {
+  const menuStore = useStore<MenuContextStore>({
+    open: false,
+  });
+
+  useContextProvider(MenuContext, menuStore);
+
   return (
     <QwikCityProvider>
       <head>

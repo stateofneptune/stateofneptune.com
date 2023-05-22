@@ -1,7 +1,8 @@
 import { component$, useContext, $ } from "@builder.io/qwik";
-import { MenuContext } from "~/routes/layout";
-import { MenuCloseIcon } from "../icons/menu-close";
 import { Link } from "@builder.io/qwik-city";
+
+import { MenuContext } from "~/contexts/menu-context";
+import { MenuCloseIcon } from "../icons/menu-close";
 
 export default component$(() => {
   const menuContext = useContext(MenuContext);

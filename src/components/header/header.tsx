@@ -1,7 +1,8 @@
 import { component$, useContext, $ } from "@builder.io/qwik";
 import { Link, useLocation } from "@builder.io/qwik-city";
+
+import { MenuContext } from "~/contexts/menu-context";
 import { MenuBurgerIcon } from "../icons/menu-burger";
-import { MenuContext } from "~/routes/layout";
 
 export default component$(() => {
   const loc = useLocation();
