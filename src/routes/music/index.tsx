@@ -6,6 +6,6 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "State Of Neptune - Music",
+  title: "Music - SON",
   meta: [],
 };

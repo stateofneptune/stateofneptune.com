@@ -16,6 +16,6 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "State Of Neptune - Videos",
+  title: "Videos - SON",
   meta: [],
 };
