@@ -9,6 +9,7 @@
     "build": "qwik build",
     "build.client": "vite build",
     "build.preview": "vite build --ssr src/entry.preview.tsx",
+    "build.server": "vite build -c adapters/fastify/vite.config.ts",
     "build.types": "tsc --incremental --noEmit",
     "deploy": "echo 'Run \"npm run qwik add\" to install a server adapter'",
     "dev": "vite --mode ssr",
@@ -17,10 +18,15 @@
     "fmt.check": "prettier --check .",
     "lint": "eslint \"src/**/*.ts*\"",
     "preview": "qwik build preview && vite preview --open",
+    "serve": "node server/entry.fastify",
     "start": "vite --open --mode ssr",
     "qwik": "qwik"
   },
   "dependencies": {
+    "@fastify/compress": "^6.2.1",
+    "@fastify/static": "^6.10.1",
+    "fastify": "^4.17.0",
+    "fastify-plugin": "^4.5.0",
     "@builder.io/qwik": "^1.1.1",
     "@builder.io/qwik-city": "^1.1.1",
     "undici": "5.22.0"
