@@ -12,7 +12,7 @@ export default component$(() => {
     <>
       <div
         class={[
-          "fixed right-0 top-0 z-10 h-full w-full overflow-y-auto bg-deep-bg/90 transition-[opacity_backdrop-blur_visibility] duration-300",
+          "fixed right-0 top-0 z-10 h-full w-full overflow-y-auto bg-deep-bg/90 transition-[opacity_backdrop-blur_visibility] duration-300 will-change-[opacity,backdrop-filter]",
           menuContext.open
             ? "visible opacity-100 backdrop-blur-sm"
             : "invisible opacity-0",
