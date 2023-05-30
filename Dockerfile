@@ -24,7 +24,9 @@ RUN yarn
 RUN yarn build
 
 
-FROM node:${NODE_VERSION}-slim as production
+FROM node:${NODE_VERSION}-slim AS production
+
+USER node
 
 WORKDIR /app
 
