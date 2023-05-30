@@ -20,8 +20,8 @@ COPY --chown=node:node ./src src
 COPY --chown=node:node ./package.json package.json
 COPY --chown=node:node ./yarn.lock yarn.lock
 
-RUN yarn
-RUN yarn build
+RUN --mount=type=cache,target=/var/cache/yarn yarn
+RUN --mount=type=cache,target=/var/cache/yarn yarn build
 
 
 FROM node:${NODE_VERSION}-slim AS production
@@ -35,7 +35,7 @@ COPY --chown=node:node --from=builder /app/yarn.lock yarn.lock
 COPY --chown=node:node --from=builder /app/dist dist
 COPY --chown=node:node --from=builder /app/server server
 
-RUN yarn --production
+RUN --mount=type=cache,target=/var/cache/yarn yarn --production
 
 EXPOSE 3000
 
