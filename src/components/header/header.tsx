@@ -22,7 +22,7 @@ export default component$(() => {
           <Link href="/">
             <figure>
               <img
-                src="images/logo/state-of-neptune-wht-inline.png"
+                src="/images/logo/state-of-neptune-wht-inline.png"
                 class="h-10 transition-all md:h-12 lg:h-14"
               ></img>
             </figure>
