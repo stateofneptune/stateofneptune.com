@@ -1,11 +1,12 @@
 import { component$, useContext, $ } from "@builder.io/qwik";
-import { Link, useLocation } from "@builder.io/qwik-city";
+import { Link } from "@builder.io/qwik-city";
 
 import { MenuContext } from "~/contexts/menu-context";
 import { MenuBurgerIcon } from "../icons/menu-burger";
 
+import HeaderNavItem from "../header-nav-item/header-nav-item";
+
 export default component$(() => {
-  const loc = useLocation();
   const menuContext = useContext(MenuContext);
   const openMenu = $(() => (menuContext.open = true));
 
@@ -32,39 +33,15 @@ export default component$(() => {
         <nav class="hidden justify-center font-subtitle md:flex">
           <ul class="flex justify-center gap-12 transition-all lg:gap-14">
             <li>
-              <Link
-                href="/"
-                class={[
-                  "transition-all hover:text-accent",
-                  loc.url.pathname === "/" && "text-accent",
-                ]}
-              >
-                Home
-              </Link>
+              <HeaderNavItem href="/">Home</HeaderNavItem>
             </li>
 
             <li>
-              <Link
-                href="/music"
-                class={[
-                  "transition-all hover:text-accent",
-                  loc.url.pathname === "/music/" && "text-accent",
-                ]}
-              >
-                Music
-              </Link>
+              <HeaderNavItem href="/music/">Music</HeaderNavItem>
             </li>
 
             <li>
-              <Link
-                href="/videos"
-                class={[
-                  "transition-all hover:text-accent",
-                  loc.url.pathname === "/videos/" && "text-accent",
-                ]}
-              >
-                Videos
-              </Link>
+              <HeaderNavItem href="/videos/">Videos</HeaderNavItem>
             </li>
           </ul>
         </nav>
