@@ -1,8 +1,9 @@
 import { component$, useContext, $ } from "@builder.io/qwik";
-import { Link } from "@builder.io/qwik-city";
 
 import { MenuContext } from "~/contexts/menu-context";
 import { MenuCloseIcon } from "../icons/menu-close";
+
+import MenuNavItem from "../menu-nav-item/menu-nav-item";
 
 export default component$(() => {
   const menuContext = useContext(MenuContext);
@@ -36,33 +37,21 @@ export default component$(() => {
         <nav>
           <ul>
             <li>
-              <Link
-                href="/"
-                class="block p-3 text-center font-subtitle text-lg transition hover:bg-zinc-900/70"
-                onClick$={closeMenu}
-              >
+              <MenuNavItem href="/" onClick$={closeMenu}>
                 Home
-              </Link>
+              </MenuNavItem>
             </li>
 
             <li>
-              <Link
-                href="/music"
-                class="block p-3 text-center font-subtitle text-lg transition hover:bg-zinc-900/70"
-                onClick$={closeMenu}
-              >
+              <MenuNavItem href="/music" onClick$={closeMenu}>
                 Music
-              </Link>
+              </MenuNavItem>
             </li>
 
             <li>
-              <Link
-                href="/videos"
-                class="block p-3 text-center font-subtitle text-lg transition hover:bg-zinc-900/70"
-                onClick$={closeMenu}
-              >
+              <MenuNavItem href="/videos" onClick$={closeMenu}>
                 Videos
-              </Link>
+              </MenuNavItem>
             </li>
           </ul>
         </nav>
