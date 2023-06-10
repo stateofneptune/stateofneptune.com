@@ -4,7 +4,7 @@ import { Link } from "@builder.io/qwik-city";
 export default component$(() => {
   return (
     <>
-      <footer class="mt-auto overflow-x-hidden py-4 font-body">
+      <footer class="mt-auto overflow-x-hidden bg-deep-bg py-4 font-body">
         <nav>
           <ul class="flex items-center justify-center">
             <li class="flex h-10 w-10 min-w-[2rem] items-center justify-center transition-all md:h-12 md:w-12">
