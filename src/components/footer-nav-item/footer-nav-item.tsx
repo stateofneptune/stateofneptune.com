@@ -6,21 +6,21 @@ export interface FooterNavItemProps {
   showAbove?: "md" | "lg" | undefined;
 }
 
-export default component$(({ href, target, showAbove }: FooterNavItemProps) => {
+export default component$((props: FooterNavItemProps) => {
   return (
     <>
       <div
         class={[
           "h-10 w-10 min-w-[2rem] items-center justify-center transition-all md:h-12 md:w-12",
-          showAbove
-            ? ["hidden", showAbove === "md" ? "md:flex" : "lg:flex"]
+          props.showAbove
+            ? ["hidden", props.showAbove === "md" ? "md:flex" : "lg:flex"]
             : "flex",
         ]}
       >
         <a
-          target={target}
-          href={href}
           class="text-md transition-all focus-within:text-accent hover:text-accent md:text-lg"
+          target={props.target}
+          href={props.href}
         >
           <Slot></Slot>
         </a>
