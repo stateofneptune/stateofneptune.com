@@ -1,119 +1,112 @@
 import { component$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 
+import FooterNavItem from "../footer-nav-item/footer-nav-item";
+
 export default component$(() => {
   return (
     <>
       <footer class="mt-auto overflow-x-hidden bg-deep-bg py-4 font-body">
         <nav>
           <ul class="flex items-center justify-center">
-            <li class="flex h-10 w-10 min-w-[2rem] items-center justify-center transition-all md:h-12 md:w-12">
-              <a
-                class="text-md transition-all hover:text-accent md:text-lg"
+            <li>
+              <FooterNavItem
                 href="https://www.instagram.com/stateofneptune/"
                 target="_blank"
               >
                 <i class="fab fa-instagram"></i>
-              </a>
+              </FooterNavItem>
             </li>
 
-            <li class="flex h-10 w-10 min-w-[2rem] items-center justify-center transition-all md:h-12 md:w-12">
-              <a
-                class="text-md transition-all hover:text-accent md:text-lg"
+            <li>
+              <FooterNavItem
                 href="https://www.facebook.com/stateofneptune/"
                 target="_blank"
               >
                 <i class="fab fa-facebook"></i>
-              </a>
+              </FooterNavItem>
             </li>
 
-            <li class="flex h-10 w-10 min-w-[2rem] items-center justify-center transition-all md:h-12 md:w-12">
-              <a
-                class="text-md transition-all hover:text-accent md:text-lg"
+            <li>
+              <FooterNavItem
                 href="https://www.tiktok.com/@stateofneptune"
                 target="_blank"
               >
                 <i class="fab fa-tiktok"></i>
-              </a>
+              </FooterNavItem>
             </li>
 
-            <li class="hidden h-10 w-10 min-w-[2rem] transition-all md:flex md:h-12 md:w-12 md:items-center md:justify-center">
-              <a
-                class="text-md transition-all hover:text-accent md:text-lg"
+            <li>
+              <FooterNavItem
                 href="https://twitter.com/stateofneptune"
+                showAbove="md"
                 target="_blank"
               >
                 <i class="fab fa-twitter"></i>
-              </a>
+              </FooterNavItem>
             </li>
 
-            <li class="flex h-10 w-10 min-w-[2rem] items-center justify-center transition-all md:h-12 md:w-12">
-              <a
-                class="text-md transition-all hover:text-accent md:text-lg"
+            <li>
+              <FooterNavItem
                 href="https://www.youtube.com/@stateofneptune1864"
                 target="_blank"
               >
                 <i class="fab fa-youtube"></i>
-              </a>
+              </FooterNavItem>
             </li>
 
-            <li class="flex h-10 w-10 min-w-[2rem] items-center justify-center transition-all md:h-12 md:w-12">
-              <a
-                class="text-md transition-all hover:text-accent md:text-lg"
+            <li>
+              <FooterNavItem
                 href="https://open.spotify.com/artist/5FhQX1j6F5axsMOc1UiDmW"
                 target="_blank"
               >
                 <i class="fab fa-spotify"></i>
-              </a>
+              </FooterNavItem>
             </li>
 
-            <li class="flex h-10 w-10 min-w-[2rem] items-center justify-center transition-all md:h-12 md:w-12">
-              <a
-                class="text-md transition-all hover:text-accent md:text-lg"
+            <li>
+              <FooterNavItem
                 href="https://stateofneptune.bandcamp.com/"
                 target="_blank"
               >
                 <i class="fab fa-bandcamp"></i>
-              </a>
+              </FooterNavItem>
             </li>
 
-            <li class="hidden h-10 w-10 min-w-[2rem] transition-all md:h-12 md:w-12 lg:flex lg:items-center lg:justify-center">
-              <a
-                class="text-md transition-all hover:text-accent md:text-lg"
+            <li>
+              <FooterNavItem
                 href="https://music.apple.com/pl/artist/state-of-neptune/1570636107"
+                showAbove="lg"
                 target="_blank"
               >
                 <i class="fab fa-itunes-note"></i>
-              </a>
+              </FooterNavItem>
             </li>
 
-            <li class="hidden h-10 w-10 min-w-[2rem] transition-all md:h-12 md:w-12 lg:flex lg:items-center lg:justify-center">
-              <a
-                class="text-md transition-all hover:text-accent md:text-lg"
+            <li>
+              <FooterNavItem
                 href="https://music.amazon.com/artists/B09RCQG8XZ/state-of-neptune"
+                showAbove="lg"
                 target="_blank"
               >
                 <i class="fab fa-amazon"></i>
-              </a>
+              </FooterNavItem>
             </li>
 
-            <li class="hidden h-10 w-10 min-w-[2rem] transition-all md:h-12 md:w-12 lg:flex lg:items-center lg:justify-center">
-              <a
-                class="text-md transition-all hover:text-accent md:text-lg"
+            <li>
+              <FooterNavItem
                 href="https://www.deezer.com/us/artist/158840862"
+                showAbove="lg"
                 target="_blank"
               >
                 <i class="fab fa-deezer"></i>
-              </a>
+              </FooterNavItem>
             </li>
 
-            <li class="flex h-10 w-10 min-w-[2rem] items-center justify-center transition-all md:h-12 md:w-12">
-              <a
-                class="text-md transition-all hover:text-accent md:text-lg"
-                href="mailto:stateofneptune@gmail.com"
-              >
+            <li>
+              <FooterNavItem href="mailto:stateofneptune@gmail.com">
                 <i class="fas fa-envelope"></i>
-              </a>
+              </FooterNavItem>
             </li>
           </ul>
         </nav>
