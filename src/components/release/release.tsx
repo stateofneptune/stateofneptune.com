@@ -21,7 +21,7 @@ export default component$((props: ReleaseProps) => {
             <img
               src={props.src}
               alt={props.alt}
-              class="shadow-lg transition-[box-shadow] hover:shadow-2xl"
+              class="shadow-lg transition-[box-shadow] focus-within:shadow-2xl hover:shadow-2xl"
             ></img>
           </a>
         </figure>
@@ -31,7 +31,7 @@ export default component$((props: ReleaseProps) => {
             {props.heading}
           </div>
 
-          <div class="text-center font-subtitle uppercase transition-[color] hover:text-accent">
+          <div class="text-center font-subtitle uppercase transition-[color] focus-within:text-accent hover:text-accent">
             <a href={props.href} target="_blank">
               Buy
             </a>

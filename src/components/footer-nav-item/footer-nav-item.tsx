@@ -18,9 +18,9 @@ export default component$(({ href, target, showAbove }: FooterNavItemProps) => {
         ]}
       >
         <a
-          class="text-md transition-all hover:text-accent md:text-lg"
           target={target}
           href={href}
+          class="text-md transition-all focus-within:text-accent hover:text-accent md:text-lg"
         >
           <Slot></Slot>
         </a>

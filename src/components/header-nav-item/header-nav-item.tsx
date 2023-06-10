@@ -13,7 +13,7 @@ export default component$((props: HeaderNavItemProps) => {
       <Link
         href={props.href}
         class={[
-          "transition-all hover:text-accent",
+          "transition-all focus-within:text-accent hover:text-accent",
           loc.url.pathname === props.href && "text-accent",
         ]}
       >

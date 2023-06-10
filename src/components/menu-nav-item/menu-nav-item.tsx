@@ -11,7 +11,7 @@ export default component$((props: MenuNavItemProps) => {
     <>
       <Link
         href={props.href}
-        class="block p-3 text-center font-subtitle text-lg transition hover:bg-zinc-900/70"
+        class="block p-3 text-center font-subtitle text-lg transition focus-within:bg-zinc-900/70 hover:bg-zinc-900/70"
         onClick$={props.onClick$}
       >
         <Slot></Slot>

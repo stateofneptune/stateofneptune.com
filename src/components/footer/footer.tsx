@@ -117,7 +117,7 @@ export default component$(() => {
 
         <div class="flex items-center justify-center text-center text-sm transition-[font-size] md:text-base">
           <Link
-            class="decoration-accent underline-offset-2 hover:underline"
+            class="decoration-accent underline-offset-2 focus-within:underline hover:underline"
             href="/privacy-policy"
           >
             Privacy policy
