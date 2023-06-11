@@ -10,8 +10,6 @@ export default component$(() => {
         <div class="flex w-[80rem] flex-wrap justify-evenly gap-x-16 gap-y-16">
           <YouTube src="https://www.youtube-nocookie.com/embed/n-qIKsquRik" />
           <YouTube src="https://www.youtube-nocookie.com/embed/Ff3ebB6Un8M" />
-          <YouTube src="https://www.youtube-nocookie.com/embed/Airh7TekMmY" />
-          <YouTube src="https://www.youtube-nocookie.com/embed/0Qx5mPyOGgc" />
         </div>
       </section>
     </>
