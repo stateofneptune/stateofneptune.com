@@ -1,4 +1,10 @@
-import { component$, useContextProvider, useStore } from "@builder.io/qwik";
+import {
+  component$,
+  useContextProvider,
+  useSignal,
+  useStore,
+  useVisibleTask$,
+} from "@builder.io/qwik";
 
 import {
   QwikCityProvider,
@@ -13,6 +19,7 @@ import "./global.css";
 
 export default component$(() => {
   const menuStore = useStore<MenuContextStore>({
+    dialogRef: useSignal<HTMLDialogElement | undefined>(),
     open: false,
   });
 

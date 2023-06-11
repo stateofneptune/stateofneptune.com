@@ -7,26 +7,27 @@ import MenuNavItem from "../menu-nav-item/menu-nav-item";
 
 export default component$(() => {
   const menuContext = useContext(MenuContext);
-  const closeMenu = $(() => (menuContext.open = false));
+
+  const closeMenu = $(() => {
+    menuContext.dialogRef.value?.close();
+    menuContext.open = false;
+  });
 
   return (
     <>
-      <div
+      <dialog
         class={[
-          "fixed right-0 top-0 z-10 h-full w-full overflow-y-auto bg-deep-bg/90 transition-[opacity_backdrop-blur_visibility] duration-300 will-change-[opacity,backdrop-filter]",
-          menuContext.open
-            ? "visible opacity-100 backdrop-blur-sm"
-            : "invisible opacity-0",
+          "fixed m-0 w-full max-w-[100lvw] overflow-y-auto bg-transparent p-0 text-body transition-[opacity] duration-300 backdrop:bg-deep-bg/90 backdrop:backdrop-blur-sm",
+          menuContext.open ? "opacity-100" : "opacity-0",
         ]}
+        ref={menuContext.dialogRef}
         onClick$={closeMenu}
       >
         <div class="mb-4 flex justify-end p-2">
           <button
             class={[
-              "h-8 w-8 transition delay-300",
-              menuContext.open
-                ? "text-body/100 duration-1000"
-                : "text-body/0 duration-0",
+              "h-8 w-8 text-body transition-[opacity] delay-300 duration-1000",
+              menuContext.open ? "opacity-100" : "opacity-0",
             ]}
             onClick$={closeMenu}
           >
@@ -37,25 +38,19 @@ export default component$(() => {
         <nav>
           <ul>
             <li>
-              <MenuNavItem href="/" onClick$={closeMenu}>
-                Home
-              </MenuNavItem>
+              <MenuNavItem href="/">Home</MenuNavItem>
             </li>
 
             <li>
-              <MenuNavItem href="/music" onClick$={closeMenu}>
-                Music
-              </MenuNavItem>
+              <MenuNavItem href="/music">Music</MenuNavItem>
             </li>
 
             <li>
-              <MenuNavItem href="/videos" onClick$={closeMenu}>
-                Videos
-              </MenuNavItem>
+              <MenuNavItem href="/videos">Videos</MenuNavItem>
             </li>
           </ul>
         </nav>
-      </div>
+      </dialog>
     </>
   );
 });

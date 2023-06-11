@@ -8,7 +8,11 @@ import HeaderNavItem from "../header-nav-item/header-nav-item";
 
 export default component$(() => {
   const menuContext = useContext(MenuContext);
-  const openMenu = $(() => (menuContext.open = true));
+
+  const openMenu = $(() => {
+    menuContext.dialogRef.value?.showModal();
+    menuContext.open = true;
+  });
 
   return (
     <>
