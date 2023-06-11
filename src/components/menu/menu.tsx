@@ -17,7 +17,7 @@ export default component$(() => {
     <>
       <dialog
         class={[
-          "fixed m-0 w-full max-w-[100lvw] overflow-y-auto bg-transparent p-0 text-body transition-[opacity] duration-300 backdrop:bg-deep-bg/90 backdrop:backdrop-blur-lg",
+          "fixed m-0 w-full max-w-[100lvw] overflow-y-auto bg-transparent p-0 text-body transition-[opacity] duration-menu-open backdrop:bg-deep-bg/90 backdrop:backdrop-blur-lg",
           menuContext.open ? "opacity-100" : "opacity-0",
         ]}
         ref={menuContext.dialogRef}
@@ -26,7 +26,7 @@ export default component$(() => {
         <div class="mb-4 flex justify-end p-2">
           <button
             class={[
-              "h-8 w-8 text-body transition-[opacity] delay-300 duration-1000",
+              "h-8 w-8 text-body transition-[opacity] delay-menu-open duration-1000",
               menuContext.open ? "opacity-100" : "opacity-0",
             ]}
             onClick$={closeMenu}

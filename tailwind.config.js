@@ -14,6 +14,15 @@ module.exports = {
         body: "#FFF9EB",
         dim: "#B3AEA4",
       },
+      menuTransitionDuration: {
+        open: "300ms",
+      },
+      transitionDuration: ({ theme }) => ({
+        "menu-open": theme("menuTransitionDuration.open"),
+      }),
+      transitionDelay: ({ theme }) => ({
+        "menu-open": theme("menuTransitionDuration.open"),
+      }),
     },
   },
   plugins: [],
