@@ -1,70 +1,26 @@
-# Qwik City App ⚡️
-
-- [Qwik Docs](https://qwik.builder.io/)
-- [Discord](https://qwik.builder.io/chat)
-- [Qwik GitHub](https://github.com/BuilderIO/qwik)
-- [@QwikDev](https://twitter.com/QwikDev)
-- [Vite](https://vitejs.dev/)
+<div align="center">
+  <img width=500 src="public/images/logo/state-of-neptune-wht-inline.png" />
+</div>
 
 ---
 
-## Project Structure
+This is the repository for State Of Neptune's official website https://stateofneptune.com/
 
-This project is using Qwik with [QwikCity](https://qwik.builder.io/qwikcity/overview/). QwikCity is just an extra set of tools on top of Qwik to make it easier to build a full site, including directory-based routing, layouts, and more.
+## Setting up the project
 
-Inside your project, you'll see the following directory structure:
-
-```
-├── public/
-│   └── ...
-└── src/
-    ├── components/
-    │   └── ...
-    └── routes/
-        └── ...
-```
-
-- `src/routes`: Provides the directory based routing, which can include a hierarchy of `layout.tsx` layout files, and an `index.tsx` file as the page. Additionally, `index.ts` files are endpoints. Please see the [routing docs](https://qwik.builder.io/qwikcity/routing/overview/) for more info.
-
-- `src/components`: Recommended directory for components.
-
-- `public`: Any static assets, like images, can be placed in the public directory. Please see the [Vite public directory](https://vitejs.dev/guide/assets.html#the-public-directory) for more info.
-
-## Add Integrations and deployment
-
-Use the `yarn qwik add` command to add additional integrations. Some examples of integrations include: Cloudflare, Netlify or Express server, and the [Static Site Generator (SSG)](https://qwik.builder.io/qwikcity/guides/static-site-generation/).
+Install the dependencies for the build and preview process:
 
 ```shell
-yarn qwik add # or `yarn qwik add`
+yarn
 ```
 
-## Development
-
-Development mode uses [Vite's development server](https://vitejs.dev/). During development, the `dev` command will server-side render (SSR) the output.
-
-```shell
-npm start # or `yarn start`
-```
-
-> Note: during dev mode, Vite may request a significant number of `.js` files. This does not represent a Qwik production build.
-
-## Preview
-
-The preview command will create a production build of the client modules, a production build of `src/entry.preview.tsx`, and run a local server. The preview server is only for convenience to locally preview a production build, and it should not be used as a production server.
-
-```shell
-yarn preview
-```
-
-## Production
-
-The production build will generate client and server modules by running both client and server build commands. Additionally, the build command will use Typescript to run a type check on the source code.
+Build the needed client and server modules using the command:
 
 ```shell
 yarn build
 ```
 
-## Fastify Server
+Additionally, the build command will use Typescript to run a type check on the source code.
 
 This app has a minimal [Fastify server](https://fastify.io/) implementation. After running a full build, you can preview the build using the command:
 
@@ -73,3 +29,23 @@ yarn serve
 ```
 
 Then visit [http://localhost:3000/](http://localhost:3000/)
+
+### Development
+
+To run the project in watch mode, use the command:
+
+```shell
+yarn dev
+```
+
+The app is running at [http://localhost:5173/](http://localhost:5173/)
+
+### With Docker
+
+Create a docker image and run a container using the command:
+
+```shell
+docker compose up
+```
+
+Then visit [http://localhost/](http://localhost/)
