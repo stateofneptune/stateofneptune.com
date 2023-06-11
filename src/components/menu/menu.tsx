@@ -17,7 +17,7 @@ export default component$(() => {
     <>
       <dialog
         class={[
-          "fixed m-0 w-full max-w-[100lvw] overflow-y-auto bg-transparent p-0 text-body transition-[opacity] duration-menu-open backdrop:bg-deep-bg/90 backdrop:backdrop-blur-lg",
+          "fixed m-0 h-full max-h-[100ldh] w-full max-w-[100lvw] overflow-y-auto bg-transparent p-0 text-body transition-[opacity] duration-menu-open backdrop:bg-deep-bg/90 backdrop:backdrop-blur-lg",
           menuContext.open ? "opacity-100" : "opacity-0",
         ]}
         ref={menuContext.dialogRef}
