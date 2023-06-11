@@ -44,11 +44,11 @@ export default component$(() => {
             </li>
 
             <li>
-              <MenuNavItem href="/music">Music</MenuNavItem>
+              <MenuNavItem href="/music/">Music</MenuNavItem>
             </li>
 
             <li>
-              <MenuNavItem href="/videos">Videos</MenuNavItem>
+              <MenuNavItem href="/videos/">Videos</MenuNavItem>
             </li>
           </ul>
         </nav>
