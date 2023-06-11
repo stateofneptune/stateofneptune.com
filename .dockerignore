@@ -5,9 +5,12 @@
 .prettierignore
 .vscode
 
+docker-compose.yml
+
 dist
 node_modules
 
+nginx
 server
 tmp
 
