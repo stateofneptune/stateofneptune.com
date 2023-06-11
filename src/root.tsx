@@ -3,7 +3,6 @@ import {
   useContextProvider,
   useSignal,
   useStore,
-  useVisibleTask$,
 } from "@builder.io/qwik";
 
 import {
