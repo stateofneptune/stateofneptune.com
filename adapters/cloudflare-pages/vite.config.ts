@@ -1,4 +1,4 @@
-import { nodeServerAdapter } from '@builder.io/qwik-city/adapters/node-server/vite';
+import { cloudflarePagesAdapter } from '@builder.io/qwik-city/adapters/cloudflare-pages/vite';
 import { extendConfig } from '@builder.io/qwik-city/vite';
 import baseConfig from '../../vite.config';
 
@@ -7,9 +7,9 @@ export default extendConfig(baseConfig, () => {
     build: {
       ssr: true,
       rollupOptions: {
-        input: ['src/entry.fastify.tsx', '@qwik-city-plan'],
+        input: ['src/entry.cloudflare-pages.tsx', '@qwik-city-plan'],
       },
     },
-    plugins: [nodeServerAdapter({ name: 'fastify' })],
+    plugins: [cloudflarePagesAdapter()],
   };
 });
