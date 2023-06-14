@@ -8,15 +8,15 @@
 
 @font-face {
   font-family: "Astro";
-  src: url("/fonts/Astro/Astro.otf");
+  src: url("/fonts/astro/astro.otf");
 }
 
 @font-face {
   font-family: "Opinion Pro Extended";
-  src: url("/fonts/Opinion Pro/Opinion Pro Extended Light.otf");
+  src: url("/fonts/opinion-pro/opinion-pro-extended-light.otf");
 }
 
 @font-face {
   font-family: "Opinion Pro Condensed";
-  src: url("/fonts/Opinion Pro/Opinion Pro Condensed Light.otf");
+  src: url("/fonts/opinion-pro/opinion-pro-condensed-light.otf");
 }
