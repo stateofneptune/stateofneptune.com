@@ -11,13 +11,13 @@ This is the repository for State Of Neptune's official website https://stateofne
 Install the dependencies for the build and preview process:
 
 ```shell
-yarn
+npm ci
 ```
 
 Build the needed client and server modules using the command:
 
 ```shell
-yarn build
+npm run build
 ```
 
 Additionally, the build command will use Typescript to run a type check on the source code.
@@ -25,7 +25,7 @@ Additionally, the build command will use Typescript to run a type check on the s
 This app has a minimal [Fastify server](https://fastify.io/) implementation. After running a full build, you can preview the build using the command:
 
 ```
-yarn serve
+npm run serve
 ```
 
 Then visit [http://localhost:3000/](http://localhost:3000/)
@@ -35,7 +35,7 @@ Then visit [http://localhost:3000/](http://localhost:3000/)
 To run the project in watch mode, use the command:
 
 ```shell
-yarn dev
+npm run dev
 ```
 
 The app is running at [http://localhost:5173/](http://localhost:5173/)
@@ -55,7 +55,7 @@ Then visit [http://localhost/](http://localhost/)
 Cloudflare's [wrangler](https://github.com/cloudflare/wrangler) CLI can be used to preview a production build locally. To start a local server, run:
 
 ```
-yarn serve
+npm run serve
 ```
 
 Then visit [http://localhost:8787/](http://localhost:8787/)
@@ -66,7 +66,7 @@ Then visit [http://localhost:8787/](http://localhost:8787/)
 
 If you don't already have an account, then [create a Cloudflare account here](https://dash.cloudflare.com/sign-up/pages). Next go to your dashboard and follow the [Cloudflare Pages deployment guide](https://developers.cloudflare.com/pages/framework-guides/deploy-anything/).
 
-Within the projects "Settings" for "Build and deployments", the "Build command" should be `yarn build`, and the "Build output directory" should be set to `dist`.
+Within the projects "Settings" for "Build and deployments", the "Build command" should be `npm run build`, and the "Build output directory" should be set to `dist`.
 
 ### Function Invocation Routes
 
