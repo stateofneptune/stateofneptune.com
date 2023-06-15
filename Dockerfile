@@ -13,11 +13,7 @@ RUN --mount=type=cache,target=/var/cache/npm npm ci
 
 COPY . .
 
-RUN --mount=type=cache,target=/var/cache/npm \
-  npm run build.types && \
-  npm run build.client && \
-  npm run build.server && \
-  npm prune --omit=dev
+RUN --mount=type=cache,target=/var/cache/npm npm run build && npm prune --omit=dev
 
 
 FROM base AS release
