@@ -1,4 +1,5 @@
-import { Signal, createContextId } from "@builder.io/qwik";
+import type { Signal } from "@builder.io/qwik";
+import { createContextId } from "@builder.io/qwik";
 
 export type MenuContextStore = {
   dialogRef: Signal<HTMLDialogElement | undefined>;

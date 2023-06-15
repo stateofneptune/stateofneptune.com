@@ -11,7 +11,8 @@ import {
   ServiceWorkerRegister,
 } from "@builder.io/qwik-city";
 
-import { MenuContext, MenuContextStore } from "./contexts/menu-context";
+import type { MenuContextStore } from "./contexts/menu-context";
+import { MenuContext } from "./contexts/menu-context";
 import { RouterHead } from "./components/router-head/router-head";
 
 import "./global.css";

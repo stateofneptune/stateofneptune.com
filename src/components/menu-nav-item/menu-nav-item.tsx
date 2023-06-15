@@ -1,5 +1,6 @@
 import { Slot, component$ } from "@builder.io/qwik";
-import { Link, LinkProps } from "@builder.io/qwik-city";
+import type { LinkProps } from "@builder.io/qwik-city";
+import { Link } from "@builder.io/qwik-city";
 
 export interface MenuNavItemProps {
   href: string;
