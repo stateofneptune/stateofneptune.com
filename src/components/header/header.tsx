@@ -28,7 +28,9 @@ export default component$(() => {
             <figure>
               <img
                 src="/images/logo/state-of-neptune-wht-inline.png"
-                class="h-10 transition-all md:h-12 lg:h-14"
+                class="h-10 w-fit transition-all md:h-12 lg:h-14"
+                width={216}
+                height={40}
               ></img>
             </figure>
           </Link>

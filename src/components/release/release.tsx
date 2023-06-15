@@ -23,6 +23,8 @@ export default component$((props: ReleaseProps) => {
               src={props.src}
               alt={props.alt}
               class="shadow-lg transition-[box-shadow] focus-within:shadow-2xl hover:shadow-2xl"
+              width={384}
+              height={384}
             ></img>
           </a>
         </figure>
