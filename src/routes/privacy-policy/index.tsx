@@ -3,13 +3,16 @@ import { DocumentHead, Link } from "@builder.io/qwik-city";
 
 import Heading from "~/components/heading/heading";
 import Paragraph from "~/components/paragraph/paragraph";
+import Title from "~/components/title/title";
 
 export default component$(() => {
   return (
     <>
       <section class="flex w-full justify-center">
         <div class="w-[80ch]">
-          <h1 class="mb-6 text-center font-body text-4xl">Privacy Policy</h1>
+          <div class="mb-6">
+            <Title>Privacy Policy</Title>
+          </div>
 
           <div class="mb-6">
             <Paragraph>
