@@ -17,10 +17,10 @@ export default component$(() => {
             </Paragraph>
 
             <Link
-              class="decoration-accent underline-offset-2 focus-within:underline hover:underline"
+              class="font-body text-dim decoration-accent underline-offset-2 focus-within:underline hover:underline"
               href="/"
             >
-              <span class="font-body text-dim">Home</span>
+              Home
             </Link>
           </div>
         </div>
