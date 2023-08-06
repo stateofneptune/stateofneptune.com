@@ -55,8 +55,8 @@ export default component$(() => {
 
           <Paragraph>
             When you contact us via e-mail, we'll use your contact information
-            to contact you. We won't share (nor sell) this information to anyone
-            else.
+            to respond to you. We won't share (nor sell) this information to
+            anyone else.
           </Paragraph>
 
           <Heading>Third-party data processing and retention</Heading>
