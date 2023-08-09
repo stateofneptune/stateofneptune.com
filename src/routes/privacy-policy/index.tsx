@@ -39,9 +39,6 @@ export default component$(() => {
 
           <ul class="list-inside list-[square] font-body text-lg">
             <li>
-              We do not set any cookies at all on this site or your own device.
-            </li>
-            <li>
               We do not collect any data whatsoever about people who visit our
               site.
             </li>
@@ -59,15 +56,15 @@ export default component$(() => {
             anyone else.
           </Paragraph>
 
-          <Heading>Third-party data processing and retention</Heading>
+          <Heading>Third-party cookies, data processing and retention</Heading>
 
           <Paragraph>
             We selected Cloudflare Pages as our host service. In order to
             provide this service, Cloudflare processes the Internet Protocol
             (IP) address of the device accessing the site and other traffic data
-            including the browser software and the operating system in use. This
-            information is processed for the purpose of diagnosing technical
-            problems and defending against attacks.
+            including the browser software, the operating system and the device
+            in use. This information is processed for the purpose of diagnosing
+            technical problems and defending against attacks.
           </Paragraph>
 
           <Heading>Changes and revisions</Heading>
@@ -78,7 +75,7 @@ export default component$(() => {
           </Paragraph>
 
           <p class="font-body text-sm text-dim md:text-base">
-            Policy published 5th August 2023 – Policy updated 5th August 2023.
+            Policy published 9th August 2023 – Policy updated 9th August 2023.
           </p>
         </div>
       </section>
