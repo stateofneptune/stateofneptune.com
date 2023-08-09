@@ -17,7 +17,7 @@ export default component$(() => {
             you visit and browse our website and social media channels.
           </Paragraph>
 
-          <Heading>We don't collect any personal data</Heading>
+          <Heading id="policy">We don't collect any personal data</Heading>
 
           <Paragraph>
             This website (
@@ -48,7 +48,9 @@ export default component$(() => {
             </li>
           </ul>
 
-          <Heading>We don't disclose or sell your contact information</Heading>
+          <Heading id="disclosure">
+            We don't disclose or sell your contact information
+          </Heading>
 
           <Paragraph>
             When you contact us via e-mail, we'll use your contact information
@@ -56,7 +58,9 @@ export default component$(() => {
             anyone else.
           </Paragraph>
 
-          <Heading>Third-party cookies, data processing and retention</Heading>
+          <Heading id="third-party">
+            Third-party cookies, data processing and retention
+          </Heading>
 
           <Paragraph>
             We selected Cloudflare Pages as our host service. In order to
@@ -67,7 +71,7 @@ export default component$(() => {
             technical problems and defending against attacks.
           </Paragraph>
 
-          <Heading>Changes and revisions</Heading>
+          <Heading id="changes">Changes and revisions</Heading>
 
           <Paragraph>
             We may update this Policy in the future. We will track such changes
