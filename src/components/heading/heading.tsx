@@ -10,7 +10,10 @@ export default component$((props: HeadingProps) => {
       <h2 id={props.id} class="font-body text-3xl">
         <a href={"#" + (props.id ?? "")} class="group">
           <Slot />
-          <span class="invisible text-dim group-hover:visible"> #</span>
+          <span class="invisible text-dim group-focus-within:visible group-hover:visible">
+            {" "}
+            #
+          </span>
         </a>
       </h2>
     </>
