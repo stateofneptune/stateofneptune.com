@@ -1,7 +1,8 @@
 import { component$ } from "@builder.io/qwik";
-import { DocumentHead, Link } from "@builder.io/qwik-city";
+import { DocumentHead } from "@builder.io/qwik-city";
 
 import Paragraph from "~/components/paragraph/paragraph";
+import UnderlineLink from "~/components/underline-link/underline-link";
 import Title from "~/components/title/title";
 
 export default component$(() => {
@@ -16,12 +17,9 @@ export default component$(() => {
               Hey! It seems the content you were looking for is missing.
             </Paragraph>
 
-            <Link
-              class="font-body text-dim decoration-accent underline-offset-2 focus-within:underline hover:underline"
-              href="/"
-            >
+            <UnderlineLink class="text-dim" href="/">
               Home
-            </Link>
+            </UnderlineLink>
           </div>
         </div>
       </section>

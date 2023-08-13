@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
-import { Link } from "@builder.io/qwik-city";
 
 import FooterNavItem from "../footer-nav-item/footer-nav-item";
+import UnderlineLink from "../underline-link/underline-link";
 
 export default component$(() => {
   return (
@@ -115,13 +115,13 @@ export default component$(() => {
           <p>© 2023 State Of Neptune – All Rights Reserved</p>
         </div>
 
-        <div class="flex items-center justify-center text-center text-sm transition-[font-size] md:text-base">
-          <Link
-            class="decoration-accent underline-offset-2 focus-within:underline hover:underline"
-            href="/privacy-policy"
+        <div class="flex items-center justify-center text-center">
+          <UnderlineLink
+            class="text-sm transition-[font-size] md:text-base"
+            href="/privacy-policy/"
           >
             Privacy policy
-          </Link>
+          </UnderlineLink>
         </div>
       </footer>
     </>

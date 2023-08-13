@@ -1,9 +1,10 @@
 import { component$ } from "@builder.io/qwik";
-import { DocumentHead, Link } from "@builder.io/qwik-city";
+import { DocumentHead } from "@builder.io/qwik-city";
 
 import Heading from "~/components/heading/heading";
 import Paragraph from "~/components/paragraph/paragraph";
 import Title from "~/components/title/title";
+import UnderlineLink from "~/components/underline-link/underline-link";
 
 export default component$(() => {
   return (
@@ -21,12 +22,7 @@ export default component$(() => {
 
           <Paragraph>
             This website (
-            <Link
-              class="decoration-accent underline-offset-2 focus-within:underline hover:underline"
-              href="/"
-            >
-              www.stateofneptune.com
-            </Link>
+            <UnderlineLink href="/">www.stateofneptune.com</UnderlineLink>
             ) does not collect any personal data. Our definition of "personal
             data" is based on the privacy laws and regulation of the EU,
             including the General Data Protection Regulation (GDPR). We consider
