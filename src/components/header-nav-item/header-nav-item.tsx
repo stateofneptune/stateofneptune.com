@@ -3,6 +3,7 @@ import { Link, useLocation } from "@builder.io/qwik-city";
 
 export interface HeaderNavItemProps {
   href: string;
+  external?: boolean;
 }
 
 export default component$((props: HeaderNavItemProps) => {
@@ -10,15 +11,28 @@ export default component$((props: HeaderNavItemProps) => {
 
   return (
     <>
-      <Link
-        href={props.href}
-        class={[
-          "transition-all focus-within:text-accent hover:text-accent",
-          loc.url.pathname === props.href && "text-accent",
-        ]}
-      >
-        <Slot></Slot>
-      </Link>
+      {props.external ? (
+        <a
+          href={props.href}
+          class={[
+            "transition-all focus-within:text-accent hover:text-accent",
+            loc.url.pathname === props.href && "text-accent",
+          ]}
+          target="_blank"
+        >
+          <Slot></Slot>
+        </a>
+      ) : (
+        <Link
+          href={props.href}
+          class={[
+            "transition-all focus-within:text-accent hover:text-accent",
+            loc.url.pathname === props.href && "text-accent",
+          ]}
+        >
+          <Slot></Slot>
+        </Link>
+      )}
     </>
   );
 });
