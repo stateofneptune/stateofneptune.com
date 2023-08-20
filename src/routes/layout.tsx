@@ -9,7 +9,7 @@ export default component$(() => {
     <>
       <Header />
       <Menu />
-      <main class="px-8 py-16">
+      <main class="p-6">
         <Slot />
       </main>
       <Footer />
