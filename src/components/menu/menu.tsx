@@ -40,10 +40,6 @@ export default component$(() => {
         <nav>
           <ul>
             <li>
-              <MenuNavItem href="/">Home</MenuNavItem>
-            </li>
-
-            <li>
               <MenuNavItem href="/music/">Music</MenuNavItem>
             </li>
 
