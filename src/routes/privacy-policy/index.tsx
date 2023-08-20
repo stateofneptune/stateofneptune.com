@@ -9,10 +9,10 @@ import UnderlineLink from "~/components/underline-link/underline-link";
 export default component$(() => {
   return (
     <>
+      <Title>Privacy Policy</Title>
+
       <section class="flex w-full justify-center">
         <div class="flex w-[80ch] flex-col gap-6">
-          <Title>Privacy Policy</Title>
-
           <Paragraph>
             This Policy explains how your personal data may be processed when
             you visit and browse our website and social media channels.

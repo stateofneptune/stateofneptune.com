@@ -8,10 +8,10 @@ import Title from "~/components/title/title";
 export default component$(() => {
   return (
     <>
+      <Title>Not Found</Title>
+
       <section class="flex w-full justify-center">
         <div class="flex w-[80ch] flex-col gap-6">
-          <Title>Not Found</Title>
-
           <div class="text-center">
             <Paragraph>
               Hey! It seems the content you were looking for is missing.
