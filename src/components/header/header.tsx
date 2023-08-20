@@ -49,6 +49,15 @@ export default component$(() => {
             <li>
               <HeaderNavItem href="/videos/">Videos</HeaderNavItem>
             </li>
+
+            <li>
+              <HeaderNavItem
+                href="https://stateofneptune.bandcamp.com/contact?b=1895537099&n=State%20Of%20Neptune"
+                external
+              >
+                Contact
+              </HeaderNavItem>
+            </li>
           </ul>
         </nav>
       </header>
