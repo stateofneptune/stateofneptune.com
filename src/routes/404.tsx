@@ -8,18 +8,33 @@ import Title from "~/components/title/title";
 export default component$(() => {
   return (
     <>
-      <Title>Not Found</Title>
+      <Title>404 Not Found</Title>
 
-      <section class="flex w-full justify-center">
-        <div class="flex w-[80ch] flex-col gap-6">
-          <div class="text-center">
-            <Paragraph>
-              Hey! It seems the content you were looking for is missing.
-            </Paragraph>
+      <section class="flex w-full justify-center text-center">
+        <div class="flex w-[80ch] flex-col items-center gap-6">
+          <Paragraph>
+            Hey! The content you were looking for is not available or has been
+            removed.
+            <br />
+            If you think something is broken, report a problem.
+          </Paragraph>
 
-            <UnderlineLink class="text-dim" href="/">
-              Home
-            </UnderlineLink>
+          <div class="flex justify-center">
+            <div class="w-[12ch]">
+              <UnderlineLink class="text-dim" href="/">
+                Home
+              </UnderlineLink>
+            </div>
+
+            <div class="w-[3ch]">
+              <UnderlineLink
+                class="text-dim"
+                href="https://stateofneptune.bandcamp.com/contact?b=1895537099&n=State%20Of%20Neptune"
+                external
+              >
+                Contact us
+              </UnderlineLink>
+            </div>
           </div>
         </div>
       </section>
@@ -28,6 +43,6 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "404 - SON",
+  title: "404 Not Found - SON",
   meta: [],
 };
