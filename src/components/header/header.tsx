@@ -4,6 +4,7 @@ import { Link } from "@builder.io/qwik-city";
 import { MenuContext } from "~/contexts/menu-context";
 import { MenuBurgerIcon } from "../icons/menu-burger";
 
+import StateOfNeptuneLogo from "/public/images/logo/state-of-neptune-wht-inline.png?jsx";
 import HeaderNavItem from "../header-nav-item/header-nav-item";
 
 export default component$(() => {
@@ -25,14 +26,7 @@ export default component$(() => {
           </div>
 
           <Link href="/">
-            <figure>
-              <img
-                src="/images/logo/state-of-neptune-wht-inline.png"
-                class="h-10 w-fit transition-all md:h-12 lg:h-14"
-                width={216}
-                height={40}
-              ></img>
-            </figure>
+            <StateOfNeptuneLogo class="h-10 w-fit transition-all md:h-12 lg:h-14" />
           </Link>
         </div>
 
