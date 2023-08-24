@@ -1,5 +1,9 @@
 import { component$ } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
+import type { DocumentHead, RequestEvent } from "@builder.io/qwik-city";
+
+export const onGet = async ({ redirect }: RequestEvent) => {
+  throw redirect(307, "https://stateofneptune.bandcamp.com/music");
+};
 
 export default component$(() => {
   return <></>;
