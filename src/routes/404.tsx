@@ -27,11 +27,7 @@ export default component$(() => {
             </div>
 
             <div class="w-[3ch]">
-              <UnderlineLink
-                class="text-dim"
-                href="https://stateofneptune.bandcamp.com/contact?b=1895537099&n=State%20Of%20Neptune"
-                external
-              >
+              <UnderlineLink class="text-dim" href="/contact/">
                 Contact us
               </UnderlineLink>
             </div>
