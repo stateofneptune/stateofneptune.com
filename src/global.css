@@ -6,10 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  color-scheme: dark;
-}
-
 @font-face {
   font-family: "Astro";
   src: url("/fonts/astro/astro.otf");
