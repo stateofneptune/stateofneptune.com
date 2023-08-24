@@ -47,12 +47,7 @@ export default component$(() => {
             </li>
 
             <li>
-              <HeaderNavItem
-                href="https://stateofneptune.bandcamp.com/contact?b=1895537099&n=State%20Of%20Neptune"
-                external
-              >
-                Contact
-              </HeaderNavItem>
+              <HeaderNavItem href="/contact/">Contact</HeaderNavItem>
             </li>
           </ul>
         </nav>
