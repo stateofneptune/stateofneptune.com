@@ -27,7 +27,9 @@ export default component$(() => {
             </div>
 
             <div class="w-[12ch]">
-              <UnderlineLink class="text-dim" href="/contact/" />
+              <UnderlineLink class="text-dim" href="/contact/">
+                Contact us
+              </UnderlineLink>
             </div>
           </div>
         </div>
