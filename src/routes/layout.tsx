@@ -21,7 +21,7 @@ export default component$(() => {
 
 export const head: DocumentHead = ({ head }) => {
   return {
-    title: `State of Neptune – ${head.title}`,
+    title: `State Of Neptune – ${head.title}`,
     meta: [
       {
         property: "og:type",
