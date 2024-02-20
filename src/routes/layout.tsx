@@ -1,10 +1,6 @@
 import { component$, Slot } from "@builder.io/qwik";
 
-import {
-  DocumentHead,
-  DocumentHeadValue,
-  DocumentMeta,
-} from "@builder.io/qwik-city";
+import { DocumentHead } from "@builder.io/qwik-city";
 
 import Header from "~/components/header/header";
 import Footer from "~/components/footer/footer";
