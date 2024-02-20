@@ -84,6 +84,23 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Privacy Policy - SON",
-  meta: [],
+  title: "Privacy Policy",
+  meta: [
+    {
+      name: "description",
+      content: "State Of Neptune privacy policy page.",
+    },
+    {
+      property: "og:description",
+      content: "State Of Neptune privacy policy page.",
+    },
+    {
+      property: "og:url",
+      content: "https://www.stateofneptune.com/privacy-policy",
+    },
+    {
+      property: "twitter:description",
+      content: "State Of Neptune privacy policy page.",
+    },
+  ],
 };

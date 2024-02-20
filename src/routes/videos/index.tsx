@@ -22,6 +22,23 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Videos - SON",
-  meta: [],
+  title: "Videos",
+  meta: [
+    {
+      name: "description",
+      content: "State Of Neptune videos.",
+    },
+    {
+      property: "og:description",
+      content: "State Of Neptune videos.",
+    },
+    {
+      property: "og:url",
+      content: "https://www.stateofneptune.com/videos",
+    },
+    {
+      property: "twitter:description",
+      content: "State Of Neptune videos.",
+    },
+  ],
 };

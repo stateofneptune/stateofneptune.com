@@ -25,15 +25,15 @@ export const RouterHead = component$(() => {
       />
 
       {head.meta.map((m) => (
-        <meta key={m.key} {...m} />
+        <meta {...m} />
       ))}
 
       {head.links.map((l) => (
-        <link key={l.key} {...l} />
+        <link {...l} />
       ))}
 
       {head.styles.map((s) => (
-        <style key={s.key} {...s.props} dangerouslySetInnerHTML={s.style} />
+        <style {...s.props} dangerouslySetInnerHTML={s.style} />
       ))}
     </>
   );

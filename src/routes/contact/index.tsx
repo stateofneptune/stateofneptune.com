@@ -13,6 +13,23 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Contact - SON",
-  meta: [],
+  title: "Contact",
+  meta: [
+    {
+      name: "description",
+      content: "State Of Neptune contact page.",
+    },
+    {
+      property: "og:description",
+      content: "State Of Neptune contact page.",
+    },
+    {
+      property: "og:url",
+      content: "https://www.stateofneptune.com/contact",
+    },
+    {
+      property: "twitter:description",
+      content: "State Of Neptune contact page.",
+    },
+  ],
 };

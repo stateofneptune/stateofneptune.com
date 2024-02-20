@@ -10,6 +10,23 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Music - SON",
-  meta: [],
+  title: "Music",
+  meta: [
+    {
+      name: "description",
+      content: "State Of Neptune music.",
+    },
+    {
+      property: "og:description",
+      content: "State Of Neptune music.",
+    },
+    {
+      property: "og:url",
+      content: "https://www.stateofneptune.com/music",
+    },
+    {
+      property: "twitter:description",
+      content: "State Of Neptune music.",
+    },
+  ],
 };

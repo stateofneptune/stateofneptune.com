@@ -33,6 +33,24 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Home - SON",
-  meta: [],
+  title: "Home",
+  meta: [
+    {
+      name: "description",
+      content:
+        "State Of Neptune official website. Get updates about new content, merch and live dates.",
+    },
+    {
+      property: "og:description",
+      content: "State Of Neptune official website.",
+    },
+    {
+      property: "og:url",
+      content: "https://www.stateofneptune.com",
+    },
+    {
+      property: "twitter:description",
+      content: "State Of Neptune official website.",
+    },
+  ],
 };
