@@ -20,7 +20,11 @@ export default component$(() => {
       <header class="top-0 w-full bg-deep-bg p-2 transition-all md:flex md:flex-col md:justify-between md:gap-4 md:p-4">
         <div class="relative flex items-center justify-center">
           <div class="absolute right-0 md:hidden">
-            <button class="h-8 w-8 text-body transition" onClick$={openMenu}>
+            <button
+              aria-label="menu"
+              class="h-8 w-8 text-body transition"
+              onClick$={openMenu}
+            >
               <MenuBurgerIcon />
             </button>
           </div>

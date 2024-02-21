@@ -27,6 +27,7 @@ export default component$(() => {
       >
         <div class="mb-4 flex justify-end p-2">
           <button
+            aria-label="close"
             class={[
               "h-8 w-8 text-body transition-[opacity] delay-menu-open duration-1000",
               menuContext.open ? "opacity-100" : "opacity-0",
