@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         "deep-bg": "#111111",
         "light-bg": "#3f3f46",
+        warn: "#D72638",
         accent: "#0292FE",
         body: "#FFF9EB",
         dim: "#B3AEA4",
