@@ -27,7 +27,7 @@ export const LIVE_SHOWS: LiveShow[] = [
     city: "Palermo",
     host: "Centro sociale Anomalia",
     venue: "Centro sociale Anomalia",
-    date: "2024-02-10",
+    date: "2024-02-16",
   },
   {
     country: "Italy",
