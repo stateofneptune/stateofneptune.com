@@ -8,20 +8,20 @@ export type LiveShow = {
 };
 
 export const LIVE_SHOWS: LiveShow[] = [
-  // {
-  //   country: "Italy",
-  //   city: "Reggio Calabria",
-  //   host: "Interzone",
-  //   venue: "Interzone",
-  //   date: "2024-03-23",
-  // },
-  // {
-  //   country: "Italy",
-  //   city: "Catania",
-  //   host: "Baraccio",
-  //   venue: "Baraccio",
-  //   date: "2024-03-22",
-  // },
+  {
+    country: "Italy",
+    city: "Reggio Calabria",
+    host: "Interzone",
+    venue: "Interzone",
+    date: "2024-03-23",
+  },
+  {
+    country: "Italy",
+    city: "Catania",
+    host: "Baraccio",
+    venue: "Baraccio",
+    date: "2024-03-22",
+  },
   {
     country: "Italy",
     city: "Palermo",
