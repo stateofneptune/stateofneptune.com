@@ -1,7 +1,14 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
+import PulpOfStonesArtwork from "/public/images/artworks/pulp-of-stones@640.webp?jsx";
+import ParadoxArtwork from "/public/images/artworks/paradox@640.webp?jsx";
+import FuryArtwork from "/public/images/artworks/fury@640.webp?jsx";
+
 import StateOfNeptuneLogoHQ from "/public/images/logo/state-of-neptune-wht-inline-hq.png?jsx";
+
+import Heading from "~/components/heading/heading";
+import Card from "~/components/card/card";
 
 export default component$(() => {
   return (
@@ -31,6 +38,38 @@ export default component$(() => {
             renditions of "Fury", a beloved song from "Pulp Of Stones", and
             "Stone Lady", a new song and a glimpse of the future to come.
           </p>
+        </div>
+      </section>
+
+      <section class="mt-12 flex justify-center font-body text-2xl">
+        <Heading id="discography">Discography</Heading>
+      </section>
+
+      <section class="m-12 flex justify-center">
+        <div class="flex w-[60rem] flex-wrap justify-center gap-16">
+          <Card
+            id="pulp-of-stones"
+            title="Pulp Of Stones"
+            href="https://stateofneptune.bandcamp.com/album/pulp-of-stones"
+          >
+            <PulpOfStonesArtwork class="w-96" />
+          </Card>
+
+          <Card
+            id="paradox"
+            title="Paradox"
+            href="https://stateofneptune.bandcamp.com/track/paradox"
+          >
+            <ParadoxArtwork class="w-96" />
+          </Card>
+
+          <Card
+            id="fury"
+            title="Fury"
+            href="https://stateofneptune.bandcamp.com/track/fury"
+          >
+            <FuryArtwork class="w-96" />
+          </Card>
         </div>
       </section>
     </>
