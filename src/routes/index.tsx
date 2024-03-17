@@ -6,10 +6,10 @@ import StateOfNeptuneLogoHQ from "/public/images/logo/state-of-neptune-wht-inlin
 export default component$(() => {
   return (
     <>
-      <section class="relative flex min-h-[90lvh] justify-center">
+      <section class="relative flex min-h-[80lvh] justify-center">
         <div
           class={[
-            "flex w-[100ch] flex-col justify-center gap-6 text-center",
+            "flex w-[100ch] flex-col justify-center gap-12 text-center md:gap-24",
             "before:absolute before:inset-0 before:-z-10 before:h-full before:w-full",
             "before:bg-[linear-gradient(rgba(13,13,13,0.5),rgba(13,13,13,0.5)),url(/images/backgrounds/anomalia-live.webp)]",
             "before:bg-cover before:bg-center before:content-['']",
@@ -17,7 +17,7 @@ export default component$(() => {
         >
           <StateOfNeptuneLogoHQ />
 
-          <p class="px-6 font-body text-sm transition-[font] md:text-base lg:text-lg">
+          <p class="mb-24 px-6 font-body text-sm transition-[font] md:text-base lg:text-lg">
             Mixing a wide range of influences from the rawness of stoner and
             punk to the intricacies of metal and grunge, State Of Neptune have
             shared the beginning of their journey on June 11th 2022, with their
