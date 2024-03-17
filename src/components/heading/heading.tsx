@@ -8,12 +8,11 @@ export default component$((props: HeadingProps) => {
   return (
     <>
       <h2 id={props.id} class="scroll-mt-20 font-body text-3xl lg:scroll-mt-36">
-        <a href={"#" + (props.id ?? "")} class="group">
+        <a
+          href={"#" + (props.id ?? "")}
+          class="decoration-light-bg underline-offset-2 focus-within:underline hover:underline"
+        >
           <Slot />
-          <span class="invisible text-dim group-focus-within:visible group-hover:visible">
-            {" "}
-            #
-          </span>
         </a>
       </h2>
     </>
