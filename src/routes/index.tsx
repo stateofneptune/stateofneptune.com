@@ -6,7 +6,7 @@ import Release from "~/components/release/release";
 export default component$(() => {
   return (
     <>
-      <section>
+      <section class="my-12 px-6">
         <Release
           id="pulp-of-stones"
           heading="Album out now"

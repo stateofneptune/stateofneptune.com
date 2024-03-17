@@ -79,16 +79,51 @@ export default component$(() => {
     <>
       <Title>Tour</Title>
 
-      <section class="flex w-full justify-center">
-        <div class="flex w-[60ch] flex-col gap-6">
-          <Heading id="upcoming">Upcoming shows</Heading>
+      <section class="my-12 px-6">
+        <section class="flex w-full justify-center">
+          <div class="flex w-[60ch] flex-col gap-6">
+            <Heading id="upcoming">Upcoming shows</Heading>
 
-          {shows.upcoming.length === 0 ? (
-            <Paragraph>
-              <span class="text-dim">No shows planned at the moment.</span>
-            </Paragraph>
-          ) : (
-            shows.upcoming.reverse().map((group, id) => (
+            {shows.upcoming.length === 0 ? (
+              <Paragraph>
+                <span class="text-dim">No shows planned at the moment.</span>
+              </Paragraph>
+            ) : (
+              shows.upcoming.reverse().map((group, id) => (
+                <>
+                  <h3
+                    id={group.year.toString()}
+                    key={id}
+                    class="font-body text-xl"
+                  >
+                    {group.year}
+                  </h3>
+
+                  <ul>
+                    {group.shows.reverse().map((show) => (
+                      <li key={show.date}>
+                        <Paragraph>
+                          <span
+                            class={[
+                              show.cancelled && "line-through decoration-1",
+                            ]}
+                          >
+                            {formatShowDate(show)}
+                          </span>
+                        </Paragraph>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              ))
+            )}
+          </div>
+        </section>
+
+        <section class="flex w-full justify-center">
+          <div class="mt-12 flex w-[60ch] flex-col gap-6 border-t border-light-bg pt-12">
+            <Heading id="past">Past shows</Heading>
+            {shows.past.map((group, id) => (
               <>
                 <h3
                   id={group.year.toString()}
@@ -99,45 +134,16 @@ export default component$(() => {
                 </h3>
 
                 <ul>
-                  {group.shows.reverse().map((show) => (
+                  {group.shows.map((show) => (
                     <li key={show.date}>
-                      <Paragraph>
-                        <span
-                          class={[
-                            show.cancelled && "line-through decoration-1",
-                          ]}
-                        >
-                          {formatShowDate(show)}
-                        </span>
-                      </Paragraph>
+                      <Paragraph>{formatShowDate(show)}</Paragraph>
                     </li>
                   ))}
                 </ul>
               </>
-            ))
-          )}
-        </div>
-      </section>
-
-      <section class="flex w-full justify-center">
-        <div class="mt-12 flex w-[60ch] flex-col gap-6 border-t border-light-bg pt-12">
-          <Heading id="past">Past shows</Heading>
-          {shows.past.map((group, id) => (
-            <>
-              <h3 id={group.year.toString()} key={id} class="font-body text-xl">
-                {group.year}
-              </h3>
-
-              <ul>
-                {group.shows.map((show) => (
-                  <li key={show.date}>
-                    <Paragraph>{formatShowDate(show)}</Paragraph>
-                  </li>
-                ))}
-              </ul>
-            </>
-          ))}
-        </div>
+            ))}
+          </div>
+        </section>
       </section>
     </>
   );

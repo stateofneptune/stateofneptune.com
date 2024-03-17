@@ -11,7 +11,7 @@ export default component$(() => {
     <>
       <Header />
       <Menu />
-      <main class="p-6">
+      <main>
         <Slot />
       </main>
       <Footer />

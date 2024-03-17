@@ -11,7 +11,7 @@ export default component$(() => {
     <>
       <Title>Privacy Policy</Title>
 
-      <section class="flex w-full justify-center">
+      <section class="my-12 flex w-full justify-center px-6">
         <div class="flex w-[60ch] flex-col gap-6">
           <Paragraph>
             This Policy explains how your personal data may be processed when
