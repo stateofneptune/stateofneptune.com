@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import { DocumentHead } from "@builder.io/qwik-city";
+import type { DocumentHead } from "@builder.io/qwik-city";
 
 import Paragraph from "~/components/paragraph/paragraph";
 import UnderlineLink from "~/components/underline-link/underline-link";

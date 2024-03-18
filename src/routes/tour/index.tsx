@@ -4,8 +4,9 @@ import Title from "~/components/title/title";
 import Paragraph from "~/components/paragraph/paragraph";
 import Heading from "~/components/heading/heading";
 
-import { LIVE_SHOWS, LiveShow } from "./live-shows";
-import { DocumentHead } from "@builder.io/qwik-city";
+import type { LiveShow } from "./live-shows";
+import { LIVE_SHOWS } from "./live-shows";
+import type { DocumentHead } from "@builder.io/qwik-city";
 
 type LiveShowGroup = {
   year: number;

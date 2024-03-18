@@ -3,8 +3,6 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 
 import LiveAtVastoRecordsArtwork from "/public/images/artworks/live-at-vasto-records@640.webp?jsx";
 import PulpOfStonesArtwork from "/public/images/artworks/pulp-of-stones@640.webp?jsx";
-import ParadoxArtwork from "/public/images/artworks/paradox@640.webp?jsx";
-import FuryArtwork from "/public/images/artworks/fury@640.webp?jsx";
 
 import StateOfNeptuneLogoHQ from "/public/images/logo/state-of-neptune-wht-inline-hq.png?jsx";
 
@@ -53,7 +51,6 @@ export default component$(() => {
             href="https://stateofneptune.bandcamp.com/album/live-at-vasto-records"
           >
             <LiveAtVastoRecordsArtwork q:slot="image" class="w-96" />
-
             <span
               q:slot="title"
               class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
