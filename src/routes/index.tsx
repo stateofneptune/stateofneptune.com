@@ -50,34 +50,55 @@ export default component$(() => {
         <div class="flex w-[60rem] flex-wrap justify-center gap-16">
           <Card
             id="live-at-vasto-records"
-            title="Live At Vasto Records"
             href="https://stateofneptune.bandcamp.com/album/live-at-vasto-records"
           >
-            <LiveAtVastoRecordsArtwork class="w-96" />
+            <LiveAtVastoRecordsArtwork q:slot="image" class="w-96" />
+
+            <span
+              q:slot="title"
+              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+            >
+              Live At Vasto Records
+            </span>
           </Card>
 
           <Card
             id="pulp-of-stones"
-            title="Pulp Of Stones"
             href="https://stateofneptune.bandcamp.com/album/pulp-of-stones"
           >
-            <PulpOfStonesArtwork class="w-96" />
+            <PulpOfStonesArtwork q:slot="image" class="w-96" />
+
+            <span
+              q:slot="title"
+              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+            >
+              Pulp Of Stones
+            </span>
           </Card>
 
           <Card
             id="paradox"
-            title="Paradox"
             href="https://stateofneptune.bandcamp.com/track/paradox"
           >
-            <ParadoxArtwork class="w-96" />
+            <ParadoxArtwork q:slot="image" class="w-96" />
+
+            <span
+              q:slot="title"
+              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+            >
+              Paradox
+            </span>
           </Card>
 
-          <Card
-            id="fury"
-            title="Fury"
-            href="https://stateofneptune.bandcamp.com/track/fury"
-          >
-            <FuryArtwork class="w-96" />
+          <Card id="fury" href="https://stateofneptune.bandcamp.com/track/fury">
+            <FuryArtwork q:slot="image" class="w-96" />
+
+            <span
+              q:slot="title"
+              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+            >
+              Fury
+            </span>
           </Card>
         </div>
       </section>

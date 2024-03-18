@@ -3,7 +3,6 @@ import { component$ } from "@builder.io/qwik";
 
 export interface CardProps {
   id?: string;
-  title: string;
   class?: ClassList | Signal<ClassList>;
   href: string;
 }
@@ -16,17 +15,17 @@ export default component$((props: CardProps) => {
       >
         <figure>
           <a href={props.href} target="_blank">
-            <Slot />
+            <Slot name="image" />
           </a>
         </figure>
 
-        <a
-          href={props.href}
-          class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
-          target="_blank"
-        >
-          {props.title}
-        </a>
+        <div class="flex flex-col">
+          <a href={props.href} target="_blank">
+            <Slot name="title" />
+          </a>
+
+          <Slot name="subtitle" />
+        </div>
       </div>
     </>
   );
