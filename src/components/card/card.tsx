@@ -1,8 +1,6 @@
 import { ClassList, Signal, Slot } from "@builder.io/qwik";
 import { component$ } from "@builder.io/qwik";
 
-import UnderlineLink from "../underline-link/underline-link";
-
 export interface CardProps {
   id?: string;
   title: string;
@@ -22,9 +20,13 @@ export default component$((props: CardProps) => {
           </a>
         </figure>
 
-        <UnderlineLink class="text-lg" href={props.href} external={true}>
+        <a
+          href={props.href}
+          class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+          target="_blank"
+        >
           {props.title}
-        </UnderlineLink>
+        </a>
       </div>
     </>
   );
