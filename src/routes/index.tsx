@@ -74,31 +74,9 @@ export default component$(() => {
             >
               Pulp Of Stones
             </span>
-          </Card>
 
-          <Card
-            id="paradox"
-            href="https://stateofneptune.bandcamp.com/track/paradox"
-          >
-            <ParadoxArtwork q:slot="image" class="w-96" />
 
-            <span
-              q:slot="title"
-              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
-            >
-              Paradox
-            </span>
-          </Card>
 
-          <Card id="fury" href="https://stateofneptune.bandcamp.com/track/fury">
-            <FuryArtwork q:slot="image" class="w-96" />
-
-            <span
-              q:slot="title"
-              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
-            >
-              Fury
-            </span>
           </Card>
         </div>
       </section>
