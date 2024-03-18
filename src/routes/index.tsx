@@ -25,7 +25,7 @@ export default component$(() => {
         >
           <StateOfNeptuneLogoHQ class="p-2" />
 
-          <p class="mb-16 px-12 font-body transition-[font] md:text-lg">
+          <p class="mb-16 px-12 text-justify font-body transition-[font] md:text-lg">
             Mixing a wide range of influences from the rawness of stoner and
             punk to the intricacies of metal and grunge, State Of Neptune have
             shared the beginning of their journey on June 11th 2022, with their
