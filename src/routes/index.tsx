@@ -60,6 +60,30 @@ export default component$(() => {
             >
               Live at Vasto Records
             </span>
+
+            <div q:slot="subtitle" class="mt-2 flex justify-center gap-6 ">
+              <a
+                class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+                href="https://open.spotify.com/intl-it/album/3MOyE8M8ZCjuCbF41sOqDy"
+              >
+                <i class="fab fa-spotify"></i>
+              </a>
+
+              <a
+                class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+                href="https://stateofneptune.bandcamp.com/album/live-at-vasto-records"
+              >
+                <i class="fab fa-bandcamp"></i>
+              </a>
+
+              <a
+                class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+                href="https://music.apple.com/it/album/live-at-vasto-records-live-at-vasto-records-single/1707288275"
+                target="_blank"
+              >
+                <i class="fab fa-itunes-note"></i>
+              </a>
+            </div>
           </Card>
 
           <Card
@@ -75,8 +99,31 @@ export default component$(() => {
               Pulp Of Stones
             </span>
 
+            <div q:slot="subtitle" class="mt-2 flex justify-center gap-6">
+              <a
+                class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+                href="https://open.spotify.com/intl-it/album/2UBy8Aw3gQkk3oRe8ytybE"
+                target="_blank"
+              >
+                <i class="fab fa-spotify"></i>
+              </a>
 
+              <a
+                class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+                href="https://stateofneptune.bandcamp.com/album/pulp-of-stones"
+                target="_blank"
+              >
+                <i class="fab fa-bandcamp"></i>
+              </a>
 
+              <a
+                class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+                href="https://music.apple.com/it/album/pulp-of-stones/1626288912"
+                target="_blank"
+              >
+                <i class="fab fa-itunes-note"></i>
+              </a>
+            </div>
           </Card>
         </div>
       </section>
