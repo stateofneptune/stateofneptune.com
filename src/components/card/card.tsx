@@ -1,4 +1,4 @@
-import type { ClassList, Signal} from "@builder.io/qwik";
+import type { ClassList, Signal } from "@builder.io/qwik";
 import { Slot } from "@builder.io/qwik";
 import { component$ } from "@builder.io/qwik";
 
@@ -20,7 +20,7 @@ export default component$((props: CardProps) => {
           </a>
         </figure>
 
-        <div class="flex flex-col">
+        <div class="flex flex-col items-center">
           <a href={props.href} target="_blank">
             <Slot name="title" />
           </a>
