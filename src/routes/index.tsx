@@ -58,7 +58,7 @@ export default component$(() => {
               q:slot="title"
               class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
             >
-              Live At Vasto Records
+              Live at Vasto Records
             </span>
           </Card>
 
