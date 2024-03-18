@@ -3,6 +3,8 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 
 import LiveAtVastoRecordsArtwork from "/public/images/artworks/live-at-vasto-records@640.webp?jsx";
 import PulpOfStonesArtwork from "/public/images/artworks/pulp-of-stones@640.webp?jsx";
+import ParadoxArtwork from "/public/images/artworks/paradox@640.webp?jsx";
+import FuryArtwork from "/public/images/artworks/fury@640.webp?jsx";
 
 import StateOfNeptuneLogoHQ from "/public/images/logo/state-of-neptune-wht-inline-hq.png?jsx";
 
@@ -116,6 +118,86 @@ export default component$(() => {
               <a
                 class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
                 href="https://music.apple.com/it/album/pulp-of-stones/1626288912"
+                target="_blank"
+              >
+                <i class="fab fa-itunes-note"></i>
+              </a>
+            </div>
+          </Card>
+
+          <Card
+            id="paradox"
+            href="https://stateofneptune.bandcamp.com/track/paradox"
+          >
+            <ParadoxArtwork q:slot="image" class="w-96" />
+
+            <span
+              q:slot="title"
+              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+            >
+              Paradox
+            </span>
+
+            <div q:slot="subtitle" class="mt-2 flex justify-center gap-6">
+              <a
+                class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+                href="https://open.spotify.com/intl-it/track/3WOSwVvksJJAwzCqxNPLGz"
+                target="_blank"
+              >
+                <i class="fab fa-spotify"></i>
+              </a>
+
+              <a
+                class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+                href="https://stateofneptune.bandcamp.com/track/paradox"
+                target="_blank"
+              >
+                <i class="fab fa-bandcamp"></i>
+              </a>
+
+              <a
+                class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+                href="https://music.apple.com/it/album/paradox/1626288912?i=1626288918"
+                target="_blank"
+              >
+                <i class="fab fa-itunes-note"></i>
+              </a>
+            </div>
+          </Card>
+
+          <Card
+            id="fury"
+            href="https://stateofneptune.bandcamp.com/track/fury"
+          >
+            <FuryArtwork q:slot="image" class="w-96" />
+
+            <span
+              q:slot="title"
+              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+            >
+              Fury
+            </span>
+
+            <div q:slot="subtitle" class="mt-2 flex justify-center gap-6">
+              <a
+                class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+                href="https://open.spotify.com/intl-it/track/5enA2D0PU6UqcRVZLZdRQa"
+                target="_blank"
+              >
+                <i class="fab fa-spotify"></i>
+              </a>
+
+              <a
+                class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+                href="https://stateofneptune.bandcamp.com/track/fury"
+                target="_blank"
+              >
+                <i class="fab fa-bandcamp"></i>
+              </a>
+
+              <a
+                class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+                href="https://music.apple.com/it/album/fury/1626288912?i=1626288915"
                 target="_blank"
               >
                 <i class="fab fa-itunes-note"></i>
