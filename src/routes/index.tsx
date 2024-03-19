@@ -1,15 +1,10 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
-import LiveAtVastoRecordsArtwork from "/public/images/artworks/live-at-vasto-records@640.webp?jsx";
-import PulpOfStonesArtwork from "/public/images/artworks/pulp-of-stones@640.webp?jsx";
-import ParadoxArtwork from "/public/images/artworks/paradox@640.webp?jsx";
-import FuryArtwork from "/public/images/artworks/fury@640.webp?jsx";
-
 import StateOfNeptuneLogoHQ from "/public/images/logo/state-of-neptune-wht-inline-hq.png?jsx";
 
 import Heading from "~/components/heading/heading";
-import Card from "~/components/card/card";
+import FullDiscography from "~/components/full-discography/full-discography";
 
 export default component$(() => {
   return (
@@ -47,164 +42,7 @@ export default component$(() => {
       </section>
 
       <section class="m-12 flex justify-center">
-        <div class="flex w-[60rem] flex-wrap justify-center gap-16">
-          <Card
-            id="live-at-vasto-records"
-            href="https://stateofneptune.bandcamp.com/album/live-at-vasto-records"
-          >
-            <LiveAtVastoRecordsArtwork q:slot="image" class="w-96" />
-            <span
-              q:slot="title"
-              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
-            >
-              Live at Vasto Records
-            </span>
-
-            <div q:slot="subtitle" class="mt-2 flex justify-center gap-6 ">
-              <a
-                class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
-                href="https://open.spotify.com/intl-it/album/3MOyE8M8ZCjuCbF41sOqDy"
-              >
-                <i class="fab fa-spotify"></i>
-              </a>
-
-              <a
-                class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
-                href="https://stateofneptune.bandcamp.com/album/live-at-vasto-records"
-              >
-                <i class="fab fa-bandcamp"></i>
-              </a>
-
-              <a
-                class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
-                href="https://music.apple.com/it/album/live-at-vasto-records-live-at-vasto-records-single/1707288275"
-                target="_blank"
-              >
-                <i class="fab fa-itunes-note"></i>
-              </a>
-            </div>
-          </Card>
-
-          <Card
-            id="pulp-of-stones"
-            href="https://stateofneptune.bandcamp.com/album/pulp-of-stones"
-          >
-            <PulpOfStonesArtwork q:slot="image" class="w-96" />
-
-            <span
-              q:slot="title"
-              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
-            >
-              Pulp Of Stones
-            </span>
-
-            <div q:slot="subtitle" class="mt-2 flex justify-center gap-6">
-              <a
-                class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
-                href="https://open.spotify.com/intl-it/album/2UBy8Aw3gQkk3oRe8ytybE"
-                target="_blank"
-              >
-                <i class="fab fa-spotify"></i>
-              </a>
-
-              <a
-                class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
-                href="https://stateofneptune.bandcamp.com/album/pulp-of-stones"
-                target="_blank"
-              >
-                <i class="fab fa-bandcamp"></i>
-              </a>
-
-              <a
-                class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
-                href="https://music.apple.com/it/album/pulp-of-stones/1626288912"
-                target="_blank"
-              >
-                <i class="fab fa-itunes-note"></i>
-              </a>
-            </div>
-          </Card>
-
-          <Card
-            id="paradox"
-            href="https://stateofneptune.bandcamp.com/track/paradox"
-          >
-            <ParadoxArtwork q:slot="image" class="w-96" />
-
-            <span
-              q:slot="title"
-              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
-            >
-              Paradox
-            </span>
-
-            <div q:slot="subtitle" class="mt-2 flex justify-center gap-6">
-              <a
-                class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
-                href="https://open.spotify.com/intl-it/track/3WOSwVvksJJAwzCqxNPLGz"
-                target="_blank"
-              >
-                <i class="fab fa-spotify"></i>
-              </a>
-
-              <a
-                class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
-                href="https://stateofneptune.bandcamp.com/track/paradox"
-                target="_blank"
-              >
-                <i class="fab fa-bandcamp"></i>
-              </a>
-
-              <a
-                class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
-                href="https://music.apple.com/it/album/paradox/1626288912?i=1626288918"
-                target="_blank"
-              >
-                <i class="fab fa-itunes-note"></i>
-              </a>
-            </div>
-          </Card>
-
-          <Card
-            id="fury"
-            href="https://stateofneptune.bandcamp.com/track/fury"
-          >
-            <FuryArtwork q:slot="image" class="w-96" />
-
-            <span
-              q:slot="title"
-              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
-            >
-              Fury
-            </span>
-
-            <div q:slot="subtitle" class="mt-2 flex justify-center gap-6">
-              <a
-                class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
-                href="https://open.spotify.com/intl-it/track/5enA2D0PU6UqcRVZLZdRQa"
-                target="_blank"
-              >
-                <i class="fab fa-spotify"></i>
-              </a>
-
-              <a
-                class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
-                href="https://stateofneptune.bandcamp.com/track/fury"
-                target="_blank"
-              >
-                <i class="fab fa-bandcamp"></i>
-              </a>
-
-              <a
-                class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
-                href="https://music.apple.com/it/album/fury/1626288912?i=1626288915"
-                target="_blank"
-              >
-                <i class="fab fa-itunes-note"></i>
-              </a>
-            </div>
-          </Card>
-        </div>
+        <FullDiscography />
       </section>
     </>
   );
