@@ -9,7 +9,7 @@ export default component$(() => {
     <>
       <Title>Discography</Title>
 
-      <section class="my-12 flex justify-center px-6">
+      <section class="my-12 flex justify-center px-12">
         <FullDiscography />
       </section>
     </>

@@ -41,7 +41,7 @@ export default component$(() => {
         <Heading id="discography">Discography</Heading>
       </section>
 
-      <section class="m-12 flex justify-center">
+      <section class="my-12 flex justify-center px-12">
         <FullDiscography />
       </section>
     </>
