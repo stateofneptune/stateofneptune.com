@@ -41,7 +41,7 @@ export default component$(() => {
         <nav>
           <ul>
             <li>
-              <MenuNavItem href="/music/">Music</MenuNavItem>
+              <MenuNavItem href="/discography/">Discography</MenuNavItem>
             </li>
 
             <li>

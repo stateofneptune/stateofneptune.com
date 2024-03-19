@@ -37,7 +37,7 @@ export default component$(() => {
         <nav class="hidden justify-center font-subtitle md:flex">
           <ul class="flex justify-center gap-12 transition-all lg:gap-14">
             <li>
-              <HeaderNavItem href="/music/">Music</HeaderNavItem>
+              <HeaderNavItem href="/discography">Discography</HeaderNavItem>
             </li>
 
             <li>
