@@ -14,7 +14,7 @@ export default component$(() => {
           <YouTube src="https://www.youtube-nocookie.com/embed/u7uWaHhZ_Yk" />
           <YouTube src="https://www.youtube-nocookie.com/embed/n-qIKsquRik" />
           <YouTube src="https://www.youtube-nocookie.com/embed/Ff3ebB6Un8M" />
-          <YouTube src="https://www.youtube-nocookie.com/embed/0Qx5mPyOGgc" />
+          <YouTube src="https://www.youtube-nocookie.com/embed/QJHSee0Po7I" />
         </div>
       </section>
     </>
