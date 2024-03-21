@@ -20,7 +20,7 @@ export default component$((props: HeaderNavItemProps) => {
           ]}
           target="_blank"
         >
-          <Slot></Slot>
+          <Slot />
         </a>
       ) : (
         <Link
@@ -30,7 +30,7 @@ export default component$((props: HeaderNavItemProps) => {
             loc.url.pathname === props.href && "text-accent",
           ]}
         >
-          <Slot></Slot>
+          <Slot />
         </Link>
       )}
     </>
