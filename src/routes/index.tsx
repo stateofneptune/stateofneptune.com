@@ -5,6 +5,7 @@ import StateOfNeptuneLogoHQ from "/public/images/logo/state-of-neptune-wht-inlin
 
 import Heading from "~/components/heading/heading";
 import FullDiscography from "~/components/full-discography/full-discography";
+import Paragraph from "~/components/paragraph/paragraph";
 
 export default component$(() => {
   return (
@@ -20,24 +21,26 @@ export default component$(() => {
         >
           <StateOfNeptuneLogoHQ class="p-2" />
 
-          <p class="mb-16 px-12 text-justify font-body transition-[font] md:text-lg">
-            Mixing a wide range of influences from the rawness of stoner and
-            punk to the intricacies of metal and grunge, State Of Neptune have
-            shared the beginning of their journey on June 11th 2022, with their
-            self-produced debut album "Pulp Of Stones".
-            <br />
-            <br />
-            Creating quite a buzz in their hometown and its surroundings, thanks
-            to a full year of high-energy live performances and the will to
-            embrace the underground culture, on September 15th 2023 they
-            released the session "Live At Vasto Records", which contains live
-            renditions of "Fury", a beloved song from "Pulp Of Stones", and
-            "Stone Lady", a new song and a glimpse of the future to come.
-          </p>
+          <div class="mb-16 px-12">
+            <Paragraph>
+              Mixing a wide range of influences from the rawness of stoner and
+              punk to the intricacies of metal and grunge, State Of Neptune have
+              shared the beginning of their journey on June 11th 2022, with
+              their self-produced debut album "Pulp Of Stones".
+              <br />
+              <br />
+              Creating quite a buzz in their hometown and its surroundings,
+              thanks to a full year of high-energy live performances and the
+              will to embrace the underground culture, on September 15th 2023
+              they released the session "Live At Vasto Records", which contains
+              live renditions of "Fury", a beloved song from "Pulp Of Stones",
+              and "Stone Lady", a new song and a glimpse of the future to come.
+            </Paragraph>
+          </div>
         </div>
       </section>
 
-      <section class="mt-12 flex justify-center font-body text-2xl">
+      <section class="mt-12 flex justify-center">
         <Heading id="discography">Discography</Heading>
       </section>
 

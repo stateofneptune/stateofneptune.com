@@ -33,7 +33,7 @@ export default component$(() => {
             Therefore:
           </Paragraph>
 
-          <ul class="list-inside list-[square] font-body text-lg">
+          <ul class="list-inside list-[square] font-body md:text-lg">
             <li>
               We do not collect any data whatsoever about people who visit our
               site.
@@ -74,9 +74,11 @@ export default component$(() => {
             in this section.
           </Paragraph>
 
-          <p class="font-body text-sm text-dim md:text-base">
-            Policy published 9th August 2023 – Policy updated 9th August 2023.
-          </p>
+          <Paragraph size="small" align="left">
+            <span class="text-dim">
+              Policy published 9th August 2023 – Policy updated 9th August 2023.
+            </span>
+          </Paragraph>
         </div>
       </section>
     </>

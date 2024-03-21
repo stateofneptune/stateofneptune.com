@@ -1,9 +1,35 @@
 import { Slot, component$ } from "@builder.io/qwik";
 
-export default component$(() => {
+export type ParagraphProps = {
+  align?: "left" | "center" | "justify";
+  size?: "small" | "medium" | "large";
+  responsive?: boolean;
+};
+
+export default component$((props: ParagraphProps) => {
+  const sizeClass =
+    props.responsive === false
+      ? props.size === "small"
+        ? "text-sm"
+        : props.size === "large"
+          ? "text-large"
+          : "text-base"
+      : props.size === "small"
+        ? "text-sm lg:text-base"
+        : props.size === "large"
+          ? "text-large lg:text-xl"
+          : "text-base lg:text-lg";
+
+  const textAlignClass =
+    props.align === "left"
+      ? "text-left"
+      : props.align === "center"
+        ? "text-center"
+        : "text-justify";
+
   return (
     <>
-      <p class="text-justify font-body text-lg">
+      <p class={["font-body transition-[font]", sizeClass, textAlignClass]}>
         <Slot />
       </p>
     </>
