@@ -33,7 +33,7 @@ export default component$(() => {
             Therefore:
           </Paragraph>
 
-          <ul class="list-inside list-[square] font-body md:text-lg">
+          <ul class="list-inside list-[square] font-body marker:text-body lg:text-lg">
             <li>
               We do not collect any data whatsoever about people who visit our
               site.
