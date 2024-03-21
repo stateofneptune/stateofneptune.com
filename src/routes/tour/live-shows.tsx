@@ -53,15 +53,15 @@ export const LIVE_SHOWS: LiveShow[] = [
   {
     country: "Italy",
     city: "Catania",
-    host: "Palestra L.U.Po",
-    venue: "Palestra L.U.Po",
+    host: "Palestra L.U.Po.",
+    venue: "Palestra L.U.Po.",
     date: "2023-09-30",
   },
   {
     country: "Italy",
     city: "Palermo",
     host: "ExKarcere",
-    venue: "ExMusic Fest",
+    venue: "ExMusik Fest Ed. II",
     date: "2023-07-30",
   },
   {
@@ -130,8 +130,8 @@ export const LIVE_SHOWS: LiveShow[] = [
   {
     country: "Italy",
     city: "Palermo",
-    host: "PYC",
-    venue: "PYC",
+    host: "P.Y.C.",
+    venue: "P.Y.C.",
     date: "2022-06-03",
   },
   {
