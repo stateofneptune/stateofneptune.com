@@ -33,6 +33,7 @@ export default component$(() => {
             <a
               class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
               href="https://open.spotify.com/intl-it/album/3MOyE8M8ZCjuCbF41sOqDy"
+              aria-label="Listen to Live at Vasto Records on Spotify."
             >
               <i class="fab fa-spotify"></i>
             </a>
@@ -40,6 +41,7 @@ export default component$(() => {
             <a
               class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
               href="https://stateofneptune.bandcamp.com/album/live-at-vasto-records"
+              aria-label="Listen to Live at Vasto Records on Bandcamp."
             >
               <i class="fab fa-bandcamp"></i>
             </a>
@@ -47,6 +49,7 @@ export default component$(() => {
             <a
               class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
               href="https://music.apple.com/it/album/live-at-vasto-records-live-at-vasto-records-single/1707288275"
+              aria-label="Listen to Live at Vasto Records on Apple Music."
               target="_blank"
             >
               <i class="fab fa-itunes-note"></i>
@@ -76,6 +79,7 @@ export default component$(() => {
             <a
               class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
               href="https://open.spotify.com/intl-it/album/2UBy8Aw3gQkk3oRe8ytybE"
+              aria-label="Listen to Pulp Of Stones on Spotify."
               target="_blank"
             >
               <i class="fab fa-spotify"></i>
@@ -84,6 +88,7 @@ export default component$(() => {
             <a
               class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
               href="https://stateofneptune.bandcamp.com/album/pulp-of-stones"
+              aria-label="Listen to Pulp Of Stones on Bandcamp."
               target="_blank"
             >
               <i class="fab fa-bandcamp"></i>
@@ -92,6 +97,7 @@ export default component$(() => {
             <a
               class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
               href="https://music.apple.com/it/album/pulp-of-stones/1626288912"
+              aria-label="Listen to Pulp Of Stones on Apple Music."
               target="_blank"
             >
               <i class="fab fa-itunes-note"></i>
@@ -121,6 +127,7 @@ export default component$(() => {
             <a
               class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
               href="https://open.spotify.com/intl-it/track/3WOSwVvksJJAwzCqxNPLGz"
+              aria-label="Listen to Paradox on Spotify."
               target="_blank"
             >
               <i class="fab fa-spotify"></i>
@@ -129,6 +136,7 @@ export default component$(() => {
             <a
               class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
               href="https://stateofneptune.bandcamp.com/track/paradox"
+              aria-label="Listen to Paradox on Bandcamp."
               target="_blank"
             >
               <i class="fab fa-bandcamp"></i>
@@ -137,6 +145,7 @@ export default component$(() => {
             <a
               class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
               href="https://music.apple.com/it/album/paradox/1626288912?i=1626288918"
+              aria-label="Listen to Paradox on Apple Music."
               target="_blank"
             >
               <i class="fab fa-itunes-note"></i>
@@ -166,6 +175,7 @@ export default component$(() => {
             <a
               class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
               href="https://open.spotify.com/intl-it/track/5enA2D0PU6UqcRVZLZdRQa"
+              aria-label="Listen to Fury on Spotify."
               target="_blank"
             >
               <i class="fab fa-spotify"></i>
@@ -174,6 +184,7 @@ export default component$(() => {
             <a
               class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
               href="https://stateofneptune.bandcamp.com/track/fury"
+              aria-label="Listen to Fury on Bandcamp."
               target="_blank"
             >
               <i class="fab fa-bandcamp"></i>
@@ -182,6 +193,7 @@ export default component$(() => {
             <a
               class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
               href="https://music.apple.com/it/album/fury/1626288912?i=1626288915"
+              aria-label="Listen to Fury on Apple Music."
               target="_blank"
             >
               <i class="fab fa-itunes-note"></i>
