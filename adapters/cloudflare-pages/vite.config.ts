@@ -10,6 +10,12 @@ export default extendConfig(baseConfig, () => {
         input: ["src/entry.cloudflare-pages.tsx", "@qwik-city-plan"],
       },
     },
-    plugins: [cloudflarePagesAdapter()],
+    plugins: [cloudflarePagesAdapter({
+      ssg: {
+        include: ["/", "/discography/", "/tour/", "/videos/"],
+        origin: "https://www.stateofneptune.com",
+        sitemapOutFile: "sitemap.xml"
+      }
+    })],
   };
 });
