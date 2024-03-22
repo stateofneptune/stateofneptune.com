@@ -16,7 +16,11 @@ export default component$(() => {
           href="https://stateofneptune.bandcamp.com/album/live-at-vasto-records"
           external
         >
-          <LiveAtVastoRecordsArtwork q:slot="image" class="w-96" />
+          <LiveAtVastoRecordsArtwork
+            q:slot="image"
+            class="w-96"
+            alt="Artwork of live album Live at Vasto Records from State Of Neptune."
+          />
 
           <span
             q:slot="title"
@@ -55,7 +59,11 @@ export default component$(() => {
           href="https://stateofneptune.bandcamp.com/album/pulp-of-stones"
           external
         >
-          <PulpOfStonesArtwork q:slot="image" class="w-96" />
+          <PulpOfStonesArtwork
+            q:slot="image"
+            class="w-96"
+            alt="Artwork of studio album Pulp Of Stones from State Of Neptune."
+          />
 
           <span
             q:slot="title"
@@ -96,7 +104,11 @@ export default component$(() => {
           href="https://stateofneptune.bandcamp.com/track/paradox"
           external
         >
-          <ParadoxArtwork q:slot="image" class="w-96" />
+          <ParadoxArtwork
+            q:slot="image"
+            class="w-96"
+            alt="Artwork of studio single Paradox from State Of Neptune."
+          />
 
           <span
             q:slot="title"
@@ -137,7 +149,11 @@ export default component$(() => {
           href="https://stateofneptune.bandcamp.com/track/fury"
           external
         >
-          <FuryArtwork q:slot="image" class="w-96" />
+          <FuryArtwork
+            q:slot="image"
+            class="w-96"
+            alt="Artwork of studio single Fury from State Of Neptune."
+          />
 
           <span
             q:slot="title"

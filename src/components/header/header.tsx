@@ -30,7 +30,10 @@ export default component$(() => {
           </div>
 
           <Link href="/">
-            <StateOfNeptuneLogo class="h-10 w-fit transition-all md:h-12 lg:h-14" />
+            <StateOfNeptuneLogo
+              class="h-10 w-fit transition-all md:h-12 lg:h-14"
+              alt="State Of Neptune logo."
+            />
           </Link>
         </div>
 

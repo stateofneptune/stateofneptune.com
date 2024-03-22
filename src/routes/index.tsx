@@ -19,7 +19,7 @@ export default component$(() => {
             "before:bg-cover before:bg-center before:content-['']",
           ]}
         >
-          <StateOfNeptuneLogoHQ class="p-2" />
+          <StateOfNeptuneLogoHQ class="p-2" alt="State Of Neptune logo." />
 
           <div class="mb-16 px-12">
             <Paragraph>
