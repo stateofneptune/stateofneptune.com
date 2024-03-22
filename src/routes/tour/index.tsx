@@ -34,7 +34,7 @@ function formatShowDate(show: LiveShow) {
 }
 
 export default component$(() => {
-  const currentDate = new Date();
+  const currentDate = new Date(new Date().toDateString());
 
   const shows = LIVE_SHOWS.reduce(
     (acc: { upcoming: LiveShowGroup[]; past: LiveShowGroup[] }, show) => {
