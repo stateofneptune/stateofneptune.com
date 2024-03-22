@@ -25,7 +25,7 @@ export default component$(() => {
         ref={menuContext.dialogRef}
         onClick$={closeMenu}
       >
-        <div class="mb-4 flex justify-end p-2">
+        <div class="mb-4 flex justify-end p-4">
           <button
             aria-label="close"
             class={[
