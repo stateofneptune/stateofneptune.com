@@ -4,6 +4,7 @@ export interface FooterNavItemProps {
   href: string;
   target?: "_blank" | undefined;
   showAbove?: "md" | "lg" | undefined;
+  "aria-label"?: string;
 }
 
 export default component$((props: FooterNavItemProps) => {
@@ -21,8 +22,9 @@ export default component$((props: FooterNavItemProps) => {
           class="text-md transition-all focus-within:text-accent hover:text-accent md:text-lg"
           target={props.target}
           href={props.href}
+          aria-label={props["aria-label"]}
         >
-          <Slot></Slot>
+          <Slot />
         </a>
       </div>
     </>
