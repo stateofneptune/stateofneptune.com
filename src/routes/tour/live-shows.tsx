@@ -10,6 +10,20 @@ export type LiveShow = {
 export const LIVE_SHOWS: LiveShow[] = [
   {
     country: "Italy",
+    city: "Catania",
+    host: "Palestra L.U.Po.",
+    venue: "Necrosis Fest Ed. II",
+    date: "2024-05-11",
+  },
+  {
+    country: "Italy",
+    city: "Torretta",
+    host: "Torrettacore",
+    venue: "Torrettacore",
+    date: "2024-04-01",
+  },
+  {
+    country: "Italy",
     city: "Reggio Calabria",
     host: "Interzone",
     venue: "Interzone",
