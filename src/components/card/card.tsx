@@ -7,7 +7,7 @@ export interface CardProps {
   id?: string;
   class?: ClassList | Signal<ClassList>;
   href?: string;
-  external?: boolean
+  external?: boolean;
 }
 
 export default component$((props: CardProps) => {
@@ -19,7 +19,11 @@ export default component$((props: CardProps) => {
       >
         <figure>
           {props.href ? (
-            <Link class="font-body decoration-accent underline-offset-2 focus-within:underline hover:underline" href={props.href} external={props.external}>
+            <Link
+              class="font-body decoration-accent underline-offset-2 focus-within:underline hover:underline"
+              href={props.href}
+              external={props.external}
+            >
               <Slot name="image" />
             </Link>
           ) : (
@@ -36,7 +40,7 @@ export default component$((props: CardProps) => {
 
           <Slot name="subtitle" />
         </div>
-      </div >
+      </div>
     </>
   );
 });

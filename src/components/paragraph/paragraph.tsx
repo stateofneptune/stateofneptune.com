@@ -12,20 +12,20 @@ export default component$((props: ParagraphProps) => {
       ? props.size === "small"
         ? "text-sm"
         : props.size === "large"
-          ? "text-large"
-          : "text-base"
+        ? "text-large"
+        : "text-base"
       : props.size === "small"
-        ? "text-sm lg:text-base"
-        : props.size === "large"
-          ? "text-large lg:text-xl"
-          : "text-base lg:text-lg";
+      ? "text-sm lg:text-base"
+      : props.size === "large"
+      ? "text-large lg:text-xl"
+      : "text-base lg:text-lg";
 
   const textAlignClass =
     props.align === "left"
       ? "text-left"
       : props.align === "center"
-        ? "text-center"
-        : "text-justify";
+      ? "text-center"
+      : "text-justify";
 
   return (
     <>

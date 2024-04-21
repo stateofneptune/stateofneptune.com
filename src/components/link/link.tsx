@@ -5,7 +5,7 @@ import { Link } from "@builder.io/qwik-city";
 export interface LinkProps {
   class?: ClassList | Signal<ClassList>;
   href?: string;
-  external?: boolean
+  external?: boolean;
 }
 
 export default component$((props: LinkProps) => {
