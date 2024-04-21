@@ -1,12 +1,14 @@
-import { component$ } from "@builder.io/qwik";
+import { JSXNode, component$ } from "@builder.io/qwik";
+import type { DocumentHead } from "@builder.io/qwik-city";
 
 import Title from "~/components/title/title";
 import Paragraph from "~/components/paragraph/paragraph";
 import Heading from "~/components/heading/heading";
+import LiveShowEntry from "~/components/live-show-entry/live-show-entry";
 
 import type { LiveShow } from "./live-shows";
+
 import { LIVE_SHOWS } from "./live-shows";
-import type { DocumentHead } from "@builder.io/qwik-city";
 
 type LiveShowGroup = {
   year: number;
@@ -17,20 +19,6 @@ function insertSorted<T>(compare: (a: T) => boolean, item: T, bucket: T[]) {
   const idxInto = bucket.findIndex(compare);
 
   return idxInto > -1 ? bucket.splice(idxInto, 0, item) : bucket.concat(item);
-}
-
-function formatShowDate(show: LiveShow) {
-  const showDate = new Date(show.date);
-
-  const month = new Intl.DateTimeFormat("en", {
-    month: "short",
-  }).format(showDate);
-
-  const day = new Intl.DateTimeFormat("en", {
-    day: "2-digit",
-  }).format(showDate);
-
-  return `${month} ${day} – ${show.city}, ${show.country} – ${show.venue}`;
 }
 
 export default component$(() => {
@@ -90,33 +78,35 @@ export default component$(() => {
                 <span class="text-dim">No shows planned at the moment.</span>
               </Paragraph>
             ) : (
-              shows.upcoming.reverse().map((group, id) => (
-                <>
-                  <h3
-                    id={group.year.toString()}
-                    key={id}
-                    class="font-body text-xl"
-                  >
-                    {group.year}
-                  </h3>
+              shows.upcoming.reduceRight(
+                (upcomingShows: JSXNode[], group, id) =>
+                  upcomingShows.concat(
+                    <>
+                      <h3
+                        id={group.year.toString()}
+                        key={id}
+                        class="font-body text-xl"
+                      >
+                        {group.year}
+                      </h3>
 
-                  <ul>
-                    {group.shows.reverse().map((show) => (
-                      <li key={show.date}>
-                        <Paragraph>
-                          <span
-                            class={[
-                              show.cancelled && "line-through decoration-1",
-                            ]}
-                          >
-                            {formatShowDate(show)}
-                          </span>
-                        </Paragraph>
-                      </li>
-                    ))}
-                  </ul>
-                </>
-              ))
+                      <ul>
+                        {group.shows.reduceRight(
+                          (acc: JSXNode[], show) =>
+                            acc.concat(
+                              <>
+                                <li key={show.date}>
+                                  <LiveShowEntry {...show} />
+                                </li>
+                              </>
+                            ),
+                          []
+                        )}
+                      </ul>
+                    </>
+                  ),
+                []
+              )
             )}
           </div>
         </section>
@@ -124,6 +114,7 @@ export default component$(() => {
         <section class="flex w-full justify-center">
           <div class="mt-12 flex w-[60ch] flex-col gap-6 border-t border-light-bg pt-12">
             <Heading id="past">Past shows</Heading>
+
             {shows.past.map((group, id) => (
               <>
                 <h3
@@ -135,11 +126,14 @@ export default component$(() => {
                 </h3>
 
                 <ul>
-                  {group.shows.map((show) => (
-                    <li key={show.date}>
-                      <Paragraph>{formatShowDate(show)}</Paragraph>
-                    </li>
-                  ))}
+                  {group.shows.map(
+                    (show) =>
+                      !show.cancelled && (
+                        <li key={show.date}>
+                          <LiveShowEntry {...show} />
+                        </li>
+                      )
+                  )}
                 </ul>
               </>
             ))}

@@ -1,11 +1,4 @@
-export type LiveShow = {
-  country?: string;
-  city?: string;
-  host?: string;
-  venue: string;
-  date: string;
-  cancelled?: boolean;
-};
+import { LiveShowEntryProps } from "~/components/live-show-entry/live-show-entry";
 
 export const LIVE_SHOWS: LiveShow[] = [
   {
