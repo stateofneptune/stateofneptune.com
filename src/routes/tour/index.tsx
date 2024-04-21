@@ -95,7 +95,7 @@ export default component$(() => {
                           (acc: JSXNode[], show) =>
                             acc.concat(
                               <>
-                                <li key={show.date}>
+                                <li id={show.date} key={show.date}>
                                   <LiveShowEntry {...show} />
                                 </li>
                               </>
@@ -129,7 +129,7 @@ export default component$(() => {
                   {group.shows.map(
                     (show) =>
                       !show.cancelled && (
-                        <li key={show.date}>
+                        <li id={show.date} key={show.date}>
                           <LiveShowEntry {...show} />
                         </li>
                       )
