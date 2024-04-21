@@ -29,7 +29,7 @@ export default component$((props: ParagraphProps) => {
 
   return (
     <>
-      <p class={["font-body transition-[font]", sizeClass, textAlignClass]}>
+      <p class={["font-body transition-[font] whitespace-pre-line", sizeClass, textAlignClass]}>
         <Slot />
       </p>
     </>
