@@ -12,7 +12,7 @@ export default extendConfig(baseConfig, () => {
     },
     plugins: [cloudflarePagesAdapter({
       ssg: {
-        include: ["/", "/discography/", "/tour/", "/videos/"],
+        include: ["/*"],
         origin: "https://www.stateofneptune.com",
         sitemapOutFile: "sitemap.xml"
       }
