@@ -97,10 +97,6 @@ export const head: DocumentHead = {
       content: "State Of Neptune privacy policy page.",
     },
     {
-      property: "og:url",
-      content: "https://www.stateofneptune.com/privacy-policy",
-    },
-    {
       property: "twitter:description",
       content: "State Of Neptune privacy policy page.",
     },

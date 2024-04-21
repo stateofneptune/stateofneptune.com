@@ -28,10 +28,6 @@ export const head: DocumentHead = {
       content: "State Of Neptune full discography.",
     },
     {
-      property: "og:url",
-      content: "https://www.stateofneptune.com/discography",
-    },
-    {
       property: "twitter:description",
       content: "State Of Neptune full discography.",
     },

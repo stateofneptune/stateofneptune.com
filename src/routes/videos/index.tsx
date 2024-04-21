@@ -33,10 +33,6 @@ export const head: DocumentHead = {
       content: "State Of Neptune videos.",
     },
     {
-      property: "og:url",
-      content: "https://www.stateofneptune.com/videos",
-    },
-    {
       property: "twitter:description",
       content: "State Of Neptune videos.",
     },

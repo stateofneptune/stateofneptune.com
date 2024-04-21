@@ -24,10 +24,6 @@ export const head: DocumentHead = {
       content: "State Of Neptune contact page.",
     },
     {
-      property: "og:url",
-      content: "https://www.stateofneptune.com/contact",
-    },
-    {
       property: "twitter:description",
       content: "State Of Neptune contact page.",
     },

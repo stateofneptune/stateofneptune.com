@@ -156,10 +156,6 @@ export const head: DocumentHead = {
       content: "State Of Neptune live shows.",
     },
     {
-      property: "og:url",
-      content: "https://www.stateofneptune.com/tour",
-    },
-    {
       property: "twitter:description",
       content: "State Of Neptune live shows.",
     },

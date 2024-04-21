@@ -19,7 +19,7 @@ export default component$(() => {
   );
 });
 
-export const head: DocumentHead = ({ head }) => {
+export const head: DocumentHead = ({ head, url }) => {
   return {
     title: `State Of Neptune – ${head.title}`,
     meta: [
@@ -30,6 +30,10 @@ export const head: DocumentHead = ({ head }) => {
       {
         property: "og:title",
         content: `State Of Neptune - ${head.title}`,
+      },
+      {
+        property: "og:url",
+        content: String(url),
       },
       {
         property: "og:image",
