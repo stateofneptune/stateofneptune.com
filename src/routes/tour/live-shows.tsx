@@ -1,5 +1,7 @@
 import { LiveShowEntryProps } from "~/components/live-show-entry/live-show-entry";
 
+export type LiveShow = LiveShowEntryProps;
+
 export const LIVE_SHOWS: LiveShow[] = [
   {
     country: "Italy",
