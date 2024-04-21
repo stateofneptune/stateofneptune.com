@@ -29,7 +29,7 @@ export const head: DocumentHead = ({ head, url }) => {
       },
       {
         property: "og:title",
-        content: `State Of Neptune - ${head.title}`,
+        content: `State Of Neptune – ${head.title}`,
       },
       {
         property: "og:url",
@@ -42,11 +42,11 @@ export const head: DocumentHead = ({ head, url }) => {
       },
       {
         property: "twitter:title",
-        content: `State Of Neptune - ${head.title}`,
+        content: `State Of Neptune – ${head.title}`,
       },
       {
         property: "twitter:site",
-        content: "https://www.stateofneptune.com",
+        content: "https://www.stateofneptune.com/",
       },
       {
         property: "twitter:card",
