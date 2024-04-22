@@ -32,7 +32,7 @@ export default component$(() => {
               Creating quite a buzz in their hometown and its surroundings,
               thanks to a full year of high-energy live performances and the
               will to embrace the underground culture, on September 15th 2023
-              they released the session "Live At Vasto Records", which contains
+              they released the session "Live at Vasto Records", which contains
               live renditions of "Fury", a beloved song from "Pulp Of Stones",
               and "Stone Lady", a new song and a glimpse of the future to come.
             </Paragraph>
