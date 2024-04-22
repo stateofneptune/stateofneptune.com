@@ -144,20 +144,16 @@ export default component$(() => {
   );
 });
 
+const META_DESCRIPTION =
+  "Palermo, Italy punk stoner trio State Of Neptune's official tour dates. \
+Get updates about upcoming live shows.";
+
 export const head: DocumentHead = {
   title: "Tour",
-  meta: [
-    {
-      name: "description",
-      content: "State Of Neptune live shows.",
-    },
-    {
-      property: "og:description",
-      content: "State Of Neptune live shows.",
-    },
-    {
-      property: "twitter:description",
-      content: "State Of Neptune live shows.",
-    },
-  ],
+  meta: ["description", "og:description", "twitter:description"].map(
+    (name) => ({
+      content: META_DESCRIPTION,
+      name,
+    })
+  ),
 };

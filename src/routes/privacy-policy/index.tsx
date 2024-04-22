@@ -85,20 +85,15 @@ export default component$(() => {
   );
 });
 
+const META_DESCRIPTION =
+  "Palermo, Italy punk stoner trio State Of Neptune's official website cookies and privacy policy.";
+
 export const head: DocumentHead = {
   title: "Privacy Policy",
-  meta: [
-    {
-      name: "description",
-      content: "State Of Neptune privacy policy page.",
-    },
-    {
-      property: "og:description",
-      content: "State Of Neptune privacy policy page.",
-    },
-    {
-      property: "twitter:description",
-      content: "State Of Neptune privacy policy page.",
-    },
-  ],
+  meta: ["description", "og:description", "twitter:description"].map(
+    (name) => ({
+      content: META_DESCRIPTION,
+      name,
+    })
+  ),
 };

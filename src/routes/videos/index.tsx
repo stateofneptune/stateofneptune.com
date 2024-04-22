@@ -21,20 +21,15 @@ export default component$(() => {
   );
 });
 
+const META_DESCRIPTION =
+  "Palermo, Italy punk stoner trio State Of Neptune's official videos.";
+
 export const head: DocumentHead = {
   title: "Videos",
-  meta: [
-    {
-      name: "description",
-      content: "State Of Neptune videos.",
-    },
-    {
-      property: "og:description",
-      content: "State Of Neptune videos.",
-    },
-    {
-      property: "twitter:description",
-      content: "State Of Neptune videos.",
-    },
-  ],
+  meta: ["description", "og:description", "twitter:description"].map(
+    (name) => ({
+      content: META_DESCRIPTION,
+      name,
+    })
+  ),
 };

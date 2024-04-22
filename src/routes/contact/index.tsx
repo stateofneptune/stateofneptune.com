@@ -12,20 +12,15 @@ export default component$(() => {
   return <></>;
 });
 
+const META_DESCRIPTION =
+  "Palermo, Italy punk stoner trio State Of Neptune's contact page.";
+
 export const head: DocumentHead = {
   title: "Contact",
-  meta: [
-    {
-      name: "description",
-      content: "State Of Neptune contact page.",
-    },
-    {
-      property: "og:description",
-      content: "State Of Neptune contact page.",
-    },
-    {
-      property: "twitter:description",
-      content: "State Of Neptune contact page.",
-    },
-  ],
+  meta: ["description", "og:description", "twitter:description"].map(
+    (name) => ({
+      content: META_DESCRIPTION,
+      name,
+    })
+  ),
 };

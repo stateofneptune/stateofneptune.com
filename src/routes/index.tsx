@@ -51,21 +51,16 @@ export default component$(() => {
   );
 });
 
+const META_DESCRIPTION =
+  "Palermo, Italy punk stoner trio State Of Neptune's official website \
+featuring music, tour dates, videos and more.";
+
 export const head: DocumentHead = {
   title: "Home",
-  meta: [
-    {
-      name: "description",
-      content:
-        "State Of Neptune official website. Get updates about new content, merch and live dates.",
-    },
-    {
-      property: "og:description",
-      content: "State Of Neptune official website.",
-    },
-    {
-      property: "twitter:description",
-      content: "State Of Neptune official website.",
-    },
-  ],
+  meta: ["description", "og:description", "twitter:description"].map(
+    (name) => ({
+      content: META_DESCRIPTION,
+      name,
+    })
+  ),
 };

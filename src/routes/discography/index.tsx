@@ -16,20 +16,15 @@ export default component$(() => {
   );
 });
 
+const META_DESCRIPTION =
+  "Palermo, Italy punk stoner trio State Of Neptune's music collection.";
+
 export const head: DocumentHead = {
   title: "Discography",
-  meta: [
-    {
-      name: "description",
-      content: "State Of Neptune full discography.",
-    },
-    {
-      property: "og:description",
-      content: "State Of Neptune full discography.",
-    },
-    {
-      property: "twitter:description",
-      content: "State Of Neptune full discography.",
-    },
-  ],
+  meta: ["description", "og:description", "twitter:description"].map(
+    (name) => ({
+      content: META_DESCRIPTION,
+      name,
+    })
+  ),
 };
