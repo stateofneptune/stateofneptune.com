@@ -53,6 +53,10 @@ export default component$(() => {
             </li>
 
             <li>
+              <MenuNavItem href="/merch/">Merch</MenuNavItem>
+            </li>
+
+            <li>
               <MenuNavItem href="/contact/">Contact</MenuNavItem>
             </li>
           </ul>
