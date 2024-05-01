@@ -15,6 +15,13 @@ export const LIVE_SHOWS: LiveShow[] = [
     city: "Palermo",
     host: "ExKarcere",
     venue: "ExKarcere",
+    date: "2024-05-03",
+  },
+  {
+    country: "Italy",
+    city: "Palermo",
+    host: "ExKarcere",
+    venue: "ExKarcere",
     date: "2024-04-26",
     cancelled: true,
   },
