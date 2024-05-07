@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import type { JSXNode } from "@builder.io/qwik";
+import type { JSXOutput } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 import Title from "~/components/title/title";
@@ -80,7 +80,7 @@ export default component$(() => {
               </Paragraph>
             ) : (
               shows.upcoming.reduceRight(
-                (upcomingShows: JSXNode[], group, id) =>
+                (upcomingShows: JSXOutput[], group, id) =>
                   upcomingShows.concat(
                     <>
                       <h3
@@ -93,13 +93,11 @@ export default component$(() => {
 
                       <ul>
                         {group.shows.reduceRight(
-                          (acc: JSXNode[], show) =>
+                          (acc: JSXOutput[], show) =>
                             acc.concat(
-                              <>
-                                <li id={show.date} key={show.date}>
-                                  <LiveShowEntry {...show} />
-                                </li>
-                              </>
+                              <li id={show.date} key={show.date}>
+                                <LiveShowEntry {...show} />
+                              </li>
                             ),
                           []
                         )}

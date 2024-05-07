@@ -1,10 +1,10 @@
-import type { ClassList, Signal } from "@builder.io/qwik";
+import type { ClassList } from "@builder.io/qwik";
 import { component$ } from "@builder.io/qwik";
 
 export interface ReleaseProps {
   id?: string;
   heading: string;
-  class?: ClassList | Signal<ClassList>;
+  class?: ClassList;
   href: string;
   src: string;
   alt?: string;

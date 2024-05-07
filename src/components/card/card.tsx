@@ -1,11 +1,11 @@
-import type { ClassList, Signal } from "@builder.io/qwik";
+import type { ClassList } from "@builder.io/qwik";
 import { Slot, component$ } from "@builder.io/qwik";
 
 import Link from "~/components/link/link";
 
 export interface CardProps {
   id?: string;
-  class?: ClassList | Signal<ClassList>;
+  class?: ClassList;
   href?: string;
   external?: boolean;
 }
