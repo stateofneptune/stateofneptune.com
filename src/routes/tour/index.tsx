@@ -27,9 +27,9 @@ export default component$(() => {
 
   const shows = LIVE_SHOWS.reduce(
     (acc: { upcoming: LiveShowGroup[]; past: LiveShowGroup[] }, show) => {
-      const showDate = new Date(show.date);
+      if (show.date) {
+        const showDate = new Date(show.date);
 
-      if (showDate) {
         const year = showDate.getFullYear();
         const isPast = showDate < currentDate;
         const group = (isPast ? acc.past : acc.upcoming).find(
