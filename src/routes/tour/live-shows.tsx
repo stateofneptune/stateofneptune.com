@@ -5,6 +5,13 @@ export type LiveShow = LiveShowEntryProps;
 export const LIVE_SHOWS: LiveShow[] = [
   {
     country: "Italy",
+    city: "Palermo",
+    host: "ExKarcere",
+    venue: "Malotempo Fest Ed. I",
+    date: "2024-07-19",
+  },
+  {
+    country: "Italy",
     city: "Catania",
     host: "Palestra L.U.Po.",
     venue: "Necrosis Fest Ed. II",
