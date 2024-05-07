@@ -25,6 +25,6 @@ export const head: DocumentHead = {
     (name) => ({
       content: META_DESCRIPTION,
       name,
-    })
+    }),
   ),
 };

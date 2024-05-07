@@ -33,14 +33,14 @@ export default component$(() => {
         const year = showDate.getFullYear();
         const isPast = showDate < currentDate;
         const group = (isPast ? acc.past : acc.upcoming).find(
-          (g) => g.year === year
+          (g) => g.year === year,
         );
 
         if (group) {
           group.shows = insertSorted(
             (a) => a.date < show.date,
             show,
-            group.shows
+            group.shows,
           );
         } else {
           const item = {
@@ -54,7 +54,7 @@ export default component$(() => {
             acc.upcoming = insertSorted(
               (g) => g.year < year,
               item,
-              acc.upcoming
+              acc.upcoming,
             );
           }
         }
@@ -62,7 +62,7 @@ export default component$(() => {
 
       return acc;
     },
-    { upcoming: [], past: [] }
+    { upcoming: [], past: [] },
   );
 
   return (
@@ -97,14 +97,14 @@ export default component$(() => {
                             acc.concat(
                               <li id={show.date} key={show.date}>
                                 <LiveShowEntry {...show} />
-                              </li>
+                              </li>,
                             ),
-                          []
+                          [],
                         )}
                       </ul>
-                    </>
+                    </>,
                   ),
-                []
+                [],
               )
             )}
           </div>
@@ -131,7 +131,7 @@ export default component$(() => {
                         <li id={show.date} key={show.date}>
                           <LiveShowEntry {...show} />
                         </li>
-                      )
+                      ),
                   )}
                 </ul>
               </>
@@ -153,6 +153,6 @@ export const head: DocumentHead = {
     (name) => ({
       content: META_DESCRIPTION,
       name,
-    })
+    }),
   ),
 };

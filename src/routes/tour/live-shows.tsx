@@ -1,4 +1,4 @@
-import { LiveShowEntryProps } from "~/components/live-show-entry/live-show-entry";
+import type { LiveShowEntryProps } from "~/components/live-show-entry/live-show-entry";
 
 export type LiveShow = LiveShowEntryProps;
 
