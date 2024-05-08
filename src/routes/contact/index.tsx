@@ -104,7 +104,7 @@ export default component$(() => {
   ];
 
   const labelClass: (required: boolean) => ClassList = (required) => [
-    "font-body text-lg text-body",
+    "font-body text-body",
     required && "after:text-warn after:content-['_*']",
   ];
 
@@ -146,7 +146,7 @@ export default component$(() => {
                 <div class="flex w-full justify-center">
                   <button
                     class={[
-                      "font-body text-lg",
+                      "font-body",
                       !contactForm.submitting
                         ? "text-body transition-colors focus-within:text-accent hover:text-accent"
                         : "pointer-events-none text-dim",
