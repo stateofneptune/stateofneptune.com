@@ -81,7 +81,7 @@ export default component$(() => {
               {...props}
               type={type}
               value={field.value}
-              class={["autofill:text-accent", inputClass(!!field.error)]}
+              class={inputClass(!!field.error)}
             />
           )}
 
@@ -99,7 +99,7 @@ export default component$(() => {
   });
 
   const inputClass: (error: boolean) => ClassList = (error) => [
-    "w-full min-w-[15ch] rounded bg-deep-bg px-3 py-1.5 font-body text-body ring-1 ring-inset ring-light-bg autofill:bg-deep-bg focus:ring-2 focus:ring-inset",
+    "w-full min-w-[15ch] rounded bg-deep-bg px-3 py-1.5 font-body text-body ring-1 ring-inset ring-light-bg autofill:delay-[50000s] autofill:transition-[background-color] autofill:text-fill-body focus:ring-2 focus:ring-inset",
     error ? "ring-warn focus:ring-warn" : "ring-light-bg focus:ring-accent",
   ];
 
