@@ -99,8 +99,10 @@ export default component$(() => {
   });
 
   const inputClass: (error: boolean) => ClassList = (error) => [
-    "w-full min-w-[15ch] rounded bg-deep-bg px-3 py-1.5 font-body text-body ring-1 ring-inset ring-light-bg autofill:delay-[50000s] autofill:transition-[background-color] autofill:text-fill-body focus:ring-2 focus:ring-inset",
-    error ? "ring-warn focus:ring-warn" : "ring-light-bg focus:ring-accent",
+    "w-full min-w-[15ch] rounded-sm bg-deep-bg px-3 py-1.5 font-body text-body ring-1 ring-inset-0 ring-light-bg autofill:delay-[50000s] autofill:transition-[background-color] autofill:text-fill-body focus-within:ring-inset focus-within:ring-2",
+    error
+      ? "ring-warn focus-within:ring-warn"
+      : "ring-light-bg focus-within:ring-accent",
   ];
 
   const labelClass: (required: boolean) => ClassList = (required) => [
