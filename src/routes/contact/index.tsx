@@ -18,8 +18,7 @@ import { email, maxLength, minLength, object, string } from "valibot";
 import type { Input } from "valibot";
 
 const ContactSchema = object({
-  firstName: string([minLength(1, "Please enter your fist name.")]),
-  lastName: string([minLength(1, "Please enter your last name.")]),
+  name: string([minLength(1, "Please enter your name.")]),
   email: string([
     minLength(1, "Please enter your email."),
     email("The email address is badly formatted."),
@@ -34,8 +33,7 @@ const ContactSchema = object({
 type ContactForm = Input<typeof ContactSchema>;
 
 export const useFormLoader = routeLoader$<InitialValues<ContactForm>>(() => ({
-  firstName: "",
-  lastName: "",
+  name: "",
   email: "",
   subject: "",
   message: "",
@@ -121,30 +119,26 @@ export default component$(() => {
           <div class="w-[40ch]">
             <Form onSubmit$={handleSubmit}>
               <div class="space-y-6">
-                <div class="flex flex-wrap gap-x-2 gap-y-6">
-                  <div class="flex-grow  basis-1/3">
-                    <Field name="firstName">
-                      {inputFactory("text", "firstName", "First name")}
-                    </Field>
-                  </div>
-
-                  <div class="flex-grow basis-1/3">
-                    <Field name="lastName">
-                      {inputFactory("text", "lastName", "Last name")}
-                    </Field>
-                  </div>
-                </div>
-
                 <Field name="email">
                   {inputFactory("email", "email", "Email")}
                 </Field>
 
-                <Field name="subject">
-                  {inputFactory("subject", "subject", "Subject")}
-                </Field>
+                <div class="flex flex-wrap gap-x-2 gap-y-6">
+                  <div class="flex-grow basis-1/3">
+                    <Field name="name">
+                      {inputFactory("text", "name", "Name")}
+                    </Field>
+                  </div>
+
+                  <div class="flex-grow basis-1/3">
+                    <Field name="subject">
+                      {inputFactory("text", "subject", "Subject")}
+                    </Field>
+                  </div>
+                </div>
 
                 <Field name="message">
-                  {inputFactory("message", "message", "Message", true)}
+                  {inputFactory("text", "message", "Message", true)}
                 </Field>
 
                 <div class="flex w-full justify-center">
