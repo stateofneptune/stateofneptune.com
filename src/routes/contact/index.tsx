@@ -141,6 +141,10 @@ export default component$(() => {
                   {inputFactory("text", "message", "Message", true)}
                 </Field>
 
+                <div class="font-body text-sm text-dim before:font-body before:text-warn before:content-['*_']">
+                  Required field
+                </div>
+
                 <div class="flex w-full justify-center">
                   <button
                     class={[
