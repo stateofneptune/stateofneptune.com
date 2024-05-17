@@ -4,7 +4,7 @@ import type { DocumentHead, RequestEvent } from "@builder.io/qwik-city";
 export const onGet = async ({ redirect }: RequestEvent) => {
   throw redirect(
     307,
-    "https://stateofneptune.bandcamp.com/contact?b=1895537099&n=State%20Of%20Neptune"
+    "https://bandcamp.com/contact?b=1895537099&n=State%20Of%20Neptune",
   );
 };
 
@@ -21,6 +21,6 @@ export const head: DocumentHead = {
     (name) => ({
       content: META_DESCRIPTION,
       name,
-    })
+    }),
   ),
 };
