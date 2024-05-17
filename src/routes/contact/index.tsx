@@ -26,7 +26,11 @@ const ContactSchema = object({
   subject: string([minLength(1, "Please enter the subject.")]),
   message: string([
     minLength(1, "Please enter the body of the message."),
-    maxLength(700, "Message can't exceed 700 characters."),
+    maxLength(
+      700,
+      ({ input }) =>
+        `Message can't exceed 700 characters; issued: ${(input as string).length}.`,
+    ),
   ]),
 });
 
