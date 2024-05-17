@@ -72,6 +72,7 @@ export default component$(() => {
           {textarea ? (
             <textarea
               {...props}
+              id={name}
               rows={4}
               value={field.value}
               class={inputClass(!!field.error)}
@@ -79,6 +80,7 @@ export default component$(() => {
           ) : (
             <input
               {...props}
+              id={name}
               type={type}
               value={field.value}
               class={inputClass(!!field.error)}
