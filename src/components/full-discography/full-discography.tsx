@@ -13,7 +13,8 @@ export default component$(() => {
       <div class="flex w-[60rem] flex-wrap justify-center gap-16">
         <Card
           id="live-at-vasto-records"
-          href="/discography/live-at-vasto-records/"
+          href="https://stateofneptune.bandcamp.com/album/live-at-vasto-records"
+          external
         >
           <LiveAtVastoRecordsArtwork
             q:slot="image"
@@ -56,7 +57,11 @@ export default component$(() => {
           </div>
         </Card>
 
-        <Card id="pulp-of-stones" href="/discography/pulp-of-stones/">
+        <Card
+          id="pulp-of-stones"
+          href="https://stateofneptune.bandcamp.com/album/pulp-of-stones"
+          external
+        >
           <PulpOfStonesArtwork
             q:slot="image"
             class="w-96"
@@ -100,7 +105,11 @@ export default component$(() => {
           </div>
         </Card>
 
-        <Card id="paradox" href="/discography/paradox/">
+        <Card
+          id="paradox"
+          href="https://stateofneptune.bandcamp.com/track/paradox"
+          external
+        >
           <ParadoxArtwork
             q:slot="image"
             class="w-96"
@@ -144,7 +153,11 @@ export default component$(() => {
           </div>
         </Card>
 
-        <Card id="fury" href="/discography/fury/">
+        <Card
+          id="fury"
+          href="https://stateofneptune.bandcamp.com/track/fury"
+          external
+        >
           <FuryArtwork
             q:slot="image"
             class="w-96"

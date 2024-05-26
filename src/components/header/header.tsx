@@ -52,7 +52,12 @@ export default component$(() => {
             </li>
 
             <li>
-              <HeaderNavItem href="/contact/">Contact</HeaderNavItem>
+              <HeaderNavItem
+                href="https://bandcamp.com/contact?b=1895537099&n=State%20Of%20Neptune"
+                external
+              >
+                Contact
+              </HeaderNavItem>
             </li>
           </ul>
         </nav>
