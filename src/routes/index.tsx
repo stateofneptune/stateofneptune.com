@@ -23,18 +23,19 @@ export default component$(() => {
 
           <div class="mb-16 px-12">
             <Paragraph>
-              Mixing a wide range of influences from the rawness of stoner and
-              punk to the intricacies of metal and grunge, State Of Neptune have
-              shared the beginning of their journey on June 11th 2022, with
-              their self-produced debut album "Pulp Of Stones".
+              Blending stoner sounds with a hardcore attitude from a place
+              called Palermo. State Of Neptune have shared the beginning of
+              their journey on June 11th 2022, with their self-produced debut
+              album "Pulp Of Stones".
               <br />
               <br />
-              Creating quite a buzz in their hometown and its surroundings,
-              thanks to a full year of high-energy live performances and the
-              will to embrace the underground culture, on September 15th 2023
-              they released the session "Live at Vasto Records", which contains
-              live renditions of "Fury", a beloved song from "Pulp Of Stones",
-              and "Stone Lady", a new song and a glimpse of the future to come.
+              Creating quite a buzz in their hometown and its regional
+              surroundings, thanks to two years of high-energy live performances
+              and the will to embrace the underground culture, on September 15th
+              2023 they released the session "Live at Vasto Records", which
+              contains live renditions of "Fury", a beloved song from "Pulp Of
+              Stones", and "Stone Lady", a new song and a glimpse of the future
+              to come.
             </Paragraph>
           </div>
         </div>
