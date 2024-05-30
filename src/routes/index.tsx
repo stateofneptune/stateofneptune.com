@@ -28,7 +28,6 @@ export default component$(() => {
               their journey on June 11th 2022, with their self-produced debut
               album "Pulp Of Stones".
               <br />
-              <br />
               Creating quite a buzz in their hometown and its regional
               surroundings, thanks to two years of high-energy live performances
               and the will to embrace the underground culture, on September 15th
