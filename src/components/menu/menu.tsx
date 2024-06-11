@@ -53,7 +53,12 @@ export default component$(() => {
             </li>
 
             <li>
-              <MenuNavItem href="/contact/">Contact</MenuNavItem>
+              <MenuNavItem
+                href="https://bandcamp.com/contact?b=1895537099&n=State%20Of%20Neptune"
+                external
+              >
+                Contact
+              </MenuNavItem>
             </li>
           </ul>
         </nav>

@@ -22,7 +22,11 @@ export default component$(() => {
               Home
             </UnderlineLink>
 
-            <UnderlineLink class="w-[12ch] text-dim" href="/contact/">
+            <UnderlineLink
+              class="w-[12ch] text-dim"
+              href="https://bandcamp.com/contact?b=1895537099&n=State%20Of%20Neptune"
+              external
+            >
               Contact us
             </UnderlineLink>
           </div>
