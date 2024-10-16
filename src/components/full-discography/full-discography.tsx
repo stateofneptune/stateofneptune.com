@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 
+import NowIRememberMyFaceAgain from "/public/images/artworks/now-i-remember-my-face-again@640.webp?jsx";
 import LiveAtVastoRecordsArtwork from "/public/images/artworks/live-at-vasto-records@640.webp?jsx";
 import PulpOfStonesArtwork from "/public/images/artworks/pulp-of-stones@640.webp?jsx";
 import ParadoxArtwork from "/public/images/artworks/paradox@640.webp?jsx";
@@ -11,6 +12,52 @@ export default component$(() => {
   return (
     <>
       <div class="flex w-[60rem] flex-wrap justify-center gap-16">
+        <Card
+          id="now-i-remember-my-face-again"
+          href="https://stateofneptune.bandcamp.com/track/now-i-remember-my-face-again"
+          external
+        >
+          <NowIRememberMyFaceAgain
+            q:slot="image"
+            class="w-96"
+            alt="Artwork of single Now I Remember My Face Again from State Of Neptune."
+          />
+
+          <span
+            q:slot="title"
+            class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+          >
+            Now I Remember My Face Again
+          </span>
+
+          <div q:slot="subtitle" class="mt-2 flex justify-center gap-6">
+            <a
+              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+              href="https://open.spotify.com/album/0JJMR2ZEAAQo0OT3Eu8Ag4"
+              aria-label="Listen to Now I Remember My Face Again on Spotify."
+            >
+              <i class="fab fa-spotify"></i>
+            </a>
+
+            <a
+              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+              href="https://stateofneptune.bandcamp.com/track/now-i-remember-my-face-again"
+              aria-label="Listen to Now I Remember My Face Again on Bandcamp."
+            >
+              <i class="fab fa-bandcamp"></i>
+            </a>
+
+            <a
+              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+              href="https://music.apple.com/it/album/now-i-remember-my-face-again-single/1772809150"
+              aria-label="Listen to Now I Remember My Face Again on Apple Music."
+              target="_blank"
+            >
+              <i class="fab fa-itunes-note"></i>
+            </a>
+          </div>
+        </Card>
+
         <Card
           id="live-at-vasto-records"
           href="https://stateofneptune.bandcamp.com/album/live-at-vasto-records"
@@ -29,7 +76,7 @@ export default component$(() => {
             Live at Vasto Records
           </span>
 
-          <div q:slot="subtitle" class="mt-2 flex justify-center gap-6 ">
+          <div q:slot="subtitle" class="mt-2 flex justify-center gap-6">
             <a
               class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
               href="https://open.spotify.com/intl-it/album/3MOyE8M8ZCjuCbF41sOqDy"
