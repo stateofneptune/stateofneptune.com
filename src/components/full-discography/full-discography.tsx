@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 
-import NowIRememberMyFaceAgain from "/public/images/artworks/now-i-remember-my-face-again@640.webp?jsx";
+import NowIRememberMyFaceAgain from "/public/images/artworks/now-i-remember-my-face-again@720.webp?jsx";
 import LiveAtVastoRecordsArtwork from "/public/images/artworks/live-at-vasto-records@640.webp?jsx";
 import PulpOfStonesArtwork from "/public/images/artworks/pulp-of-stones@640.webp?jsx";
 import ParadoxArtwork from "/public/images/artworks/paradox@640.webp?jsx";
@@ -19,7 +19,7 @@ export default component$(() => {
         >
           <NowIRememberMyFaceAgain
             q:slot="image"
-            class="w-96"
+            class="w-[33rem]"
             alt="Artwork of single Now I Remember My Face Again from State Of Neptune."
           />
 
