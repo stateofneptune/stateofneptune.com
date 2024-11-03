@@ -6,8 +6,8 @@ export const LIVE_SHOWS: LiveShow[] = [
   {
     country: "Italy",
     city: "Palermo",
-    host: "Mindhouse",
-    venue: "Mindhouse",
+    host: "Mind House",
+    venue: "Mind House",
     date: "2024-11-30",
   },
   {
