@@ -31,10 +31,9 @@ export default component$(() => {
               Creating quite a buzz in their hometown and its regional
               surroundings, thanks to two years of high-energy live performances
               and the will to embrace the underground culture, on September 15th
-              2023 they released the session "Live at Vasto Records", which
-              contains live renditions of "Fury", a beloved song from "Pulp Of
-              Stones", and "Stone Lady", a new song and a glimpse of the future
-              to come.
+              2023 they released the session "Live at Vasto Records". Their
+              latest song "Now I Remember My Face Again" is the beginning of a
+              new era for them, with more music coming in the near future.
             </Paragraph>
           </div>
         </div>
