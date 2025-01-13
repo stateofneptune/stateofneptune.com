@@ -1,7 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 
 import NowIRememberMyFaceAgain from "/public/images/artworks/now-i-remember-my-face-again@720.webp?jsx";
-import LiveAtVastoRecordsArtwork from "/public/images/artworks/live-at-vasto-records@640.webp?jsx";
 import PulpOfStonesArtwork from "/public/images/artworks/pulp-of-stones@640.webp?jsx";
 import ParadoxArtwork from "/public/images/artworks/paradox@640.webp?jsx";
 import FuryArtwork from "/public/images/artworks/fury@640.webp?jsx";
@@ -51,52 +50,6 @@ export default component$(() => {
               class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
               href="https://music.apple.com/it/album/now-i-remember-my-face-again-single/1772809150"
               aria-label="Listen to Now I Remember My Face Again on Apple Music."
-              target="_blank"
-            >
-              <i class="fab fa-itunes-note"></i>
-            </a>
-          </div>
-        </Card>
-
-        <Card
-          id="live-at-vasto-records"
-          href="https://stateofneptune.bandcamp.com/album/live-at-vasto-records"
-          external
-        >
-          <LiveAtVastoRecordsArtwork
-            q:slot="image"
-            class="w-96"
-            alt="Artwork of live album Live at Vasto Records from State Of Neptune."
-          />
-
-          <span
-            q:slot="title"
-            class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
-          >
-            Live at Vasto Records
-          </span>
-
-          <div q:slot="subtitle" class="mt-2 flex justify-center gap-6">
-            <a
-              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
-              href="https://open.spotify.com/intl-it/album/3MOyE8M8ZCjuCbF41sOqDy"
-              aria-label="Listen to Live at Vasto Records on Spotify."
-            >
-              <i class="fab fa-spotify"></i>
-            </a>
-
-            <a
-              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
-              href="https://stateofneptune.bandcamp.com/album/live-at-vasto-records"
-              aria-label="Listen to Live at Vasto Records on Bandcamp."
-            >
-              <i class="fab fa-bandcamp"></i>
-            </a>
-
-            <a
-              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
-              href="https://music.apple.com/it/album/live-at-vasto-records-live-at-vasto-records-single/1707288275"
-              aria-label="Listen to Live at Vasto Records on Apple Music."
               target="_blank"
             >
               <i class="fab fa-itunes-note"></i>
