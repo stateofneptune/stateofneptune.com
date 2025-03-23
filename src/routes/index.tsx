@@ -21,7 +21,7 @@ export default component$(() => {
         >
           <StateOfNeptuneLogoHQ class="p-2" alt="State Of Neptune logo." />
 
-          <div class="mb-16 px-12">
+          <div class="mb-16 px-12 italic">
             <Paragraph>
               Blending stoner sounds with a hardcore attitude from a place
               called Palermo.
