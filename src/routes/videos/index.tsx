@@ -11,9 +11,8 @@ export default component$(() => {
 
       <section class="my-12 flex w-full justify-center px-6">
         <div class="flex w-[80rem] flex-wrap justify-center gap-16">
-          <YouTube src="https://www.youtube-nocookie.com/embed/u7uWaHhZ_Yk" />
-          <YouTube src="https://www.youtube-nocookie.com/embed/n-qIKsquRik" />
           <YouTube src="https://www.youtube-nocookie.com/embed/Ff3ebB6Un8M" />
+          <YouTube src="https://www.youtube-nocookie.com/embed/n-qIKsquRik" />
           <YouTube src="https://www.youtube-nocookie.com/embed/QJHSee0Po7I" />
         </div>
       </section>
