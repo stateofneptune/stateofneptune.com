@@ -57,7 +57,7 @@ This is useful to determine if a page response should be Server-Side Rendered (S
 
 By default, the Cloudflare pages adaptor _does not_ include a `public/_routes.json` config, but rather it is auto-generated from the build by the Cloudflare adaptor. An example of an auto-generate `dist/_routes.json` would be:
 
-```
+```json
 {
   "include": [
     "/*"
