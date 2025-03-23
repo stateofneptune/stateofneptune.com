@@ -24,16 +24,15 @@ export default component$(() => {
           <div class="mb-16 px-12">
             <Paragraph>
               Blending stoner sounds with a hardcore attitude from a place
-              called Palermo. State Of Neptune have shared the beginning of
-              their journey on June 11th 2022, with their self-produced debut
-              album "Pulp Of Stones".
+              called Palermo.
               <br />
-              Creating quite a buzz in their hometown and its regional
-              surroundings, thanks to two years of high-energy live performances
-              and the will to embrace the underground culture, on September 15th
-              2023 they released the session "Live at Vasto Records". Their
-              latest song "Now I Remember My Face Again" is the beginning of a
-              new era for them, with more music coming in the near future.
+              State Of Neptune have shared the beginning of their journey on
+              June 11th 2022, with their self-produced debut album "Pulp Of
+              Stones". Creating quite a buzz in their hometown and its regional
+              surroundings, thanks to three years of high-energy live
+              performances and the will to embrace the underground culture, on
+              October 11th 2024 they released the song "Now I Remember My Face
+              Again", leading to the beginning of a new era for them.
             </Paragraph>
           </div>
         </div>
