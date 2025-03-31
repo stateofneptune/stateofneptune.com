@@ -21,7 +21,7 @@ export default component$(() => {
 
 export const head: DocumentHead = ({ head, url }) => {
   return {
-    title: `State Of Neptune – ${head.title}`,
+    title: `${head.title} – State Of Neptune`,
     meta: [
       {
         property: "og:type",
@@ -29,7 +29,7 @@ export const head: DocumentHead = ({ head, url }) => {
       },
       {
         property: "og:title",
-        content: `State Of Neptune – ${head.title}`,
+        content: `${head.title} – State Of Neptune`,
       },
       {
         property: "og:url",
@@ -42,7 +42,7 @@ export const head: DocumentHead = ({ head, url }) => {
       },
       {
         property: "twitter:title",
-        content: `State Of Neptune – ${head.title}`,
+        content: `${head.title} – State Of Neptune`,
       },
       {
         property: "twitter:site",
