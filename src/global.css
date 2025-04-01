@@ -20,3 +20,9 @@
   font-family: "Opinion Pro Condensed";
   src: url("/fonts/opinion-pro/opinion-pro-condensed-light.otf");
 }
+
+@keyframes blink {
+  0% {
+    color: transparent;
+  }
+}
