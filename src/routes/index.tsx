@@ -5,7 +5,6 @@ import StateOfNeptuneLogoHQ from "/public/images/logo/state-of-neptune-wht-inlin
 
 import Heading from "~/components/heading/heading";
 import FullDiscography from "~/components/full-discography/full-discography";
-import Paragraph from "~/components/paragraph/paragraph";
 
 export default component$(() => {
   return (
@@ -13,28 +12,16 @@ export default component$(() => {
       <section class="relative flex min-h-[90lvh] justify-center">
         <div
           class={[
-            "flex w-[100ch] flex-col justify-center gap-8 md:gap-16",
+            "flex w-[100ch] flex-col justify-center gap-4 md:gap-8",
             "before:absolute before:inset-0 before:-z-10 before:h-full before:w-full",
             "before:bg-[linear-gradient(rgba(13,13,13,0.5),rgba(13,13,13,0.5)),url(/images/backgrounds/anomalia-live.webp)]",
             "before:bg-cover before:bg-center before:content-['']",
           ]}
         >
-          <StateOfNeptuneLogoHQ class="p-2" alt="State Of Neptune logo." />
-
-          <div class="mb-16 px-12 italic">
-            <Paragraph>
-              Blending stoner sounds with a hardcore attitude from a place
-              called Palermo.
-              <br />
-              State Of Neptune have shared the beginning of their journey on
-              June 11th 2022, with their self-produced debut album "Pulp Of
-              Stones". Creating quite a buzz in their hometown and its regional
-              surroundings, thanks to three years of high-energy live
-              performances and the will to embrace the underground culture, on
-              October 11th 2024 they released the song "Now I Remember My Face
-              Again", leading to the beginning of a new era for them.
-            </Paragraph>
-          </div>
+          <StateOfNeptuneLogoHQ
+            class="mb-52 p-2 md:mb-80"
+            alt="State Of Neptune official logo."
+          />
         </div>
       </section>
 
