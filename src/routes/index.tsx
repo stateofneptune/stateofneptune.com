@@ -35,14 +35,22 @@ export default component$(() => {
             "before:bg-cover before:bg-center before:content-['']",
           ]}
         >
-          <StateOfNeptuneLogoHQ
-            class="p-2"
-            alt="State Of Neptune official logo."
-          />
+          <div class="flex flex-grow">
+            <StateOfNeptuneLogoHQ
+              class="self-end p-2"
+              alt="State Of Neptune official logo."
+            />
+          </div>
 
-          <div class="mb-16 text-center font-body text-2xl lg:text-4xl">
-            {pickupLine.value}
-            <span class="animate-[blink_1s_steps(2)_infinite]">|</span>
+          <div class="flex flex-grow flex-col justify-between">
+            <div class="mb-16 text-center font-body text-2xl lg:text-4xl">
+              {pickupLine.value}
+              <span class="animate-[blink_1s_steps(2)_infinite]">|</span>
+            </div>
+
+            <div class="mb-16 animate-bounce text-center font-body md:text-xl">
+              <i class="fa-solid fa-arrow-down"></i>{" "}
+            </div>
           </div>
         </div>
       </section>
