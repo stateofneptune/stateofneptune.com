@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
-@config '../tailwind.config.js';
+@import "./font-awesome.css";
+
+@config "../tailwind.config.js";
 
 /*
   The default border color has changed to `currentcolor` in Tailwind CSS v4,
@@ -44,8 +46,4 @@
   0% {
     color: transparent;
   }
-}
-
-html {
-  scroll-behaviour: smooth;
 }
