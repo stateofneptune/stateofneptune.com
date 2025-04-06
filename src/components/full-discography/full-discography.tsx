@@ -24,14 +24,14 @@ export default component$(() => {
 
           <span
             q:slot="title"
-            class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+            class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
           >
             Now I Remember My Face Again
           </span>
 
           <div q:slot="subtitle" class="mt-2 flex justify-center gap-6">
             <a
-              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+              class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
               href="https://open.spotify.com/album/0JJMR2ZEAAQo0OT3Eu8Ag4"
               aria-label="Listen to Now I Remember My Face Again on Spotify."
             >
@@ -39,7 +39,7 @@ export default component$(() => {
             </a>
 
             <a
-              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+              class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
               href="https://stateofneptune.bandcamp.com/track/now-i-remember-my-face-again"
               aria-label="Listen to Now I Remember My Face Again on Bandcamp."
             >
@@ -47,7 +47,7 @@ export default component$(() => {
             </a>
 
             <a
-              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+              class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
               href="https://music.apple.com/it/album/now-i-remember-my-face-again-single/1772809150"
               aria-label="Listen to Now I Remember My Face Again on Apple Music."
               target="_blank"
@@ -70,14 +70,14 @@ export default component$(() => {
 
           <span
             q:slot="title"
-            class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+            class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
           >
             Pulp Of Stones
           </span>
 
           <div q:slot="subtitle" class="mt-2 flex justify-center gap-6">
             <a
-              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+              class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
               href="https://open.spotify.com/intl-it/album/2UBy8Aw3gQkk3oRe8ytybE"
               aria-label="Listen to Pulp Of Stones on Spotify."
               target="_blank"
@@ -86,7 +86,7 @@ export default component$(() => {
             </a>
 
             <a
-              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+              class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
               href="https://stateofneptune.bandcamp.com/album/pulp-of-stones"
               aria-label="Listen to Pulp Of Stones on Bandcamp."
               target="_blank"
@@ -95,7 +95,7 @@ export default component$(() => {
             </a>
 
             <a
-              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+              class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
               href="https://music.apple.com/it/album/pulp-of-stones/1626288912"
               aria-label="Listen to Pulp Of Stones on Apple Music."
               target="_blank"
@@ -118,14 +118,14 @@ export default component$(() => {
 
           <span
             q:slot="title"
-            class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+            class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
           >
             Paradox
           </span>
 
           <div q:slot="subtitle" class="mt-2 flex justify-center gap-6">
             <a
-              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+              class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
               href="https://open.spotify.com/intl-it/track/3WOSwVvksJJAwzCqxNPLGz"
               aria-label="Listen to Paradox on Spotify."
               target="_blank"
@@ -134,7 +134,7 @@ export default component$(() => {
             </a>
 
             <a
-              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+              class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
               href="https://stateofneptune.bandcamp.com/track/paradox"
               aria-label="Listen to Paradox on Bandcamp."
               target="_blank"
@@ -143,7 +143,7 @@ export default component$(() => {
             </a>
 
             <a
-              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+              class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
               href="https://music.apple.com/it/album/paradox/1626288912?i=1626288918"
               aria-label="Listen to Paradox on Apple Music."
               target="_blank"
@@ -166,14 +166,14 @@ export default component$(() => {
 
           <span
             q:slot="title"
-            class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+            class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
           >
             Fury
           </span>
 
           <div q:slot="subtitle" class="mt-2 flex justify-center gap-6">
             <a
-              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+              class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
               href="https://open.spotify.com/intl-it/track/5enA2D0PU6UqcRVZLZdRQa"
               aria-label="Listen to Fury on Spotify."
               target="_blank"
@@ -182,7 +182,7 @@ export default component$(() => {
             </a>
 
             <a
-              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+              class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
               href="https://stateofneptune.bandcamp.com/track/fury"
               aria-label="Listen to Fury on Bandcamp."
               target="_blank"
@@ -191,7 +191,7 @@ export default component$(() => {
             </a>
 
             <a
-              class="font-body text-lg transition-all focus-within:text-accent hover:text-accent"
+              class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
               href="https://music.apple.com/it/album/fury/1626288912?i=1626288915"
               aria-label="Listen to Fury on Apple Music."
               target="_blank"

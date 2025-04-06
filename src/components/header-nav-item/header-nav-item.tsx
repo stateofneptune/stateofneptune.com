@@ -15,7 +15,7 @@ export default component$((props: HeaderNavItemProps) => {
         <a
           href={props.href}
           class={[
-            "transition-all focus-within:text-accent hover:text-accent",
+            "focus-within:text-accent hover:text-accent transition-all",
             loc.url.pathname === props.href && "text-accent",
           ]}
           target="_blank"
@@ -26,7 +26,7 @@ export default component$((props: HeaderNavItemProps) => {
         <Link
           href={props.href}
           class={[
-            "transition-all focus-within:text-accent hover:text-accent",
+            "focus-within:text-accent hover:text-accent transition-all",
             loc.url.pathname === props.href && "text-accent",
           ]}
         >

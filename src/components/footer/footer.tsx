@@ -6,7 +6,7 @@ import UnderlineLink from "../underline-link/underline-link";
 export default component$(() => {
   return (
     <>
-      <footer class="mt-auto overflow-x-hidden bg-deep-bg py-4 font-body">
+      <footer class="bg-deep-bg font-body mt-auto overflow-x-hidden py-4">
         <nav>
           <ul class="flex items-center justify-center">
             <li>
@@ -124,7 +124,7 @@ export default component$(() => {
           </ul>
         </nav>
 
-        <div class="flex items-center justify-center text-center text-sm text-dim transition-[font-size] md:text-base">
+        <div class="text-dim flex items-center justify-center text-center text-sm transition-[font-size] md:text-base">
           <p>© 2023 State Of Neptune – All Rights Reserved</p>
         </div>
 

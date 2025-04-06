@@ -111,7 +111,7 @@ export default component$(() => {
         </section>
 
         <section class="flex w-full justify-center">
-          <div class="mt-12 flex w-[60ch] flex-col gap-6 border-t border-light-bg pt-12">
+          <div class="border-light-bg mt-12 flex w-[60ch] flex-col gap-6 border-t pt-12">
             <Heading id="past">Past shows</Heading>
 
             {shows.past.map((group, id) => (

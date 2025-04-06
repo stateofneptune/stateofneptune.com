@@ -30,11 +30,11 @@ export default component$((props: ReleaseProps) => {
         </figure>
 
         <div class="flex basis-96 flex-col items-center justify-center gap-y-2 transition-[gap] md:gap-y-4">
-          <div class="text-center font-subtitle text-lg uppercase text-accent transition-[font-size] md:text-xl">
+          <div class="font-subtitle text-accent text-center text-lg uppercase transition-[font-size] md:text-xl">
             {props.heading}
           </div>
 
-          <div class="text-center font-subtitle uppercase transition-[color] focus-within:text-accent hover:text-accent">
+          <div class="font-subtitle focus-within:text-accent hover:text-accent text-center uppercase transition-[color]">
             <a href={props.href} target="_blank">
               Buy
             </a>

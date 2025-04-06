@@ -19,7 +19,7 @@ export default component$((props: FooterNavItemProps) => {
         ]}
       >
         <a
-          class="transition-all focus-within:text-accent hover:text-accent md:text-lg"
+          class="focus-within:text-accent hover:text-accent transition-all md:text-lg"
           target={props.target}
           href={props.href}
           aria-label={props["aria-label"]}

@@ -27,5 +27,8 @@ export default function (opts: RenderToStreamOptions) {
       prefix: "og: https://ogp.me/ns#",
       ...opts.containerAttributes,
     },
+    serverData: {
+      ...opts.serverData,
+    },
   });
 }

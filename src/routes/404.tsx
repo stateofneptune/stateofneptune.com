@@ -18,12 +18,12 @@ export default component$(() => {
           </Paragraph>
 
           <div class="flex items-center justify-center gap-6">
-            <UnderlineLink class="w-[12ch] text-dim" href="/">
+            <UnderlineLink class="text-dim w-[12ch]" href="/">
               Home
             </UnderlineLink>
 
             <UnderlineLink
-              class="w-[12ch] text-dim"
+              class="text-dim w-[12ch]"
               href="https://bandcamp.com/contact?b=1895537099&n=State%20Of%20Neptune"
               external
             >

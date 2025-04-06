@@ -17,7 +17,7 @@ export default component$(() => {
     <>
       <dialog
         class={[
-          "fixed m-0 h-full max-h-[100ldh] w-full max-w-[100lvw] overflow-y-auto bg-transparent p-0 text-body transition-[opacity] duration-menu-open backdrop:bg-deep-bg/90 backdrop:backdrop-blur-lg backdrop:transition-[opacity] backdrop:duration-menu-open",
+          "text-body duration-menu-open backdrop:bg-deep-bg/90 backdrop:duration-menu-open fixed m-0 h-full max-h-[100ldh] w-full max-w-[100lvw] overflow-y-auto bg-transparent p-0 transition-[opacity] backdrop:backdrop-blur-lg backdrop:transition-[opacity]",
           menuContext.open
             ? "opacity-100 backdrop:opacity-100"
             : "opacity-0 backdrop:opacity-0",
@@ -29,7 +29,7 @@ export default component$(() => {
           <button
             aria-label="close"
             class={[
-              "h-8 w-8 text-body transition-[opacity] delay-menu-open duration-1000",
+              "text-body delay-menu-open h-8 w-8 transition-[opacity] duration-1000",
               menuContext.open ? "opacity-100" : "opacity-0",
             ]}
             onClick$={closeMenu}

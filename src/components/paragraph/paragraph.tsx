@@ -31,7 +31,7 @@ export default component$((props: ParagraphProps) => {
     <>
       <p
         class={[
-          "whitespace-pre-line font-body transition-[font]",
+          "font-body whitespace-pre-line transition-[font]",
           sizeClass,
           textAlignClass,
         ]}

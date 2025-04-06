@@ -9,7 +9,7 @@ export default component$((props: HeadingProps) => {
     <>
       <h2
         id={props.id}
-        class="scroll-mt-20 font-body text-2xl lg:scroll-mt-36 lg:text-3xl"
+        class="font-body scroll-mt-20 text-2xl lg:scroll-mt-36 lg:text-3xl"
       >
         <a
           href={"#" + (props.id ?? "")}

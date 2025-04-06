@@ -14,7 +14,7 @@ export default component$((props: MenuNavItemProps) => {
       {props.external ? (
         <a
           href={props.href}
-          class="block p-3 text-center font-body text-xl transition focus-within:bg-light-bg/20 hover:bg-light-bg/20"
+          class="font-body focus-within:bg-light-bg/20 hover:bg-light-bg/20 block p-3 text-center text-xl transition"
           onClick$={props.onClick$}
           target="_blank"
         >
@@ -23,7 +23,7 @@ export default component$((props: MenuNavItemProps) => {
       ) : (
         <Link
           href={props.href}
-          class="block p-3 text-center font-body text-xl transition focus-within:bg-light-bg/20 hover:bg-light-bg/20"
+          class="font-body focus-within:bg-light-bg/20 hover:bg-light-bg/20 block p-3 text-center text-xl transition"
           onClick$={props.onClick$}
         >
           <Slot />

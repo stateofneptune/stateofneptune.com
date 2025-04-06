@@ -36,7 +36,7 @@ export default component$(() => {
       <body
         lang="en"
         class={[
-          "flex min-h-[100dvh] flex-col scroll-smooth bg-deep-bg text-body before:fixed before:inset-0 before:-z-10 before:h-[100lvh]",
+          "bg-deep-bg text-body flex min-h-[100dvh] flex-col scroll-smooth before:fixed before:inset-0 before:-z-10 before:h-[100lvh]",
           "before:w-full before:bg-[linear-gradient(rgba(13,13,13,0.95),rgba(13,13,13,0.95)),url(/images/backgrounds/umbilical.webp)]",
           "before:bg-cover before:bg-center before:content-['']",
           menuStore.open && "overflow-hidden",
