@@ -1,10 +1,18 @@
 import { component$, Slot } from "@builder.io/qwik";
 
-import type { DocumentHead } from "@builder.io/qwik-city";
+import type { DocumentHead, RequestHandler } from "@builder.io/qwik-city";
 
 import Header from "~/components/header/header";
 import Footer from "~/components/footer/footer";
 import Menu from "~/components/menu/menu";
+
+export const onGet: RequestHandler = async ({ cacheControl }) => {
+  cacheControl({
+    staleWhileRevalidate: 60 * 60 * 24 * 7,
+    maxAge: 10,
+    sMaxAge: 15,
+  });
+};
 
 export default component$(() => {
   return (
