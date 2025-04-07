@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import StateOfNeptuneGalleryImg from "/public/images/gallery/20241013_LV_BOL.jpg?jsx";
 
-import { DocumentHead } from "@builder.io/qwik-city";
+import type { DocumentHead } from "@builder.io/qwik-city";
 
 import Paragraph from "~/components/paragraph/paragraph";
 import Title from "~/components/title/title";

@@ -6,6 +6,12 @@ import ParadoxArtwork from "/public/images/artworks/paradox@640.webp?jsx";
 import FuryArtwork from "/public/images/artworks/fury@640.webp?jsx";
 
 import Card from "~/components/card/card";
+import { FaIcon } from "qwik-fontawesome";
+import {
+  faBandcamp,
+  faItunesNote,
+  faSpotify,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default component$(() => {
   return (
@@ -35,7 +41,7 @@ export default component$(() => {
               href="https://open.spotify.com/album/0JJMR2ZEAAQo0OT3Eu8Ag4"
               aria-label="Listen to Now I Remember My Face Again on Spotify."
             >
-              <i class="fab fa-spotify"></i>
+              <FaIcon icon={faSpotify}></FaIcon>
             </a>
 
             <a
@@ -43,7 +49,7 @@ export default component$(() => {
               href="https://stateofneptune.bandcamp.com/track/now-i-remember-my-face-again"
               aria-label="Listen to Now I Remember My Face Again on Bandcamp."
             >
-              <i class="fab fa-bandcamp"></i>
+              <FaIcon icon={faBandcamp}></FaIcon>
             </a>
 
             <a
@@ -52,7 +58,7 @@ export default component$(() => {
               aria-label="Listen to Now I Remember My Face Again on Apple Music."
               target="_blank"
             >
-              <i class="fab fa-itunes-note"></i>
+              <FaIcon icon={faItunesNote}></FaIcon>
             </a>
           </div>
         </Card>
@@ -82,7 +88,7 @@ export default component$(() => {
               aria-label="Listen to Pulp Of Stones on Spotify."
               target="_blank"
             >
-              <i class="fab fa-spotify"></i>
+              <FaIcon icon={faSpotify}></FaIcon>
             </a>
 
             <a
@@ -91,7 +97,7 @@ export default component$(() => {
               aria-label="Listen to Pulp Of Stones on Bandcamp."
               target="_blank"
             >
-              <i class="fab fa-bandcamp"></i>
+              <FaIcon icon={faBandcamp}></FaIcon>
             </a>
 
             <a
@@ -100,7 +106,7 @@ export default component$(() => {
               aria-label="Listen to Pulp Of Stones on Apple Music."
               target="_blank"
             >
-              <i class="fab fa-itunes-note"></i>
+              <FaIcon icon={faItunesNote}></FaIcon>
             </a>
           </div>
         </Card>
@@ -130,7 +136,7 @@ export default component$(() => {
               aria-label="Listen to Paradox on Spotify."
               target="_blank"
             >
-              <i class="fab fa-spotify"></i>
+              <FaIcon icon={faSpotify}></FaIcon>
             </a>
 
             <a
@@ -139,7 +145,7 @@ export default component$(() => {
               aria-label="Listen to Paradox on Bandcamp."
               target="_blank"
             >
-              <i class="fab fa-bandcamp"></i>
+              <FaIcon icon={faBandcamp}></FaIcon>
             </a>
 
             <a
@@ -148,7 +154,7 @@ export default component$(() => {
               aria-label="Listen to Paradox on Apple Music."
               target="_blank"
             >
-              <i class="fab fa-itunes-note"></i>
+              <FaIcon icon={faItunesNote}></FaIcon>
             </a>
           </div>
         </Card>
@@ -178,7 +184,7 @@ export default component$(() => {
               aria-label="Listen to Fury on Spotify."
               target="_blank"
             >
-              <i class="fab fa-spotify"></i>
+              <FaIcon icon={faSpotify}></FaIcon>
             </a>
 
             <a
@@ -187,7 +193,7 @@ export default component$(() => {
               aria-label="Listen to Fury on Bandcamp."
               target="_blank"
             >
-              <i class="fab fa-bandcamp"></i>
+              <FaIcon icon={faBandcamp}></FaIcon>
             </a>
 
             <a
@@ -196,7 +202,7 @@ export default component$(() => {
               aria-label="Listen to Fury on Apple Music."
               target="_blank"
             >
-              <i class="fab fa-itunes-note"></i>
+              <FaIcon icon={faItunesNote}></FaIcon>
             </a>
           </div>
         </Card>

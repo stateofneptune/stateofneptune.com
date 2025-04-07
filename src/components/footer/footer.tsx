@@ -3,6 +3,23 @@ import { component$ } from "@builder.io/qwik";
 import FooterNavItem from "../footer-nav-item/footer-nav-item";
 import UnderlineLink from "../underline-link/underline-link";
 
+import { FaIcon } from "qwik-fontawesome";
+
+import {
+  faAmazon,
+  faBandcamp,
+  faDeezer,
+  faFacebook,
+  faInstagram,
+  faItunesNote,
+  faSpotify,
+  faTiktok,
+  faTwitter,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 export default component$(() => {
   return (
     <>
@@ -15,7 +32,7 @@ export default component$(() => {
                 aria-label="State Of Neptune Instagram link."
                 target="_blank"
               >
-                <i class="fab fa-instagram"></i>
+                <FaIcon icon={faInstagram}></FaIcon>
               </FooterNavItem>
             </li>
 
@@ -25,7 +42,7 @@ export default component$(() => {
                 aria-label="State Of Neptune Facebook link."
                 target="_blank"
               >
-                <i class="fab fa-facebook"></i>
+                <FaIcon icon={faFacebook}></FaIcon>
               </FooterNavItem>
             </li>
 
@@ -35,7 +52,7 @@ export default component$(() => {
                 aria-label="State Of Neptune TikTok account link."
                 target="_blank"
               >
-                <i class="fab fa-tiktok"></i>
+                <FaIcon icon={faTiktok}></FaIcon>
               </FooterNavItem>
             </li>
 
@@ -46,7 +63,7 @@ export default component$(() => {
                 showAbove="md"
                 target="_blank"
               >
-                <i class="fab fa-twitter"></i>
+                <FaIcon icon={faTwitter}></FaIcon>
               </FooterNavItem>
             </li>
 
@@ -56,7 +73,7 @@ export default component$(() => {
                 aria-label="State Of Neptune YouTube account link."
                 target="_blank"
               >
-                <i class="fab fa-youtube"></i>
+                <FaIcon icon={faYoutube}></FaIcon>
               </FooterNavItem>
             </li>
 
@@ -66,7 +83,7 @@ export default component$(() => {
                 aria-label="State Of Neptune Spotify artist link."
                 target="_blank"
               >
-                <i class="fab fa-spotify"></i>
+                <FaIcon icon={faSpotify}></FaIcon>
               </FooterNavItem>
             </li>
 
@@ -76,7 +93,7 @@ export default component$(() => {
                 aria-label="State Of Neptune Bandcamp artist link."
                 target="_blank"
               >
-                <i class="fab fa-bandcamp"></i>
+                <FaIcon icon={faBandcamp}></FaIcon>
               </FooterNavItem>
             </li>
 
@@ -87,7 +104,7 @@ export default component$(() => {
                 showAbove="lg"
                 target="_blank"
               >
-                <i class="fab fa-itunes-note"></i>
+                <FaIcon icon={faItunesNote}></FaIcon>
               </FooterNavItem>
             </li>
 
@@ -98,7 +115,7 @@ export default component$(() => {
                 showAbove="lg"
                 target="_blank"
               >
-                <i class="fab fa-amazon"></i>
+                <FaIcon icon={faAmazon}></FaIcon>
               </FooterNavItem>
             </li>
 
@@ -109,7 +126,7 @@ export default component$(() => {
                 showAbove="lg"
                 target="_blank"
               >
-                <i class="fab fa-deezer"></i>
+                <FaIcon icon={faDeezer}></FaIcon>
               </FooterNavItem>
             </li>
 
@@ -118,7 +135,7 @@ export default component$(() => {
                 href="mailto:stateofneptune@gmail.com"
                 aria-label="Mail to State Of Neptune."
               >
-                <i class="fas fa-envelope"></i>
+                <FaIcon icon={faEnvelope}></FaIcon>
               </FooterNavItem>
             </li>
           </ul>

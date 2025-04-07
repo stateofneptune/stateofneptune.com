@@ -1,6 +1,7 @@
 import { component$, Slot } from "@builder.io/qwik";
 
 import type { DocumentHead, RequestHandler } from "@builder.io/qwik-city";
+import { FaStylesheet } from "qwik-fontawesome";
 
 import Header from "~/components/header/header";
 import Footer from "~/components/footer/footer";
@@ -19,6 +20,7 @@ export default component$(() => {
     <>
       <Header />
       <Menu />
+      <FaStylesheet />
       <main>
         <Slot />
       </main>

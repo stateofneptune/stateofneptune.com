@@ -7,6 +7,9 @@ import StateOfNeptuneLogoHQ from "/public/images/logo/state-of-neptune-wht-inlin
 import Heading from "~/components/heading/heading";
 import FullDiscography from "~/components/full-discography/full-discography";
 
+import { FaIcon } from "qwik-fontawesome";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+
 const delay = (time: number) => new Promise((res) => setTimeout(res, time));
 
 export default component$(() => {
@@ -53,7 +56,7 @@ export default component$(() => {
                 href="#discography"
                 class="font-body focus-within:text-dim hover:text-dim transition-all"
               >
-                <i class="fa-solid fa-arrow-down"></i>
+                <FaIcon icon={faArrowDown}></FaIcon>
               </a>
             </div>
           </div>
