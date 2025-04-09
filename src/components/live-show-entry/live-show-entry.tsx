@@ -1,7 +1,5 @@
 import { component$ } from "@builder.io/qwik";
 
-import Paragraph from "../paragraph/paragraph";
-
 export type LiveShowEntryProps = {
   country?: string;
   city?: string;
@@ -14,6 +12,10 @@ export type LiveShowEntryProps = {
 export default component$((props: LiveShowEntryProps) => {
   const showDate = new Date(props.date);
 
+  const year = new Intl.DateTimeFormat("en", {
+    year: "numeric",
+  }).format(showDate);
+
   const month = new Intl.DateTimeFormat("en", {
     month: "short",
   }).format(showDate);
@@ -24,19 +26,20 @@ export default component$((props: LiveShowEntryProps) => {
 
   return (
     <>
-      <Paragraph>
+      <div class="font-body text-body">
+        {day} {month} {year} – {props.city}, {props.country}
+      </div>
+
+      <div class="font-body text-body text-lg italic">
+        <span class="font-bold">{props.venue}</span>
         {props.cancelled ? (
           <>
-            {`${month} ${day} – ${props.city}, ${props.country} – ${props.venue}`}
-
             <span class="text-warn"> [CANCELLED]</span>
           </>
         ) : (
-          <>
-            {`${month} ${day} – ${props.city}, ${props.country} – ${props.venue}`}
-          </>
+          <></>
         )}
-      </Paragraph>
+      </div>
     </>
   );
 });

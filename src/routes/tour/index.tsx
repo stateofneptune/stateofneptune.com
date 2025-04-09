@@ -71,7 +71,7 @@ export default component$(() => {
 
       <section class="my-12 px-6">
         <section class="flex w-full justify-center">
-          <div class="flex w-[60ch] flex-col gap-6">
+          <div class="flex w-[60ch] flex-col gap-8">
             <Heading id="upcoming">Upcoming shows</Heading>
 
             {shows.upcoming.length === 0 ? (
@@ -91,7 +91,7 @@ export default component$(() => {
                         {group.year}
                       </h3>
 
-                      <ul>
+                      <ul class="flex flex-col gap-4">
                         {group.shows.reduceRight(
                           (acc: JSXOutput[], show) =>
                             acc.concat(
@@ -111,7 +111,7 @@ export default component$(() => {
         </section>
 
         <section class="flex w-full justify-center">
-          <div class="border-light-bg mt-12 flex w-[60ch] flex-col gap-6 border-t pt-12">
+          <div class="border-light-bg mt-12 flex w-[60ch] flex-col gap-8 border-t pt-12">
             <Heading id="past">Past shows</Heading>
 
             {shows.past.map((group, id) => (
@@ -124,14 +124,17 @@ export default component$(() => {
                   {group.year}
                 </h3>
 
-                <ul>
-                  {group.shows.map(
-                    (show) =>
-                      !show.cancelled && (
-                        <li id={show.date} key={show.date}>
-                          <LiveShowEntry {...show} />
-                        </li>
-                      ),
+                <ul class="flex flex-col gap-4">
+                  {group.shows.reduce(
+                    (acc: JSXOutput[], show) =>
+                      !show.cancelled
+                        ? acc.concat(
+                            <li id={show.date} key={show.date}>
+                              <LiveShowEntry {...show} />
+                            </li>,
+                          )
+                        : acc,
+                    [],
                   )}
                 </ul>
               </>
