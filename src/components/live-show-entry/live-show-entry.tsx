@@ -1,5 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 
+import UnderlineLink from "../underline-link/underline-link";
+
 export type LiveShowEntryProps = {
   country?: string;
   city?: string;
@@ -7,6 +9,7 @@ export type LiveShowEntryProps = {
   venue: string;
   date: string;
   cancelled?: boolean;
+  href?: string;
 };
 
 export default component$((props: LiveShowEntryProps) => {
@@ -32,6 +35,7 @@ export default component$((props: LiveShowEntryProps) => {
 
       <div class="font-body text-body text-lg italic">
         <span class="font-bold">{props.venue}</span>
+
         {props.cancelled ? (
           <>
             <span class="text-warn"> [CANCELLED]</span>
@@ -40,6 +44,16 @@ export default component$((props: LiveShowEntryProps) => {
           <></>
         )}
       </div>
+
+      {props.href && !props.cancelled && showDate > new Date() ? (
+        <>
+          <UnderlineLink href={props.href}>
+            <span class="text-dim">Link to event</span>{" "}
+          </UnderlineLink>
+        </>
+      ) : (
+        <></>
+      )}
     </>
   );
 });
