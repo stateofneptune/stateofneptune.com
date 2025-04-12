@@ -41,6 +41,7 @@ export default component$(() => {
       await delay(delayms);
     }
 
+    await delay(2000);
     pickupLineShown.value = true;
   });
 
@@ -72,11 +73,13 @@ export default component$(() => {
               <a
                 href="#announcements"
                 class={[
-                  "font-body transition-[opacity] delay-2000 duration-1000",
-                  pickupLineShown.value ? "opacity-100" : "opacity-0",
+                  "font-body flex flex-col gap-2 transition-[opacity] duration-1000",
+                  pickupLineShown.value
+                    ? "visible opacity-100"
+                    : "invisible opacity-0",
                 ]}
-                aria-label="See more below"
               >
+                Announcements
                 <FaIcon icon={faArrowDown}></FaIcon>
               </a>
             </div>
