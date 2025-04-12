@@ -24,7 +24,7 @@ export default component$(() => {
         >
           <NowIRememberMyFaceAgain
             q:slot="image"
-            class="w-[33rem]"
+            class="w-96"
             alt="Artwork of studio single Now I Remember My Face Again from State Of Neptune."
           />
 
