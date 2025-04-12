@@ -1,9 +1,10 @@
-import { Slot, component$ } from "@builder.io/qwik";
+import { ClassList, Slot, component$ } from "@builder.io/qwik";
 
 export type ParagraphProps = {
   align?: "left" | "center" | "justify";
   size?: "small" | "medium" | "large";
   responsive?: boolean;
+  class?: ClassList;
 };
 
 export default component$((props: ParagraphProps) => {
@@ -34,6 +35,7 @@ export default component$((props: ParagraphProps) => {
           "font-body whitespace-pre-line transition-[font]",
           sizeClass,
           textAlignClass,
+          props.class,
         ]}
       >
         <Slot />
