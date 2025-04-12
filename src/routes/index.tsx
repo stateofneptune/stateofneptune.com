@@ -16,6 +16,8 @@ export default component$(() => {
   const pickupLineText = "It's been a long time...";
 
   const pickupLine = useSignal("");
+  const pickupLineShown = useSignal(false);
+
   const delayms = 75;
 
   // eslint-disable-next-line qwik/no-use-visible-task
@@ -25,6 +27,8 @@ export default component$(() => {
 
       await delay(delayms);
     }
+
+    pickupLineShown.value = true;
   });
 
   return (
@@ -51,10 +55,14 @@ export default component$(() => {
               <span class="animate-[blink_1s_steps(2)_infinite]">|</span>
             </div>
 
-            <div class="mb-16 animate-bounce scroll-m-20 text-center md:text-xl lg:scroll-mt-36">
+            <div class="focus-within:text-dim hover:text-dim mb-16 scroll-m-20 text-center transition-all md:text-xl lg:scroll-mt-36">
               <a
-                href="#discography"
-                class="font-body focus-within:text-dim hover:text-dim transition-all"
+                href="#announcements"
+                class={[
+                  "font-body transition-[opacity] delay-2000 duration-1000",
+                  pickupLineShown.value ? "opacity-100" : "opacity-0",
+                ]}
+                aria-label="See more below"
               >
                 <FaIcon icon={faArrowDown}></FaIcon>
               </a>
