@@ -6,10 +6,13 @@ import StateOfNeptuneLogoHQ from "/public/images/logo/state-of-neptune-wht-inlin
 import NowIRememberMyFaceAgain from "/public/images/artworks/now-i-remember-my-face-again@720.webp?jsx";
 
 import Heading from "~/components/heading/heading";
-import FullDiscography from "~/components/full-discography/full-discography";
 
 import { FaIcon } from "qwik-fontawesome";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+
+import {
+  faArrowDown,
+  faArrowRightLong,
+} from "@fortawesome/free-solid-svg-icons";
 
 import Paragraph from "~/components/paragraph/paragraph";
 import Card from "~/components/card/card";
@@ -143,8 +146,14 @@ export default component$(() => {
         </article>
       </section>
 
-      <section class="my-12 flex justify-center px-12">
-        <FullDiscography />
+      <section class="mt-16 mb-12 flex justify-center px-12">
+        <UnderlineLink
+          class="flex flex-wrap items-center justify-center gap-2 text-lg"
+          href="/discography/"
+        >
+          See full discography
+          <FaIcon class="h-3 w-3 text-center" icon={faArrowRightLong}></FaIcon>
+        </UnderlineLink>
       </section>
     </>
   );
