@@ -47,6 +47,7 @@ export default component$(() => {
               class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
               href="https://open.spotify.com/album/0JJMR2ZEAAQo0OT3Eu8Ag4"
               aria-label="Listen to Now I Remember My Face Again on Spotify."
+              target="_blank"
             >
               <FaIcon icon={faSpotify}></FaIcon>
             </a>
@@ -55,6 +56,7 @@ export default component$(() => {
               class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
               href="https://stateofneptune.bandcamp.com/track/now-i-remember-my-face-again"
               aria-label="Listen to Now I Remember My Face Again on Bandcamp."
+              target="_blank"
             >
               <FaIcon icon={faBandcamp}></FaIcon>
             </a>
