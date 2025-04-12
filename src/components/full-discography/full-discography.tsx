@@ -30,7 +30,7 @@ export default component$(() => {
 
           <div
             q:slot="image-overlay"
-            class="bg-deep-bg/80 flex h-full w-full items-center justify-center opacity-0 transition-[opacity] group-focus-within:opacity-100 group-hover:opacity-100"
+            class="bg-deep-bg/75 flex h-full w-full items-center justify-center opacity-0 transition-[opacity_blur] group-focus-within:opacity-100 group-focus-within:backdrop-blur-xs group-hover:opacity-100 group-hover:backdrop-blur-xs"
           >
             <FaIcon class="text-5xl" icon={faBandcamp}></FaIcon>
           </div>
@@ -83,7 +83,7 @@ export default component$(() => {
 
           <div
             q:slot="image-overlay"
-            class="bg-deep-bg/80 flex h-full w-full items-center justify-center opacity-0 transition-[opacity] group-focus-within:opacity-100 group-hover:opacity-100"
+            class="bg-deep-bg/75 flex h-full w-full items-center justify-center opacity-0 transition-[opacity_blur] group-focus-within:opacity-100 group-focus-within:backdrop-blur-xs group-hover:opacity-100 group-hover:backdrop-blur-xs"
           >
             <FaIcon class="text-5xl" icon={faBandcamp}></FaIcon>
           </div>
@@ -138,7 +138,7 @@ export default component$(() => {
 
           <div
             q:slot="image-overlay"
-            class="bg-deep-bg/80 flex h-full w-full items-center justify-center opacity-0 transition-[opacity] group-focus-within:opacity-100 group-hover:opacity-100"
+            class="bg-deep-bg/75 flex h-full w-full items-center justify-center opacity-0 transition-[opacity_blur] group-focus-within:opacity-100 group-focus-within:backdrop-blur-xs group-hover:opacity-100 group-hover:backdrop-blur-xs"
           >
             <FaIcon class="text-5xl" icon={faBandcamp}></FaIcon>
           </div>
@@ -193,7 +193,7 @@ export default component$(() => {
 
           <div
             q:slot="image-overlay"
-            class="bg-deep-bg/80 flex h-full w-full items-center justify-center opacity-0 transition-[opacity] group-focus-within:opacity-100 group-hover:opacity-100"
+            class="bg-deep-bg/75 flex h-full w-full items-center justify-center opacity-0 transition-[opacity_blur] group-focus-within:opacity-100 group-focus-within:backdrop-blur-xs group-hover:opacity-100 group-hover:backdrop-blur-xs"
           >
             <FaIcon class="text-5xl" icon={faBandcamp}></FaIcon>
           </div>
