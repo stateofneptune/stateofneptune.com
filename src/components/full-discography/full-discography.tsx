@@ -30,7 +30,7 @@ export default component$(() => {
 
           <div
             q:slot="image-overlay"
-            class="bg-deep-bg/75 flex h-full w-full items-center justify-center opacity-0 transition-[opacity_blur] group-focus-within:opacity-100 group-focus-within:backdrop-blur-xs group-hover:opacity-100 group-hover:backdrop-blur-xs"
+            class="bg-deep-bg/85 flex h-full w-full items-center justify-center opacity-0 transition-[opacity_blur] group-focus-within:opacity-100 group-focus-within:backdrop-blur-[1px] group-hover:opacity-100 group-hover:backdrop-blur-[1px]"
           >
             <FaIcon class="text-5xl" icon={faBandcamp}></FaIcon>
           </div>
@@ -85,7 +85,7 @@ export default component$(() => {
 
           <div
             q:slot="image-overlay"
-            class="bg-deep-bg/75 flex h-full w-full items-center justify-center opacity-0 transition-[opacity_blur] group-focus-within:opacity-100 group-focus-within:backdrop-blur-xs group-hover:opacity-100 group-hover:backdrop-blur-xs"
+            class="bg-deep-bg/85 flex h-full w-full items-center justify-center opacity-0 transition-[opacity_blur] group-focus-within:opacity-100 group-focus-within:backdrop-blur-[1px] group-hover:opacity-100 group-hover:backdrop-blur-[1px]"
           >
             <FaIcon class="text-5xl" icon={faBandcamp}></FaIcon>
           </div>
@@ -140,7 +140,7 @@ export default component$(() => {
 
           <div
             q:slot="image-overlay"
-            class="bg-deep-bg/75 flex h-full w-full items-center justify-center opacity-0 transition-[opacity_blur] group-focus-within:opacity-100 group-focus-within:backdrop-blur-xs group-hover:opacity-100 group-hover:backdrop-blur-xs"
+            class="bg-deep-bg/85 flex h-full w-full items-center justify-center opacity-0 transition-[opacity_blur] group-focus-within:opacity-100 group-focus-within:backdrop-blur-[1px] group-hover:opacity-100 group-hover:backdrop-blur-[1px]"
           >
             <FaIcon class="text-5xl" icon={faBandcamp}></FaIcon>
           </div>
@@ -195,7 +195,7 @@ export default component$(() => {
 
           <div
             q:slot="image-overlay"
-            class="bg-deep-bg/75 flex h-full w-full items-center justify-center opacity-0 transition-[opacity_blur] group-focus-within:opacity-100 group-focus-within:backdrop-blur-xs group-hover:opacity-100 group-hover:backdrop-blur-xs"
+            class="bg-deep-bg/85 flex h-full w-full items-center justify-center opacity-0 transition-[opacity_blur] group-focus-within:opacity-100 group-focus-within:backdrop-blur-[1px] group-hover:opacity-100 group-hover:backdrop-blur-[1px]"
           >
             <FaIcon class="text-5xl" icon={faBandcamp}></FaIcon>
           </div>
