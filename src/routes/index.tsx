@@ -3,12 +3,22 @@ import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 import StateOfNeptuneLogoHQ from "/public/images/logo/state-of-neptune-wht-inline-hq.png?jsx";
+import NowIRememberMyFaceAgain from "/public/images/artworks/now-i-remember-my-face-again@720.webp?jsx";
 
 import Heading from "~/components/heading/heading";
 import FullDiscography from "~/components/full-discography/full-discography";
 
 import { FaIcon } from "qwik-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+
+import Paragraph from "~/components/paragraph/paragraph";
+import Card from "~/components/card/card";
+import UnderlineLink from "~/components/underline-link/underline-link";
+import {
+  faSpotify,
+  faBandcamp,
+  faItunesNote,
+} from "@fortawesome/free-brands-svg-icons";
 
 const delay = (time: number) => new Promise((res) => setTimeout(res, time));
 
@@ -71,8 +81,66 @@ export default component$(() => {
         </div>
       </section>
 
-      <section class="mt-12 flex justify-center">
-        <Heading id="discography">Discography</Heading>
+      <section class="mt-12 flex flex-col items-center justify-center gap-12 px-12">
+        <Heading id="announcements">Announcements</Heading>
+
+        <article class="flex flex-col items-center justify-center gap-4">
+          <div class="flex flex-col items-center justify-center">
+            <h3 class="font-body text-2xl lg:text-3xl">
+              Now I Remember My Face Again
+            </h3>
+
+            <Paragraph align="center" class="text-dim italic">
+              Out on all platforms
+            </Paragraph>
+          </div>
+
+          <Card
+            id="now-i-remember-my-face-again"
+            href="https://stateofneptune.bandcamp.com/track/now-i-remember-my-face-again"
+            external
+          >
+            <NowIRememberMyFaceAgain
+              q:slot="image"
+              class="w-[33rem]"
+              alt="Artwork of studio single Now I Remember My Face Again from State Of Neptune."
+            />
+
+            <span
+              q:slot="title"
+              class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
+            >
+              Now I Remember My Face Again
+            </span>
+
+            <div q:slot="subtitle" class="mt-2 flex justify-center gap-6">
+              <a
+                class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
+                href="https://open.spotify.com/album/0JJMR2ZEAAQo0OT3Eu8Ag4"
+                aria-label="Listen to Now I Remember My Face Again on Spotify."
+              >
+                <FaIcon icon={faSpotify}></FaIcon>
+              </a>
+
+              <a
+                class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
+                href="https://stateofneptune.bandcamp.com/track/now-i-remember-my-face-again"
+                aria-label="Listen to Now I Remember My Face Again on Bandcamp."
+              >
+                <FaIcon icon={faBandcamp}></FaIcon>
+              </a>
+
+              <a
+                class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
+                href="https://music.apple.com/it/album/now-i-remember-my-face-again-single/1772809150"
+                aria-label="Listen to Now I Remember My Face Again on Apple Music."
+                target="_blank"
+              >
+                <FaIcon icon={faItunesNote}></FaIcon>
+              </a>
+            </div>
+          </Card>
+        </article>
       </section>
 
       <section class="my-12 flex justify-center px-12">
