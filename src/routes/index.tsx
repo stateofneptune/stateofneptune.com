@@ -108,9 +108,16 @@ export default component$(() => {
           >
             <NowIRememberMyFaceAgain
               q:slot="image"
-              class="w-[33rem]"
+              class="w-[33rem] transition-transform group-focus-within:scale-105 group-hover:scale-105"
               alt="Artwork of studio single Now I Remember My Face Again from State Of Neptune."
             />
+
+            <div
+              q:slot="image-overlay"
+              class="bg-deep-bg/80 flex h-full w-full items-center justify-center opacity-0 transition-[opacity] group-focus-within:opacity-100 group-hover:opacity-100"
+            >
+              <FaIcon class="text-5xl" icon={faBandcamp}></FaIcon>
+            </div>
 
             <span
               q:slot="title"

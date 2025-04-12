@@ -17,13 +17,13 @@ export default component$((props: CardProps) => {
         id={props.id}
         class="flex flex-col content-center items-center justify-center gap-y-6"
       >
-        <figure>
+        <figure class="group relative overflow-hidden">
           {props.href ? (
-            <Link
-              class="font-body decoration-accent underline-offset-2 focus-within:underline hover:underline"
-              href={props.href}
-              external={props.external}
-            >
+            <Link href={props.href} external={props.external}>
+              <div class="absolute inset-0 z-10">
+                <Slot name="image-overlay" />
+              </div>
+
               <Slot name="image" />
             </Link>
           ) : (
