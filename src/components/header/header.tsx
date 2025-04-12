@@ -17,7 +17,7 @@ export default component$(() => {
 
   return (
     <>
-      <header class="bg-deep-bg sticky top-0 z-10 w-full p-4 transition-all md:flex md:flex-col md:justify-between md:gap-4">
+      <header class="bg-deep-bg sticky top-0 z-90 w-full p-4 transition-all md:flex md:flex-col md:justify-between md:gap-4">
         <div class="relative flex items-center justify-center">
           <div class="absolute right-0 md:hidden">
             <button
