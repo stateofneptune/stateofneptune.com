@@ -51,52 +51,48 @@ export default component$(() => {
       <section class="relative flex min-h-[90lvh] justify-center">
         <div
           class={[
-            "flex w-[130ch] flex-col justify-center gap-4 md:gap-8",
+            "flex w-[124ch] flex-col items-center justify-center gap-4 md:gap-8",
             "before:absolute before:inset-0 before:-z-10 before:h-full before:w-full",
             "before:bg-[linear-gradient(rgba(13,13,13,0.5),rgba(13,13,13,0.5)),url(/images/backgrounds/now-i-remember-my-face-again-full.webp)]",
             "before:bg-cover before:bg-center before:content-['']",
           ]}
         >
-          <div class="flex grow flex-col items-center justify-end">
-            <Link
-              class="focus-within:text-dim hover:text-dim text-body flex flex-col items-center justify-center gap-4 px-2 transition-[transform_color]"
-              href="/#now-i-remember-my-face-again"
-            >
-              <div class="font-title scale-y-[140%] text-center text-5xl uppercase md:text-6xl lg:text-8xl">
-                Now I Remember My Face Again
-              </div>
+          <Link
+            class="focus-within:text-dim hover:text-dim text-body flex flex-col items-center justify-center gap-4 px-2 transition-[transform_color]"
+            href="/#now-i-remember-my-face-again"
+          >
+            <div class="font-title scale-y-[140%] text-center text-5xl uppercase md:text-6xl lg:text-8xl">
+              Now I Remember My Face Again
+            </div>
 
-              <div class="font-body text-center text-2xl lg:text-3xl">
-                {pickupLine.value}
-                <span
-                  class={[
-                    pickupLineShown.value
-                      ? "animate-[blink_1s_steps(2)_infinite]"
-                      : "opacity-50",
-                  ]}
-                >
-                  |
-                </span>
-              </div>
-            </Link>
-          </div>
-
-          <div class="flex grow flex-col items-center justify-end">
-            <Link
-              class={[
-                "font-body text-body mb-16 flex scroll-m-20 justify-center gap-2 text-center transition-opacity duration-1000 md:text-xl lg:scroll-mt-36",
-                pickupLineShown.value
-                  ? "visible opacity-100"
-                  : "invisible opacity-0",
-              ]}
-              href="/#announcements"
-            >
-              <span class="focus-within:text-dim hover:text-dim flex flex-col items-center justify-center transition-colors">
-                Announcements
-                <FaIcon icon={faArrowDown}></FaIcon>
+            <div class="font-body text-center text-2xl lg:text-3xl">
+              {pickupLine.value}
+              <span
+                class={[
+                  pickupLineShown.value
+                    ? "animate-[blink_1s_steps(2)_infinite]"
+                    : "opacity-50",
+                ]}
+              >
+                |
               </span>
-            </Link>
-          </div>
+            </div>
+          </Link>
+
+          <Link
+            class={[
+              "font-body text-body absolute bottom-16 flex scroll-m-20 justify-center gap-2 text-center transition-opacity duration-1000 md:text-xl lg:scroll-mt-36",
+              pickupLineShown.value
+                ? "visible opacity-100"
+                : "invisible opacity-0",
+            ]}
+            href="/#announcements"
+          >
+            <span class="focus-within:text-dim hover:text-dim flex flex-col items-center justify-center transition-colors">
+              Announcements
+              <FaIcon icon={faArrowDown}></FaIcon>
+            </span>
+          </Link>
         </div>
       </section>
 
