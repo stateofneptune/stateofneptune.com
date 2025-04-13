@@ -18,7 +18,7 @@ export default component$(() => {
           <Paragraph>
             We are State Of Neptune, a trio from Sicily (Italy). We like dirty
             sounds, dirty kebab and delivering high-energy live performances.
-            Our music is a tribute to the island we were born in, we draw
+            Our music is a tribute to the island we were born in — we draw
             inspiration from punk, stoner, alternative and post-era territories
             of all kinds.
             <br />
@@ -34,7 +34,7 @@ export default component$(() => {
             <br />
             <br />
             We are currently working on our new studio project, among other
-            things, feel free to reach out to us!
+            things — feel free to reach out to us!
             <br />
             <br />
             Greetings from Frallo, Manfredi and Elia.
