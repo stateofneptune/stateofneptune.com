@@ -60,7 +60,7 @@ export default component$(() => {
             class="text-body group flex flex-col items-center justify-center gap-4 px-2"
             href="/#now-i-remember-my-face-again"
           >
-            <div class="font-title scale-y-[140%] text-center text-5xl tracking-tight uppercase transition-[text-shadow] group-focus-within:text-shadow-lg group-hover:text-shadow-lg md:text-6xl lg:text-7xl xl:text-9xl">
+            <div class="font-title scale-y-[140%] text-center text-5xl tracking-[-0.035em] uppercase transition-[text-shadow] group-focus-within:text-shadow-lg group-hover:text-shadow-lg md:text-6xl lg:text-7xl xl:text-9xl">
               Now I Remember My Face Again
             </div>
 
