@@ -51,7 +51,7 @@ export default component$(() => {
       <section class="relative flex min-h-[90lvh] justify-center">
         <div
           class={[
-            "flex w-[124ch] flex-col items-center justify-center gap-4 md:gap-8",
+            "flex w-[142ch] flex-col items-center justify-center gap-4 md:gap-8",
             "before:absolute before:inset-0 before:-z-10 before:h-full before:w-full",
             "before:bg-[linear-gradient(rgba(13,13,13,0.5),rgba(13,13,13,0.5)),url(/images/backgrounds/now-i-remember-my-face-again-full.webp)]",
             "before:bg-cover before:bg-center before:content-['']",
@@ -61,7 +61,7 @@ export default component$(() => {
             class="focus-within:text-dim hover:text-dim text-body flex flex-col items-center justify-center gap-4 px-2 transition-[transform_color]"
             href="/#now-i-remember-my-face-again"
           >
-            <div class="font-title scale-y-[140%] text-center text-5xl uppercase md:text-6xl lg:text-8xl">
+            <div class="font-title scale-y-[140%] text-center text-5xl tracking-tight uppercase md:text-6xl lg:text-7xl xl:text-9xl">
               Now I Remember My Face Again
             </div>
 
