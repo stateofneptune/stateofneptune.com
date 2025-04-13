@@ -69,7 +69,7 @@ export default component$(() => {
               <span class="animate-[blink_1s_steps(2)_infinite]">|</span>
             </div>
 
-            <div class="focus-within:text-dim hover:text-dim mb-16 scroll-m-20 text-center transition-all md:text-xl lg:scroll-mt-36">
+            <div class="focus-within:text-dim hover:text-dim text-body mb-16 flex scroll-m-20 justify-center text-center transition-all md:text-xl lg:scroll-mt-36">
               <a
                 href="#announcements"
                 class={[
