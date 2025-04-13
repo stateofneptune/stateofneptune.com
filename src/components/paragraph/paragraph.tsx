@@ -1,4 +1,5 @@
-import { ClassList, Slot, component$ } from "@builder.io/qwik";
+import type { ClassList} from "@builder.io/qwik";
+import { Slot, component$ } from "@builder.io/qwik";
 
 export type ParagraphProps = {
   align?: "left" | "center" | "justify";
