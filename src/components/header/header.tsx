@@ -31,7 +31,7 @@ export default component$(() => {
 
           <Link href="/">
             <StateOfNeptuneLogo
-              class="h-10 w-fit transition-all md:h-12 lg:h-14"
+              class="h-10 w-fit object-scale-down transition-all md:h-12 lg:h-14"
               alt="State Of Neptune logo."
             />
           </Link>
