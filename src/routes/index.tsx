@@ -107,7 +107,7 @@ export default component$(() => {
             </h3>
 
             <Paragraph align="center" class="text-dim italic">
-              Out on all platforms
+              Single out on all platforms
             </Paragraph>
           </div>
 
