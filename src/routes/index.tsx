@@ -79,20 +79,22 @@ export default component$(() => {
             </div>
           </Link>
 
-          <Link
+          <div
             class={[
               "font-body text-body absolute bottom-16 flex scroll-m-20 justify-center gap-2 text-center transition-opacity duration-1000 md:text-xl lg:scroll-mt-36",
               pickupLineShown.value
                 ? "visible opacity-100"
                 : "invisible opacity-0",
             ]}
-            href="/#announcements"
           >
-            <span class="focus-within:text-dim hover:text-dim flex flex-col items-center justify-center transition-colors">
+            <Link
+              class="focus-within:text-dim hover:text-dim flex flex-col items-center justify-center transition-colors"
+              href="/#announcements"
+            >
               Announcements
-              <FaIcon icon={faArrowDown}></FaIcon>
-            </span>
-          </Link>
+              <FaIcon class="h-3 w-3" icon={faArrowDown}></FaIcon>
+            </Link>
+          </div>
         </div>
       </section>
 
