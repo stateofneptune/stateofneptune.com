@@ -8,10 +8,7 @@ import Heading from "~/components/heading/heading";
 
 import { FaIcon } from "qwik-fontawesome";
 
-import {
-  faArrowDown,
-  faArrowRightLong,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import Card from "~/components/card/card";
 import Link from "~/components/link/link";
@@ -171,13 +168,13 @@ export default component$(() => {
         </article>
       </section>
 
-      <section class="mt-16 mb-12 flex justify-center px-12">
+      <section class="mt-6 mb-12 flex justify-center px-12">
         <UnderlineLink
-          class="flex flex-wrap items-center justify-center gap-2 text-lg"
+          class="text-dim flex flex-wrap items-center justify-center gap-1"
           href="/discography/"
         >
           See full discography
-          <FaIcon class="h-3 w-3 text-center" icon={faArrowRightLong}></FaIcon>
+          <FaIcon class="h-2 w-2 -rotate-45" icon={faArrowRight}></FaIcon>
         </UnderlineLink>
       </section>
     </>
