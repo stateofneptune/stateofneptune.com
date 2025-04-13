@@ -41,7 +41,6 @@ export default component$(() => {
       await delay(delayms);
     }
 
-    await delay(2000);
     pickupLineShown.value = true;
   });
 
@@ -64,9 +63,17 @@ export default component$(() => {
           </div>
 
           <div class="flex grow flex-col justify-between">
-            <div class="font-body mb-16 text-center text-2xl lg:text-4xl">
+            <div class="font-body text-body text-center text-2xl lg:text-4xl">
               {pickupLine.value}
-              <span class="animate-[blink_1s_steps(2)_infinite]">|</span>
+              <span
+                class={[
+                  pickupLineShown.value
+                    ? "animate-[blink_1s_steps(2)_infinite]"
+                    : "opacity-50",
+                ]}
+              >
+                |
+              </span>
             </div>
 
             <div class="focus-within:text-dim hover:text-dim text-body mb-16 flex scroll-m-20 justify-center text-center transition-all md:text-xl lg:scroll-mt-36">
