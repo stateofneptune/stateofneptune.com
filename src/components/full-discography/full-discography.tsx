@@ -28,13 +28,6 @@ export default component$(() => {
             alt="Artwork of studio single Now I Remember My Face Again from State Of Neptune."
           />
 
-          <div
-            q:slot="image-overlay"
-            class="bg-deep-bg/85 flex h-full w-full items-center justify-center opacity-0 transition-[opacity_blur] group-focus-within:opacity-100 group-focus-within:backdrop-blur-[1px] group-hover:opacity-100 group-hover:backdrop-blur-[1px]"
-          >
-            <FaIcon class="text-5xl" icon={faBandcamp}></FaIcon>
-          </div>
-
           <span
             q:slot="title"
             class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
@@ -82,13 +75,6 @@ export default component$(() => {
             class="w-96 transition-transform group-focus-within:scale-105 group-hover:scale-105"
             alt="Artwork of studio album Pulp Of Stones from State Of Neptune."
           />
-
-          <div
-            q:slot="image-overlay"
-            class="bg-deep-bg/85 flex h-full w-full items-center justify-center opacity-0 transition-[opacity_blur] group-focus-within:opacity-100 group-focus-within:backdrop-blur-[1px] group-hover:opacity-100 group-hover:backdrop-blur-[1px]"
-          >
-            <FaIcon class="text-5xl" icon={faBandcamp}></FaIcon>
-          </div>
 
           <span
             q:slot="title"
@@ -138,13 +124,6 @@ export default component$(() => {
             alt="Artwork of studio single Paradox from State Of Neptune."
           />
 
-          <div
-            q:slot="image-overlay"
-            class="bg-deep-bg/85 flex h-full w-full items-center justify-center opacity-0 transition-[opacity_blur] group-focus-within:opacity-100 group-focus-within:backdrop-blur-[1px] group-hover:opacity-100 group-hover:backdrop-blur-[1px]"
-          >
-            <FaIcon class="text-5xl" icon={faBandcamp}></FaIcon>
-          </div>
-
           <span
             q:slot="title"
             class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
@@ -192,13 +171,6 @@ export default component$(() => {
             class="w-96 transition-transform group-focus-within:scale-105 group-hover:scale-105"
             alt="Artwork of studio single Fury from State Of Neptune."
           />
-
-          <div
-            q:slot="image-overlay"
-            class="bg-deep-bg/85 flex h-full w-full items-center justify-center opacity-0 transition-[opacity_blur] group-focus-within:opacity-100 group-focus-within:backdrop-blur-[1px] group-hover:opacity-100 group-hover:backdrop-blur-[1px]"
-          >
-            <FaIcon class="text-5xl" icon={faBandcamp}></FaIcon>
-          </div>
 
           <span
             q:slot="title"
