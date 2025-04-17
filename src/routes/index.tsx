@@ -2,13 +2,18 @@ import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
 
 import type { DocumentHead } from "@builder.io/qwik-city";
 
+import PoolOfConsciousness from "/public/images/artworks/pool-of-consciousness@720.webp?jsx";
 import NowIRememberMyFaceAgain from "/public/images/artworks/now-i-remember-my-face-again@720.webp?jsx";
 
 import Heading from "~/components/heading/heading";
 
 import { FaIcon } from "qwik-fontawesome";
 
-import { faArrowDown, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowDown,
+  faArrowRight,
+  faBookmark,
+} from "@fortawesome/free-solid-svg-icons";
 
 import Card from "~/components/card/card";
 import Link from "~/components/link/link";
@@ -97,8 +102,46 @@ export default component$(() => {
         </div>
       </section>
 
-      <section class="mt-12 flex flex-col items-center justify-center gap-12 px-12">
+      <section class="mt-16 flex flex-col items-center justify-center gap-12 px-12">
         <Heading id="announcements">Announcements</Heading>
+
+        <article class="flex flex-col items-center justify-center gap-4">
+          <div class="flex flex-col items-center justify-center">
+            <h3 class="font-body text-2xl lg:text-3xl">
+              Pool Of Consciousness
+            </h3>
+
+            <Paragraph align="center" class="text-dim italic">
+              Single out on 26/04
+            </Paragraph>
+          </div>
+
+          <Card
+            id="pool-of-consciousness"
+            href="https://distrokid.com/hyperfollow/stateofneptune/pool-of-consciousness"
+            external
+          >
+            <PoolOfConsciousness
+              q:slot="image"
+              class="w-[33rem] transition-transform group-focus-within:scale-105 group-hover:scale-105"
+              alt="Artwork of studio single Pool Of Consciousness from State Of Neptune."
+            />
+
+            <div
+              q:slot="image-overlay"
+              class="bg-deep-bg/85 flex h-full w-full items-center justify-center opacity-0 transition-[opacity_blur] group-focus-within:opacity-100 group-focus-within:backdrop-blur-[1px] group-hover:opacity-100 group-hover:backdrop-blur-[1px]"
+            >
+              <FaIcon class="text-body text-5xl" icon={faBookmark}></FaIcon>
+            </div>
+
+            <span
+              q:slot="title"
+              class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
+            >
+              Pool Of Consciousness — Pre-Save
+            </span>
+          </Card>
+        </article>
 
         <article class="flex flex-col items-center justify-center gap-4">
           <div class="flex flex-col items-center justify-center">
