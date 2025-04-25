@@ -108,13 +108,13 @@ export default component$(() => {
             </h3>
 
             <Paragraph align="center" class="text-dim italic">
-              Single out on 26/04
+              Single out on all platforms
             </Paragraph>
           </div>
 
           <Card
             id="pool-of-consciousness"
-            href="https://distrokid.com/hyperfollow/stateofneptune/pool-of-consciousness"
+            href="https://open.spotify.com/album/5RPNlQuVJZEZHsjwNnHELt"
             external
           >
             <PoolOfConsciousness
@@ -127,8 +127,28 @@ export default component$(() => {
               q:slot="title"
               class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
             >
-              Pool Of Consciousness — Pre-Save
+              Pool Of Consciousness
             </span>
+
+            <div q:slot="subtitle" class="mt-2 flex justify-center gap-6">
+              <a
+                class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
+                href="https://open.spotify.com/album/5RPNlQuVJZEZHsjwNnHELt"
+                aria-label="Listen to Pool Of Consciousness on Spotify."
+                target="_blank"
+              >
+                <FaIcon icon={faSpotify}></FaIcon>
+              </a>
+
+              <a
+                class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
+                href="https://music.apple.com/it/album/pool-of-consciousness-single/1807884056"
+                aria-label="Listen to Pool Of Consciousness on Apple Music."
+                target="_blank"
+              >
+                <FaIcon icon={faItunesNote}></FaIcon>
+              </a>
+            </div>
           </Card>
         </article>
 
