@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 
+import PoolOfConsciousness from "/public/images/artworks/pool-of-consciousness@720.webp?jsx";
 import NowIRememberMyFaceAgain from "/public/images/artworks/now-i-remember-my-face-again@720.webp?jsx";
 import PulpOfStonesArtwork from "/public/images/artworks/pulp-of-stones@640.webp?jsx";
 import ParadoxArtwork from "/public/images/artworks/paradox@640.webp?jsx";
@@ -17,6 +18,45 @@ export default component$(() => {
   return (
     <>
       <div class="flex w-[60rem] flex-wrap justify-center gap-16">
+        <Card
+          id="pool-of-consciousness"
+          href="https://open.spotify.com/album/5RPNlQuVJZEZHsjwNnHELt"
+          external
+        >
+          <PoolOfConsciousness
+            q:slot="image"
+            class="w-96 transition-transform group-focus-within:scale-105 group-hover:scale-105"
+            alt="Artwork of studio single Pool Of Consciousness from State Of Neptune."
+          />
+
+          <span
+            q:slot="title"
+            class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
+          >
+            Pool Of Consciousness
+          </span>
+
+          <div q:slot="subtitle" class="mt-2 flex justify-center gap-6">
+            <a
+              class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
+              href="https://open.spotify.com/album/5RPNlQuVJZEZHsjwNnHELt"
+              aria-label="Listen to Pool Of Consciousness on Spotify."
+              target="_blank"
+            >
+              <FaIcon icon={faSpotify}></FaIcon>
+            </a>
+
+            <a
+              class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
+              href="https://music.apple.com/it/album/pool-of-consciousness-single/1807884056"
+              aria-label="Listen to Pool Of Consciousness on Apple Music."
+              target="_blank"
+            >
+              <FaIcon icon={faItunesNote}></FaIcon>
+            </a>
+          </div>
+        </Card>
+
         <Card
           id="now-i-remember-my-face-again"
           href="https://stateofneptune.bandcamp.com/track/now-i-remember-my-face-again"
