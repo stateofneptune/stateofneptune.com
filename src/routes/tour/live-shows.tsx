@@ -6,6 +6,13 @@ export const LIVE_SHOWS: LiveShow[] = [
   {
     country: "Italy",
     city: "Palermo",
+    host: "Cento Sociale Anomalia",
+    venue: "Cento Sociale Anomalia",
+    date: "2025-05-09",
+  },
+  {
+    country: "Italy",
+    city: "Palermo",
     host: "Mind House",
     venue: "Mind House",
     date: "2024-11-30",
