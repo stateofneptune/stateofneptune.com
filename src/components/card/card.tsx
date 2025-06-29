@@ -15,7 +15,7 @@ export default component$((props: CardProps) => {
     <>
       <div
         id={props.id}
-        class="flex flex-col content-center items-center justify-center gap-y-6"
+        class="flex scroll-mt-64 flex-col content-center items-center justify-center gap-y-6"
       >
         <figure class="group relative overflow-hidden">
           {props.href ? (
