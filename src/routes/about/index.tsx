@@ -28,9 +28,9 @@ export default component$(() => {
             years of noise-around-and-find-out in our hometown and its regional
             surroundings, building up a small, yet genuine following and
             acknowledgement in the DIY and underground scene. After some
-            polishing and fine-tuning, on October 11th 2024 we released the song
-            "Now I Remember My Face Again", introducing a new phase for the
-            band.
+            polishing and fine-tuning, on October 11th 2024 and April 26th 2025
+            we released two new singles: "Now I Remember My Face Again" and
+            "Pool Of Consciousness", introducing a new phase for the band.
             <br />
             <br />
             We are currently working on our new studio project, among other
