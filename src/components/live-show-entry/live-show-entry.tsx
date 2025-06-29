@@ -29,11 +29,11 @@ export default component$((props: LiveShowEntryProps) => {
 
   return (
     <>
-      <div class="font-body text-body">
+      <div class="font-body text-body text-sm md:text-base">
         {day} {month} {year} – {props.city}, {props.country}
       </div>
 
-      <div class="font-body text-body text-lg italic">
+      <div class="font-body text-body italic md:text-lg">
         <span class="font-bold">{props.venue}</span>
 
         {props.cancelled ? (

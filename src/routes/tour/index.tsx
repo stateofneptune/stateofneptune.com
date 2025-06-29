@@ -92,15 +92,17 @@ export default component$(() => {
                       </h3>
 
                       <ul class="flex flex-col gap-4">
-                        {group.shows.reduceRight(
-                          (acc: JSXOutput[], show) =>
-                            acc.concat(
-                              <li id={show.date} key={show.date}>
-                                <LiveShowEntry {...show} />
-                              </li>,
-                            ),
-                          [],
-                        )}
+                        <div class="grid grid-cols-2 gap-4">
+                          {group.shows.reduceRight(
+                            (acc: JSXOutput[], show) =>
+                              acc.concat(
+                                <li id={show.date} key={show.date}>
+                                  <LiveShowEntry {...show} />
+                                </li>,
+                              ),
+                            [],
+                          )}
+                        </div>
                       </ul>
                     </>,
                   ),
@@ -125,17 +127,19 @@ export default component$(() => {
                 </h3>
 
                 <ul class="flex flex-col gap-4">
-                  {group.shows.reduce(
-                    (acc: JSXOutput[], show) =>
-                      !show.cancelled
-                        ? acc.concat(
+                  <div class="grid grid-cols-2 gap-4">
+                    {group.shows.reduce(
+                      (acc: JSXOutput[], show) =>
+                        !show.cancelled
+                          ? acc.concat(
                             <li id={show.date} key={show.date}>
                               <LiveShowEntry {...show} />
                             </li>,
                           )
-                        : acc,
-                    [],
-                  )}
+                          : acc,
+                      [],
+                    )}
+                  </div>
                 </ul>
               </>
             ))}
