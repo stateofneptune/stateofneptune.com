@@ -8,6 +8,7 @@ import FuryArtwork from "/public/images/artworks/fury@640.webp?jsx";
 
 import Card from "~/components/card/card";
 import { FaIcon } from "qwik-fontawesome";
+
 import {
   faBandcamp,
   faItunesNote,

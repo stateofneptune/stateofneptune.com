@@ -29,8 +29,8 @@
     "qwik": "qwik"
   },
   "dependencies": {
-    "@builder.io/qwik": "^1.13.0",
-    "@builder.io/qwik-city": "^1.13.0",
+    "@builder.io/qwik": "^1.14.1",
+    "@builder.io/qwik-city": "^1.14.1",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/free-regular-svg-icons": "^6.7.2",
@@ -42,7 +42,7 @@
     "@typescript-eslint/eslint-plugin": "^7.16.1",
     "@typescript-eslint/parser": "^7.0.0",
     "eslint": "^8.57.0",
-    "eslint-plugin-qwik": "^1.13.0",
+    "eslint-plugin-qwik": "^1.14.0",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "qwik-fontawesome": "^0.2.0",
