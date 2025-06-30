@@ -4,7 +4,7 @@
 
 ---
 
-This is the repository for State Of Neptune's official website https://stateofneptune.com/
+Repository for State Of Neptune's official website https://www.stateofneptune.com/
 
 ## Setting up the project
 
