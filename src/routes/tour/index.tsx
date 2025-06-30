@@ -91,18 +91,16 @@ export default component$(() => {
                         {group.year}
                       </h3>
 
-                      <ul class="flex flex-col gap-4">
-                        <div class="grid grid-cols-2 gap-4">
-                          {group.shows.reduceRight(
-                            (acc: JSXOutput[], show) =>
-                              acc.concat(
-                                <li id={show.date} key={show.date}>
-                                  <LiveShowEntry {...show} />
-                                </li>,
-                              ),
-                            [],
-                          )}
-                        </div>
+                      <ul class="grid grid-cols-2 gap-4">
+                        {group.shows.reduceRight(
+                          (acc: JSXOutput[], show) =>
+                            acc.concat(
+                              <li id={show.date} key={show.date}>
+                                <LiveShowEntry {...show} />
+                              </li>,
+                            ),
+                          [],
+                        )}
                       </ul>
                     </>,
                   ),
@@ -126,20 +124,18 @@ export default component$(() => {
                   {group.year}
                 </h3>
 
-                <ul class="flex flex-col gap-4">
-                  <div class="grid grid-cols-2 gap-4">
-                    {group.shows.reduce(
-                      (acc: JSXOutput[], show) =>
-                        !show.cancelled
-                          ? acc.concat(
+                <ul class="grid grid-cols-2 gap-4">
+                  {group.shows.reduce(
+                    (acc: JSXOutput[], show) =>
+                      !show.cancelled
+                        ? acc.concat(
                             <li id={show.date} key={show.date}>
                               <LiveShowEntry {...show} />
                             </li>,
                           )
-                          : acc,
-                      [],
-                    )}
-                  </div>
+                        : acc,
+                    [],
+                  )}
                 </ul>
               </>
             ))}
