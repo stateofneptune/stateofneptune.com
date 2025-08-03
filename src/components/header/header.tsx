@@ -19,7 +19,7 @@ export default component$(() => {
     <>
       <header class="bg-deep-bg sticky top-0 z-90 w-full p-4 transition-all md:flex md:flex-col md:justify-between md:gap-4">
         <div class="relative flex items-center justify-center">
-          <div class="absolute right-0 md:hidden">
+          <div class="absolute right-0 flex justify-center md:hidden">
             <button
               aria-label="menu"
               class="text-body h-8 w-8 transition"
