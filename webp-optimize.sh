@@ -1,15 +1,16 @@
-PROGRAM="generate-background.sh"
+PROGRAM="web-optimize.sh"
 
 DEFAULT_QUALITY=70
 
 function usage {
   cat \
 <<-EOF
-Usage: $PROGRAM [OPTIONS] INPUT [OUT_BASENAME]
+Usage: $PROGRAM [OPTIONS] IMAGE
 
 OPTIONS
   -s, --scale        set output scale ratio in w:h format.
   -q, --quality      set output compression quality. Defaults to 70.
+  -o, --output       set output filename instead of /public/images/*.webp
   -h, --help         print this help message
 EOF
 }
@@ -25,7 +26,7 @@ function main {
     die "$PROGRAM: error - could not locate ffmpeg in PATH"
   fi
 
-  if ! options=$(getopt -o "hs:q:" -l "help,scale:,quality:" -- "$@"); then
+  if ! options=$(getopt -o "hs:q:o:" -l "help,scale:,quality:,output:" -- "$@"); then
     usage; die
   fi
 
@@ -45,6 +46,10 @@ function main {
         local quality="${2}"
         shift 2;;
 
+      -o|--output)
+        local output="${2}"
+        shift 2;;
+
       --)
         shift
         break;;
@@ -60,11 +65,6 @@ function main {
 
   local input_image="$1"
 
-  local strip_path="${input_image##*/}"
-  local strip_ext="${strip_path%.*}"
-
-  local basename="${2:-$strip_ext}"
-
   quality=${quality:-$DEFAULT_QUALITY}
 
   local ffmpeg_opts=("-i '$input_image'")
@@ -77,7 +77,14 @@ function main {
     ffmpeg_opts+=("-quality $quality")
   fi
 
-  local fullpath="$(dirname $0)/public/images/backgrounds/$basename.webp"
+  if [[ -n "$output" ]]; then
+    local fullpath="$output"
+  else
+    local strip_path="${input_image##*/}"
+    local strip_ext="${strip_path%.*}"
+
+    local fullpath="$(dirname $0)/public/images/${strip_ext}.webp"
+  fi
 
   ffmpeg_opts+=("-vcodec webp -y" "'$fullpath'")
 
