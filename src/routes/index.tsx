@@ -7,7 +7,7 @@ import {
   faSpotify,
 } from "@fortawesome/free-brands-svg-icons";
 
-import StateOfNeptuneGalleryImg from "/public/images/gallery/IMG_20241015_133847_523-crop.jpg?jsx";
+import StateOfNeptuneGalleryImg from "/public/images/gallery/IMG_20241015_133847_523.webp?jsx";
 import StateOfNeptuneLogo from "/public/images/logo/state-of-neptune-wht-inline-hq.png?jsx";
 import PulpOfStonesArtwork from "/public/images/artworks/pulp-of-stones@640.webp?jsx";
 
