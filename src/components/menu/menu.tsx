@@ -41,11 +41,7 @@ export default component$(() => {
         <nav>
           <ul>
             <li>
-              <MenuNavItem href="/about/">About</MenuNavItem>
-            </li>
-
-            <li>
-              <MenuNavItem href="/discography/">Discography</MenuNavItem>
+              <MenuNavItem href="/#discography">Discography</MenuNavItem>
             </li>
 
             <li>
@@ -54,6 +50,10 @@ export default component$(() => {
 
             <li>
               <MenuNavItem href="/tour/">Tour</MenuNavItem>
+            </li>
+
+            <li>
+              <MenuNavItem href="/privacy-policy/">Privacy Policy</MenuNavItem>
             </li>
 
             <li>
