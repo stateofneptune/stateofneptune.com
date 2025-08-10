@@ -4,7 +4,7 @@ import { Link } from "@builder.io/qwik-city";
 import { MenuContext } from "~/contexts/menu-context";
 import { MenuBurgerIcon } from "../icons/menu-burger";
 
-import StateOfNeptuneLogo from "/public/images/logo/state-of-neptune-wht-inline.png?jsx";
+import StateOfNeptuneLogo from "/public/images/logo/state-of-neptune-wht-inline-red.webp?jsx";
 import HeaderNavItem from "../header-nav-item/header-nav-item";
 
 export default component$(() => {

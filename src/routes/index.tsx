@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import StateOfNeptuneGalleryImg from "/public/images/gallery/IMG_20241015_133847_523.webp?jsx";
-import StateOfNeptuneLogo from "/public/images/logo/state-of-neptune-wht-inline-hq.png?jsx";
+import StateOfNeptuneLogo from "/public/images/logo/state-of-neptune-wht-inline-red.webp?jsx";
 import PulpOfStonesArtwork from "/public/images/artworks/pulp-of-stones@640.webp?jsx";
 
 import { FaIcon } from "qwik-fontawesome";
@@ -29,7 +29,7 @@ export default component$(() => {
             "before:bg-cover before:bg-center before:content-['']",
           ]}
         >
-          <StateOfNeptuneLogo />
+          <StateOfNeptuneLogo class="w-full p-6" />
 
           <div class="mb-8 flex flex-col justify-center gap-8 md:mb-16 md:flex-row md:gap-6">
             <StateOfNeptuneGalleryImg
