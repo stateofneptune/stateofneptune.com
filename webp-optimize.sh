@@ -65,9 +65,9 @@ function main {
 
   local input_image="$1"
 
-  quality=${quality:-$DEFAULT_QUALITY}
+  quality="${quality:-$DEFAULT_QUALITY}"
 
-  local ffmpeg_opts=("-i '$input_image'")
+  local ffmpeg_opts=("-i \"$input_image\"")
 
   if [[ -n "$scale" ]]; then
     ffmpeg_opts+=("-vf scale=${scale}")
@@ -86,7 +86,7 @@ function main {
     local fullpath="$(dirname $0)/public/images/${strip_ext}.webp"
   fi
 
-  ffmpeg_opts+=("-vcodec webp -y" "'$fullpath'")
+  ffmpeg_opts+=("-vcodec webp -y" "\"$fullpath\"")
 
   eval ffmpeg "${ffmpeg_opts[@]}" >/dev/null 2>&1 \
     && echo "Written $fullpath"
