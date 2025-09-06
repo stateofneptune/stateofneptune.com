@@ -1,4 +1,4 @@
-ARG NODE_VERSION="18.16"
+ARG NODE_VERSION="22"
 
 FROM node:${NODE_VERSION}-slim AS base
 
@@ -9,11 +9,11 @@ WORKDIR /build
 COPY package.json package.json
 COPY package-lock.json package-lock.json
 
-RUN --mount=type=cache,target=/var/cache/npm npm ci
+RUN npm ci
 
 COPY . .
 
-RUN --mount=type=cache,target=/var/cache/npm npm run build && npm prune --omit=dev
+RUN npm run build && npm prune --omit=dev
 
 
 FROM base AS release
@@ -22,6 +22,7 @@ USER node
 
 COPY --chown=node:node --from=builder /build/node_modules node_modules
 COPY --chown=node:node --from=builder /build/package.json package.json
+COPY --chown=node:node --from=builder /build/.wrangler .wrangler
 COPY --chown=node:node --from=builder /build/server server
 COPY --chown=node:node --from=builder /build/dist dist
 

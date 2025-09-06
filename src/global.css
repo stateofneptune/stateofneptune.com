@@ -4,21 +4,30 @@
 
 @font-face {
   font-family: "Astro";
-  src: url("/fonts/astro/astro.otf");
+  src:
+    url("/fonts/astro/astro.woff2") format("woff2"),
+    url("/fonts/astro/astro.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "Opinion Pro Extended";
-  src: url("/fonts/opinion-pro/opinion-pro-extended-light.otf");
+  font-family: "Opinion Pro Cn Lt";
+  src:
+    url("/fonts/opinion-pro/opinion-pro-condensed-light.woff2") format("woff2"),
+    url("/fonts/opinion-pro/opinion-pro-condensed-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "Opinion Pro Condensed";
-  src: url("/fonts/opinion-pro/opinion-pro-condensed-light.otf");
-}
-
-@keyframes blink {
-  0% {
-    color: transparent;
-  }
+  font-family: "Opinion Pro Ex Lt";
+  src:
+    url("/fonts/opinion-pro/opinion-pro-extended-light.woff2") format("woff2"),
+    url("/fonts/opinion-pro/opinion-pro-extended-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
