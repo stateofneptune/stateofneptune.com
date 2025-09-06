@@ -29,7 +29,7 @@ export default component$(() => {
             "before:bg-cover before:bg-center before:content-['']",
           ]}
         >
-          <StateOfNeptuneLogo />
+          <StateOfNeptuneLogo alt="State Of Neptune logo." />
 
           <div class="mb-8 flex flex-col justify-center gap-8 md:mb-16 md:flex-row md:gap-6">
             <StateOfNeptuneGalleryImg
@@ -80,6 +80,7 @@ export default component$(() => {
           <Card
             id="pulp-of-stones"
             href="https://stateofneptune.bandcamp.com/album/pulp-of-stones"
+            aria-label="Listen to Pulp Of Stones on Bandcamp."
             external
           >
             <PulpOfStonesArtwork
