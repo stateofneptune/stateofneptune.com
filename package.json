@@ -24,7 +24,7 @@
     "fmt.check": "prettier --check .",
     "lint": "eslint \"src/**/*.ts*\"",
     "preview": "qwik build preview && vite preview --open --host",
-    "serve": "wrangler pages dev ./dist --compatibility-flags=nodejs_als",
+    "serve": "wrangler pages dev ./dist --ip=0.0.0.0 --port=3000 --compatibility-flags=nodejs_als",
     "start": "vite --open --mode ssr",
     "qwik": "qwik"
   },
@@ -51,6 +51,6 @@
     "undici": "*",
     "vite": "^5.3.5",
     "vite-tsconfig-paths": "^4.2.1",
-    "wrangler": "^3.5.1"
+    "wrangler": "^4.34.0"
   }
 }
