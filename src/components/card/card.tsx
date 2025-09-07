@@ -38,7 +38,11 @@ export default component$((props: CardProps) => {
 
         <div class="flex flex-col items-center">
           {props.href && (
-            <Link href={props.href} external={props.external}>
+            <Link
+              href={props.href}
+              external={props.external}
+              aria-label={props["aria-label"]}
+            >
               <Slot name="title" />
             </Link>
           )}

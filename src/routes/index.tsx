@@ -89,9 +89,13 @@ export default component$(() => {
               alt="Artwork of studio album Pulp Of Stones from State Of Neptune."
             />
 
-            <div q:slot="subtitle" class="flex flex-col justify-center gap-2">
-              <span class="font-body md:text-lg">Listen to Pulp Of Stones</span>
+            <div q:slot="title" class="mb-2 flex flex-col justify-center">
+              <span class="font-body focus-within:text-accent hover:text-accent transition-all md:text-lg">
+                Listen to Pulp Of Stones
+              </span>
+            </div>
 
+            <div q:slot="subtitle" class="flex flex-col justify-center gap-2">
               <div class="flex justify-center gap-6">
                 <a
                   class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
