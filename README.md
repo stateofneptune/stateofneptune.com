@@ -85,4 +85,4 @@ Create a docker image and run a container using the command:
 docker compose up
 ```
 
-Then visit [http://localhost/](http://localhost/)
+Then visit [http://localhost/](http://localhost:8080/)

@@ -6,6 +6,7 @@ import Link from "~/components/link/link";
 export interface CardProps {
   id?: string;
   class?: ClassList;
+  "aria-label"?: string;
   href?: string;
   external?: boolean;
 }
@@ -19,7 +20,11 @@ export default component$((props: CardProps) => {
       >
         <figure class="group relative overflow-hidden">
           {props.href ? (
-            <Link href={props.href} external={props.external}>
+            <Link
+              href={props.href}
+              external={props.external}
+              aria-label={props["aria-label"]}
+            >
               <div class="absolute inset-0 z-10">
                 <Slot name="image-overlay" />
               </div>
@@ -33,7 +38,11 @@ export default component$((props: CardProps) => {
 
         <div class="flex flex-col items-center">
           {props.href && (
-            <Link href={props.href} external={props.external}>
+            <Link
+              href={props.href}
+              external={props.external}
+              aria-label={props["aria-label"]}
+            >
               <Slot name="title" />
             </Link>
           )}

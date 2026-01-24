@@ -5,11 +5,7 @@ import {
   useStore,
 } from "@builder.io/qwik";
 
-import {
-  QwikCityProvider,
-  RouterOutlet,
-  ServiceWorkerRegister,
-} from "@builder.io/qwik-city";
+import { QwikCityProvider, RouterOutlet } from "@builder.io/qwik-city";
 
 import type { MenuContextStore } from "./contexts/menu-context";
 import { MenuContext } from "./contexts/menu-context";
@@ -43,8 +39,6 @@ export default component$(() => {
         ]}
       >
         <RouterOutlet />
-
-        <ServiceWorkerRegister />
       </body>
     </QwikCityProvider>
   );
