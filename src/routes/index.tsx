@@ -9,13 +9,14 @@ import {
 
 import StateOfNeptuneGalleryImg from "/public/images/gallery/IMG_20241015_133847_523.webp?jsx";
 import StateOfNeptuneLogo from "/public/images/logo/state-of-neptune-wht-inline-hq.png?jsx";
-import PulpOfStonesArtwork from "/public/images/artworks/pulp-of-stones@640.webp?jsx";
 
 import { FaIcon } from "qwik-fontawesome";
 
 import Card from "~/components/card/card";
 import Heading from "~/components/heading/heading";
 import Paragraph from "~/components/paragraph/paragraph";
+
+import { RELEASES } from "./discography/releases";
 
 export default component$(() => {
   return (
@@ -68,65 +69,71 @@ export default component$(() => {
       <section class="mt-8 mb-8 flex flex-col items-center justify-center gap-8 px-12">
         <Heading id="discography">Discography</Heading>
 
-        <article class="flex flex-col items-center justify-center gap-4">
-          <div class="flex flex-col items-center justify-center">
-            <h3 class="font-body text-xl lg:text-2xl">Pulp Of Stones</h3>
+        {RELEASES.map((release) => (
+          <>
+            <article
+              key={release.id}
+              class="flex flex-col items-center justify-center gap-4"
+            >
+              <div class="flex flex-col items-center justify-center">
+                <h3 class="font-body text-xl lg:text-2xl">{release.title}</h3>
 
-            <Paragraph align="center" class="text-dim italic">
-              Album out on all platforms
-            </Paragraph>
-          </div>
-
-          <Card
-            id="pulp-of-stones"
-            href="https://stateofneptune.bandcamp.com/album/pulp-of-stones"
-            aria-label="Listen to Pulp Of Stones on Bandcamp."
-            external
-          >
-            <PulpOfStonesArtwork
-              q:slot="image"
-              class="w-[30rem] transition-transform group-focus-within:scale-105 group-hover:scale-105"
-              alt="Artwork of studio album Pulp Of Stones from State Of Neptune."
-            />
-
-            <div q:slot="title" class="mb-2 flex flex-col justify-center">
-              <span class="font-body focus-within:text-accent hover:text-accent transition-all md:text-lg">
-                Listen to Pulp Of Stones
-              </span>
-            </div>
-
-            <div q:slot="subtitle" class="flex flex-col justify-center gap-2">
-              <div class="flex justify-center gap-6">
-                <a
-                  class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
-                  href="https://open.spotify.com/intl-it/album/2UBy8Aw3gQkk3oRe8ytybE"
-                  aria-label="Listen to Pulp Of Stones on Spotify."
-                  target="_blank"
-                >
-                  <FaIcon icon={faSpotify}></FaIcon>
-                </a>
-
-                <a
-                  class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
-                  href="https://stateofneptune.bandcamp.com/album/pulp-of-stones"
-                  aria-label="Listen to Pulp Of Stones on Bandcamp."
-                  target="_blank"
-                >
-                  <FaIcon icon={faBandcamp}></FaIcon>
-                </a>
-
-                <a
-                  class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
-                  href="https://music.apple.com/it/album/pulp-of-stones/1626288912"
-                  aria-label="Listen to Pulp Of Stones on Apple Music."
-                  target="_blank"
-                >
-                  <FaIcon icon={faItunesNote}></FaIcon>
-                </a>
+                <Paragraph align="center" class="text-dim italic">
+                  {release.type === "single" ? "Single" : "Album"} out on all
+                  platforms
+                </Paragraph>
               </div>
-            </div>
-          </Card>
-        </article>
+
+              <Card
+                id={release.id}
+                href={release.href}
+                aria-label={release.label}
+                external
+              >
+                <div
+                  q:slot="image"
+                  class="w-[30rem] transition-transform group-focus-within:scale-105 group-hover:scale-105"
+                >
+                  {release.image}
+                </div>
+
+                <div q:slot="title" class="mb-2 flex flex-col justify-center">
+                  <span class="font-body focus-within:text-accent hover:text-accent transition-all md:text-lg">
+                    Listen to {release.title}
+                  </span>
+                </div>
+
+                <div
+                  q:slot="subtitle"
+                  class="flex flex-col justify-center gap-2"
+                >
+                  <div class="flex justify-center gap-6">
+                    {release.links.map((link) => (
+                      <>
+                        <a
+                          class="font-body focus-within:text-accent hover:text-accent text-lg transition-all"
+                          href={link.href}
+                          aria-label={link.href}
+                          target="_blank"
+                        >
+                          <FaIcon
+                            icon={
+                              link.type === "spotify"
+                                ? faSpotify
+                                : link.type === "bandcamp"
+                                  ? faBandcamp
+                                  : faItunesNote
+                            }
+                          ></FaIcon>
+                        </a>
+                      </>
+                    ))}
+                  </div>
+                </div>
+              </Card>
+            </article>
+          </>
+        ))}
       </section>
     </>
   );
