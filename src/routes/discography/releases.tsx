@@ -23,7 +23,10 @@ export const RELEASES: Release[] = [
   {
     id: "now-i-remember-my-face-again",
     image: (
-      <NowIRememberMyFaceAgainArtwork alt="Artwork of studio single Now I Remember My Face Again from State Of Neptune." />
+      <NowIRememberMyFaceAgainArtwork
+        class="w-[30rem]"
+        alt="Artwork of studio single Now I Remember My Face Again from State Of Neptune."
+      />
     ),
     href: "https://open.spotify.com/album/13cRIsGpfSPB3PM4TpTvfl",
     label: `Listen to Now I Remember My Face Again on Spotify.`,
@@ -46,7 +49,10 @@ export const RELEASES: Release[] = [
     id: "killersplinter",
     title: "Killersplinter",
     image: (
-      <KillersplinterArtwork alt="Artwork of studio single Killersplinter from State Of Neptune." />
+      <KillersplinterArtwork
+        class="w-[30rem]"
+        alt="Artwork of studio single Killersplinter from State Of Neptune."
+      />
     ),
     href: "https://open.spotify.com/album/2OMOeiW7O5v4ikLeWABxWs",
     label: "Listen to Killersplinter on Spotify.",
@@ -69,7 +75,10 @@ export const RELEASES: Release[] = [
     title: "Pulp Of Stones",
     type: "album",
     image: (
-      <PulpOfStonesArtwork alt="Artwork of studio album Pulp Of Stones from State Of Neptune." />
+      <PulpOfStonesArtwork
+        class="w-[30rem]"
+        alt="Artwork of studio album Pulp Of Stones from State Of Neptune."
+      />
     ),
     href: "https://open.spotify.com/intl-it/album/2UBy8Aw3gQkk3oRe8ytybE",
     label: "Listen to Killersplinter on Spotify.",
