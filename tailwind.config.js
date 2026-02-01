@@ -5,8 +5,8 @@ export default {
     extend: {
       fontFamily: {
         title: ["Astro", "sans-serif"],
-        subtitle: ["Opinion Pro Extended", "sans-serif"],
-        body: ["Opinion Pro Condensed", "sans"],
+        subtitle: ["Opinion Pro Ex Lt", "sans-serif"],
+        body: ["Opinion Pro Cn Lt", "sans"],
       },
       colors: {
         "deep-bg": "#111111",
