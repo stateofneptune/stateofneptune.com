@@ -92,7 +92,7 @@ export default component$(() => {
               >
                 <div
                   q:slot="image"
-                  class="w-[30rem] transition-transform group-focus-within:scale-105 group-hover:scale-105"
+                  class="transition-transform group-focus-within:scale-105 group-hover:scale-105"
                 >
                   {release.image}
                 </div>
