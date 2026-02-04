@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
-import Heading from "~/components/heading/heading";
+import H2 from "~/components/heading/h2";
 import Paragraph from "~/components/paragraph/paragraph";
 import Title from "~/components/title/title";
 import UnderlineLink from "~/components/underline-link/underline-link";
@@ -18,7 +18,7 @@ export default component$(() => {
             you visit and browse our website and social media channels.
           </Paragraph>
 
-          <Heading id="policy">We don't collect any personal data</Heading>
+          <H2 id="policy">We don't collect any personal data</H2>
 
           <Paragraph>
             This website (
@@ -44,9 +44,9 @@ export default component$(() => {
             </li>
           </ul>
 
-          <Heading id="disclosure">
+          <H2 id="disclosure">
             We don't disclose or sell your contact information
-          </Heading>
+          </H2>
 
           <Paragraph>
             When you contact us via e-mail, we'll use your contact information
@@ -54,9 +54,9 @@ export default component$(() => {
             anyone else.
           </Paragraph>
 
-          <Heading id="third-party">
+          <H2 id="third-party">
             Third-party cookies, data processing and retention
-          </Heading>
+          </H2>
 
           <Paragraph>
             We selected Cloudflare Pages as our host service. In order to
@@ -67,7 +67,7 @@ export default component$(() => {
             technical problems and defending against attacks.
           </Paragraph>
 
-          <Heading id="changes">Changes and revisions</Heading>
+          <H2 id="changes">Changes and revisions</H2>
 
           <Paragraph>
             We may update this Policy in the future. We will track such changes

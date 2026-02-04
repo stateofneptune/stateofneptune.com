@@ -3,8 +3,9 @@ import type { JSXOutput } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 import Title from "~/components/title/title";
+import H3 from "~/components/heading/h3";
+import H2 from "~/components/heading/h2";
 import Paragraph from "~/components/paragraph/paragraph";
-import Heading from "~/components/heading/heading";
 import LiveShowEntry from "~/components/live-show-entry/live-show-entry";
 
 import type { LiveShow } from "./live-shows";
@@ -71,8 +72,8 @@ export default component$(() => {
 
       <section class="my-12 px-6">
         <section class="flex w-full justify-center">
-          <div class="flex w-[60ch] flex-col gap-8">
-            <Heading id="upcoming">Upcoming shows</Heading>
+          <div class="flex w-[70ch] flex-col gap-8">
+            <H2 id="upcoming">Upcoming shows</H2>
 
             {shows.upcoming.length === 0 ? (
               <Paragraph>
@@ -83,13 +84,9 @@ export default component$(() => {
                 (upcomingShows: JSXOutput[], group, id) =>
                   upcomingShows.concat(
                     <>
-                      <h3
-                        id={group.year.toString()}
-                        key={id}
-                        class="font-body text-xl"
-                      >
+                      <H3 id={"upcoming_" + group.year.toString()} key={id}>
                         {group.year}
-                      </h3>
+                      </H3>
 
                       <ul class="grid grid-cols-2 gap-4">
                         {group.shows.reduceRight(
@@ -111,18 +108,14 @@ export default component$(() => {
         </section>
 
         <section class="flex w-full justify-center">
-          <div class="border-light-bg mt-12 flex w-[60ch] flex-col gap-8 border-t pt-12">
-            <Heading id="past">Past shows</Heading>
+          <div class="border-light-bg mt-12 flex w-[70ch] flex-col gap-8 border-t pt-12">
+            <H2 id="past">Past shows</H2>
 
             {shows.past.map((group, id) => (
               <>
-                <h3
-                  id={group.year.toString()}
-                  key={id}
-                  class="font-body text-xl"
-                >
+                <H3 id={"past_" + group.year.toString()} key={id}>
                   {group.year}
-                </h3>
+                </H3>
 
                 <ul class="grid grid-cols-2 gap-4">
                   {group.shows.reduce(

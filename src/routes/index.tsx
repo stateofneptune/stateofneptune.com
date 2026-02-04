@@ -12,8 +12,8 @@ import StateOfNeptuneLogo from "/public/images/logo/state-of-neptune-wht-inline-
 
 import { FaIcon } from "qwik-fontawesome";
 
+import H2 from "~/components/heading/h2";
 import Card from "~/components/card/card";
-import Heading from "~/components/heading/heading";
 import Paragraph from "~/components/paragraph/paragraph";
 
 import { RELEASES } from "./discography/releases";
@@ -67,7 +67,7 @@ export default component$(() => {
       </section>
 
       <section class="mt-8 mb-8 flex flex-col items-center justify-center gap-8 px-12">
-        <Heading id="discography">Discography</Heading>
+        <H2 id="discography">Discography</H2>
 
         {RELEASES.map((release) => (
           <>
