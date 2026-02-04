@@ -53,6 +53,15 @@ export default component$(() => {
 
             <li>
               <HeaderNavItem
+                href="https://stateofneptune.bandcamp.com/merch/"
+                external
+              >
+                Merch
+              </HeaderNavItem>
+            </li>
+
+            <li>
+              <HeaderNavItem
                 href="https://bandcamp.com/contact?b=1895537099&n=State%20Of%20Neptune"
                 external
               >

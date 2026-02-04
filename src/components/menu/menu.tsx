@@ -53,6 +53,15 @@ export default component$(() => {
             </li>
 
             <li>
+              <MenuNavItem
+                href="https://stateofneptune.bandcamp.com/merch/"
+                external
+              >
+                Merch
+              </MenuNavItem>
+            </li>
+
+            <li>
               <MenuNavItem href="/privacy-policy/">Privacy Policy</MenuNavItem>
             </li>
 
