@@ -7,6 +7,7 @@ export type LiveShowEntryProps = {
   city?: string;
   host?: string;
   venue: string;
+  with?: string[];
   date: string;
   cancelled?: boolean;
   href?: string;
@@ -29,11 +30,7 @@ export default component$((props: LiveShowEntryProps) => {
 
   return (
     <>
-      <div class="font-body text-body text-sm md:text-base">
-        {day} {month} {year} – {props.city}, {props.country}
-      </div>
-
-      <div class="font-body text-body italic md:text-lg">
+      <div class="font-body text-body text-lg italic md:text-xl">
         <span class="font-bold">{props.venue}</span>
 
         {props.cancelled ? (
@@ -44,6 +41,18 @@ export default component$((props: LiveShowEntryProps) => {
           <></>
         )}
       </div>
+
+      <div class="font-body text-body text-sm md:text-base">
+        {day} {month} {year} – {props.city}, {props.country}
+      </div>
+
+      {props.with && props.with.length > 0 ? (
+        <div class="font-body text-dim text-sm md:text-base">
+          with: {props.with.join(", ")}
+        </div>
+      ) : (
+        <></>
+      )}
 
       {props.href && !props.cancelled && showDate > new Date() ? (
         <>
