@@ -141,8 +141,10 @@ export default component$(() => {
           </ul>
         </nav>
 
-        <div class="text-dim flex items-center justify-center text-center text-sm transition-[font-size] md:text-base">
+        <div class="text-dim flex flex-col items-center justify-center text-center text-sm transition-[font-size] md:text-base">
           <p>© 2023 State Of Neptune – All Rights Reserved</p>
+
+          <p>A&R Marcello Venditti</p>
         </div>
 
         <div class="flex items-center justify-center text-center">
