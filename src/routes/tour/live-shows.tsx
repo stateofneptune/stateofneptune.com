@@ -6,8 +6,17 @@ export const LIVE_SHOWS: LiveShow[] = [
   {
     country: "Italy",
     city: "Palermo",
+    host: "E.P.Y.C.",
+    venue: "Malotempo x E.P.Y.C.",
+    with: ["Mother Giraffe", "Your Noisy Neighbors"],
+    date: "2025-11-08",
+  },
+  {
+    country: "Italy",
+    city: "Palermo",
     host: "Centro Sociale Anomalia",
     venue: "Centro Sociale Anomalia",
+    with: ["Descuncumiddatus", "others"],
     date: "2025-05-09",
   },
   {
@@ -15,6 +24,7 @@ export const LIVE_SHOWS: LiveShow[] = [
     city: "Palermo",
     host: "Mind House",
     venue: "Mind House",
+    with: ["Rhino", "Space Travel", "others"],
     date: "2024-11-30",
   },
   {
@@ -22,6 +32,7 @@ export const LIVE_SHOWS: LiveShow[] = [
     city: "Bologna",
     host: "Freakout Club",
     venue: "Freakout Club",
+    with: ["Nadsat", "Grufus"],
     date: "2024-10-13",
   },
   {
@@ -29,6 +40,7 @@ export const LIVE_SHOWS: LiveShow[] = [
     city: "Palermo",
     host: "ExKarcere",
     venue: "Malotempo Fest Ed. I",
+    with: ["Stormo", "Komarov Magnificent Backflip", "Nadsat", "others"],
     date: "2024-07-19",
   },
   {
@@ -36,6 +48,7 @@ export const LIVE_SHOWS: LiveShow[] = [
     city: "Catania",
     host: "Palestra L.U.Po.",
     venue: "Necrosis Fest Ed. II",
+    with: ["Descuncumiddatus", "Sumptus", "Nihil"],
     date: "2024-05-11",
   },
   {
@@ -43,21 +56,15 @@ export const LIVE_SHOWS: LiveShow[] = [
     city: "Palermo",
     host: "ExKarcere",
     venue: "ExKarcere",
+    with: ["Not Another Prayer"],
     date: "2024-05-03",
-  },
-  {
-    country: "Italy",
-    city: "Palermo",
-    host: "ExKarcere",
-    venue: "ExKarcere",
-    date: "2024-04-26",
-    cancelled: true,
   },
   {
     country: "Italy",
     city: "Torretta",
     host: "Torrettacore",
     venue: "Torrettacore",
+    with: ["Mostardacida", "Mosquitos Like Helicopters", "others"],
     date: "2024-04-01",
   },
   {
@@ -79,6 +86,7 @@ export const LIVE_SHOWS: LiveShow[] = [
     city: "Palermo",
     host: "Centro sociale Anomalia",
     venue: "Centro sociale Anomalia",
+    with: ["Consumer", "Nadsat"],
     date: "2024-02-16",
   },
   {
@@ -86,6 +94,7 @@ export const LIVE_SHOWS: LiveShow[] = [
     city: "Palermo",
     host: "Alibi",
     venue: "Alibi",
+    with: ["Grymalin", "Descuncumiddatus"],
     date: "2023-12-09",
   },
   {
@@ -100,6 +109,7 @@ export const LIVE_SHOWS: LiveShow[] = [
     city: "Palermo",
     host: "ExKarcere",
     venue: "Punk Festival",
+    with: ["Mostardacida", "others"],
     date: "2023-10-06",
   },
   {
@@ -107,6 +117,7 @@ export const LIVE_SHOWS: LiveShow[] = [
     city: "Catania",
     host: "Palestra L.U.Po.",
     venue: "Palestra L.U.Po.",
+    with: ["Carcano", "Mother Giraffe", "Gigantik"],
     date: "2023-09-30",
   },
   {
@@ -114,6 +125,7 @@ export const LIVE_SHOWS: LiveShow[] = [
     city: "Palermo",
     host: "ExKarcere",
     venue: "ExMusik Fest Ed. II",
+    with: ["Luglio 1984", "Not Another Prayer"],
     date: "2023-07-30",
   },
   {
@@ -121,6 +133,7 @@ export const LIVE_SHOWS: LiveShow[] = [
     city: "Palermo",
     host: "ExKarcere",
     venue: "ExKarcere",
+    with: ["Smokeden"],
     date: "2023-04-28",
   },
   {
@@ -128,6 +141,7 @@ export const LIVE_SHOWS: LiveShow[] = [
     city: "Palermo",
     host: "ExKarcere",
     venue: "ExKarcere",
+    with: ["Luglio 1984"],
     date: "2023-03-10",
   },
   {
@@ -135,6 +149,7 @@ export const LIVE_SHOWS: LiveShow[] = [
     city: "Palermo",
     host: "UniPA",
     venue: "UniPA",
+    with: ["Mostardacida", "others"],
     date: "2023-03-09",
   },
   {
@@ -142,6 +157,7 @@ export const LIVE_SHOWS: LiveShow[] = [
     city: "Palermo",
     host: "Nuove Officine Zisa",
     venue: "Nuove Officine Zisa",
+    with: ["Nurturance"],
     date: "2023-01-05",
   },
   {
