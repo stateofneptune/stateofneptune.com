@@ -88,7 +88,7 @@ export default component$(() => {
                         {group.year}
                       </H3>
 
-                      <ul class="grid grid-cols-2 gap-4">
+                      <ul class="grid grid-cols-2 gap-6">
                         {group.shows.reduceRight(
                           (acc: JSXOutput[], show) =>
                             acc.concat(
@@ -117,7 +117,7 @@ export default component$(() => {
                   {group.year}
                 </H3>
 
-                <ul class="grid grid-cols-2 gap-4">
+                <ul class="grid grid-cols-2 gap-6">
                   {group.shows.reduce(
                     (acc: JSXOutput[], show) =>
                       !show.cancelled
