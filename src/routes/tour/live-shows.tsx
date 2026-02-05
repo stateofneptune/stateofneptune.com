@@ -21,6 +21,22 @@ export const LIVE_SHOWS: LiveShow[] = [
   },
   {
     country: "Italy",
+    city: "Cinisi",
+    host: "Bunkerino",
+    venue: "Bunkerino",
+    with: ["others"],
+    date: "2025-11-02",
+  },
+  {
+    country: "Italy",
+    city: "Cinisi",
+    host: "Pool F*cking Party",
+    venue: "Pool F*cking Party",
+    with: ["Mostardacida", "Descuncumiddatus", "Negative Path", "others"],
+    date: "2025-08-30",
+  },
+  {
+    country: "Italy",
     city: "Palermo",
     host: "Centro Sociale Anomalia",
     venue: "Centro Sociale Anomalia",
