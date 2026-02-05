@@ -1,5 +1,6 @@
 import type { JSXOutput } from "@builder.io/qwik";
 
+import AGamblerSDemiseArtwork from "/public/images/artworks/a-gamblers-demise.jpg?jsx";
 import NowIRememberMyFaceAgainArtwork from "/public/images/artworks/now-i-remember-my-face-again.jpg?jsx";
 import KillersplinterArtwork from "/public/images/artworks/killersplinter.png?jsx";
 import PulpOfStonesArtwork from "/public/images/artworks/pulp-of-stones.jpg?jsx";
@@ -16,10 +17,39 @@ export type Release = {
     label: string;
     type: "bandcamp" | "spotify" | "apple-music";
   }[];
-  publishDate?: Date;
 };
 
 export const RELEASES: Release[] = [
+  {
+    id: "a-gamblers-demise",
+    image: (
+      <AGamblerSDemiseArtwork
+        class="w-[30rem]"
+        alt="Artwork of studio album A Gambler's Demise from State Of Neptune."
+      />
+    ),
+    href: "https://ffm.to/agamblersdemise",
+    label: `Listen to A Gambler's Demise on Spotify.`,
+    title: "A Gambler's Demise",
+    type: "album",
+    links: [
+      {
+        href: "https://open.spotify.com/album/13cRIsGpfSPB3PM4TpTvfl",
+        label: `Listen to A Gambler's Demise on Spotify.`,
+        type: "spotify",
+      },
+      {
+        href: "https://stateofneptune.bandcamp.com/album/a-gamblers-demise",
+        label: `Listen to A Gambler's Demise on Bandcamp.`,
+        type: "bandcamp",
+      },
+      {
+        href: "https://music.apple.com/pl/album/now-i-remember-my-face-again-single/1857928875",
+        label: `Listen to A Gambler's Demise on Apple Music.`,
+        type: "apple-music",
+      },
+    ],
+  },
   {
     id: "now-i-remember-my-face-again",
     image: (
