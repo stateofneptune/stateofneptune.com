@@ -1,9 +1,9 @@
 import type { JSXOutput } from "@builder.io/qwik";
 
-import AGamblerSDemiseArtwork from "/public/images/artworks/a-gamblers-demise.jpg?w=640&h=640&quality=100&jsx";
-import NowIRememberMyFaceAgainArtwork from "/public/images/artworks/now-i-remember-my-face-again.jpg?w=640&h=640&quality=100&jsx";
-import KillersplinterArtwork from "/public/images/artworks/killersplinter.png?w=640&h=640&quality=100&jsx";
-import PulpOfStonesArtwork from "/public/images/artworks/pulp-of-stones.jpg?w=640&h=640&quality=100&jsx";
+import AGamblerSDemiseArtwork from "/public/images/artworks/a-gamblers-demise.jpg?w=960&h=960&quality=95&jsx";
+import NowIRememberMyFaceAgainArtwork from "/public/images/artworks/now-i-remember-my-face-again.jpg?w=960&h=960&quality=95&jsx";
+import KillersplinterArtwork from "/public/images/artworks/killersplinter.png?w=960&h=960&quality=95&jsx";
+import PulpOfStonesArtwork from "/public/images/artworks/pulp-of-stones.jpg?w=960&h=960&quality=95&jsx";
 
 export type Release = {
   id: string;
