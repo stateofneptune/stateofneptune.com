@@ -28,13 +28,13 @@ export const RELEASES: Release[] = [
         alt="Artwork of studio album A Gambler's Demise from State Of Neptune."
       />
     ),
-    href: "https://ffm.to/agamblersdemise",
+    href: "https://open.spotify.com/album/5ipZUX128nwJu9Kkc6EBw9?si=zN4MOJxPR4a2AgEX8OL7tA",
     label: `Listen to A Gambler's Demise on Spotify.`,
     title: "A Gambler's Demise",
     type: "album",
     links: [
       {
-        href: "https://open.spotify.com/album/13cRIsGpfSPB3PM4TpTvfl",
+        href: "https://open.spotify.com/album/5ipZUX128nwJu9Kkc6EBw9?si=zN4MOJxPR4a2AgEX8OL7tA",
         label: `Listen to A Gambler's Demise on Spotify.`,
         type: "spotify",
       },
@@ -44,7 +44,7 @@ export const RELEASES: Release[] = [
         type: "bandcamp",
       },
       {
-        href: "https://music.apple.com/pl/album/now-i-remember-my-face-again-single/1857928875",
+        href: "https://music.apple.com/pl/album/a-gamblers-demise/1872290788",
         label: `Listen to A Gambler's Demise on Apple Music.`,
         type: "apple-music",
       },
