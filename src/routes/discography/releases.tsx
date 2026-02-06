@@ -111,7 +111,7 @@ export const RELEASES: Release[] = [
       />
     ),
     href: "https://open.spotify.com/intl-it/album/2UBy8Aw3gQkk3oRe8ytybE",
-    label: "Listen to Killersplinter on Spotify.",
+    label: "Listen to Pulp Of Stones on Spotify.",
     links: [
       {
         href: "https://open.spotify.com/intl-it/album/2UBy8Aw3gQkk3oRe8ytybE",
