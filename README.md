@@ -40,7 +40,7 @@ Cloudflare's [wrangler](https://github.com/cloudflare/wrangler) CLI can be used 
 npm run serve
 ```
 
-Then visit [http://localhost:8787/](http://localhost:8787/)
+Then visit [http://localhost:3000/](http://localhost:3000/)
 
 ### Deployments
 
@@ -85,4 +85,4 @@ Create a docker image and run a container using the command:
 docker compose up
 ```
 
-Then visit [http://localhost/](http://localhost:8080/)
+Then visit [http://localhost:3000/](http://localhost:3000/)
