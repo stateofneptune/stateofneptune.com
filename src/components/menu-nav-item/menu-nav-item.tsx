@@ -1,6 +1,8 @@
 import { Slot, component$ } from "@builder.io/qwik";
 import type { LinkProps } from "@builder.io/qwik-city";
 import { Link } from "@builder.io/qwik-city";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { FaIcon } from "qwik-fontawesome";
 
 export interface MenuNavItemProps {
   href: string;
@@ -18,7 +20,8 @@ export default component$((props: MenuNavItemProps) => {
           onClick$={props.onClick$}
           target="_blank"
         >
-          <Slot />
+          <Slot />{" "}
+          <FaIcon class="fill-body w-2 rotate-45" icon={faArrowUp}></FaIcon>
         </a>
       ) : (
         <Link

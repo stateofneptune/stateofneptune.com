@@ -1,5 +1,7 @@
 import { Slot, component$ } from "@builder.io/qwik";
 import { Link, useLocation } from "@builder.io/qwik-city";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { FaIcon } from "qwik-fontawesome";
 
 export interface HeaderNavItemProps {
   href: string;
@@ -20,7 +22,8 @@ export default component$((props: HeaderNavItemProps) => {
           ]}
           target="_blank"
         >
-          <Slot />
+          <Slot />{" "}
+          <FaIcon class="fill-body w-2 rotate-45" icon={faArrowUp}></FaIcon>
         </a>
       ) : (
         <Link
