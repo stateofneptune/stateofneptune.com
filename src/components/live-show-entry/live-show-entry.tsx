@@ -16,16 +16,8 @@ export type LiveShowEntryProps = {
 export default component$((props: LiveShowEntryProps) => {
   const showDate = new Date(props.date);
 
-  const year = new Intl.DateTimeFormat("en", {
-    year: "numeric",
-  }).format(showDate);
-
-  const month = new Intl.DateTimeFormat("en", {
-    month: "short",
-  }).format(showDate);
-
-  const day = new Intl.DateTimeFormat("en", {
-    day: "2-digit",
+  const showDateDisplay = new Intl.DateTimeFormat("en", {
+    dateStyle: "medium",
   }).format(showDate);
 
   return (
@@ -43,7 +35,7 @@ export default component$((props: LiveShowEntryProps) => {
       </div>
 
       <div class="font-body text-body text-sm md:text-base">
-        {day} {month} {year} – {props.city}, {props.country}
+        {showDateDisplay} – {props.city}, {props.country}
       </div>
 
       {props.with && props.with.length > 0 ? (
@@ -56,8 +48,8 @@ export default component$((props: LiveShowEntryProps) => {
 
       {props.href && !props.cancelled && showDate > new Date() ? (
         <>
-          <UnderlineLink href={props.href}>
-            <span class="text-dim">Link to event</span>{" "}
+          <UnderlineLink class="text-dim" href={props.href} external>
+            Link to event
           </UnderlineLink>
         </>
       ) : (
