@@ -72,7 +72,7 @@ export default component$(() => {
 
       <section class="my-12 px-6">
         <section class="flex w-full justify-center">
-          <div class="flex w-[70ch] flex-col gap-8">
+          <div class="flex w-[60ch] flex-col gap-8">
             <H2 id="upcoming">Upcoming shows</H2>
 
             {shows.upcoming.length === 0 ? (
@@ -88,11 +88,15 @@ export default component$(() => {
                         {group.year}
                       </H3>
 
-                      <ul class="grid grid-cols-2 gap-6">
+                      <ul class="grid grid-cols-1 gap-6 md:grid-cols-2">
                         {group.shows.reduceRight(
                           (acc: JSXOutput[], show) =>
                             acc.concat(
-                              <li id={show.date} key={show.date}>
+                              <li
+                                id={show.date}
+                                key={show.date}
+                                class="md:even:mt-6"
+                              >
                                 <LiveShowEntry {...show} />
                               </li>,
                             ),
@@ -108,7 +112,7 @@ export default component$(() => {
         </section>
 
         <section class="flex w-full justify-center">
-          <div class="border-light-bg mt-12 flex w-[70ch] flex-col gap-8 border-t pt-12">
+          <div class="border-light-bg mt-12 flex w-[60ch] flex-col gap-8 border-t pt-12">
             <H2 id="past">Past shows</H2>
 
             {shows.past.map((group, id) => (
@@ -117,12 +121,16 @@ export default component$(() => {
                   {group.year}
                 </H3>
 
-                <ul class="grid grid-cols-2 gap-6">
+                <ul class="grid grid-cols-1 gap-6 md:grid-cols-2">
                   {group.shows.reduce(
                     (acc: JSXOutput[], show) =>
                       !show.cancelled
                         ? acc.concat(
-                            <li id={show.date} key={show.date}>
+                            <li
+                              id={show.date}
+                              key={show.date}
+                              class="md:even:mt-6"
+                            >
                               <LiveShowEntry {...show} />
                             </li>,
                           )
