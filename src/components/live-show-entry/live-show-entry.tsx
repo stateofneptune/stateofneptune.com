@@ -35,7 +35,7 @@ export default component$((props: LiveShowEntryProps) => {
       </div>
 
       <div class="font-body text-body text-sm md:text-base">
-        {showDateDisplay} – {props.city}, {props.country}
+        {showDateDisplay} ~ {props.city}, {props.country}
       </div>
 
       {props.with && props.with.length > 0 ? (
