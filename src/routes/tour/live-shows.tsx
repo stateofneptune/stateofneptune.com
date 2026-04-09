@@ -16,7 +16,7 @@ export const LIVE_SHOWS: LiveShow[] = [
     city: "Catania",
     host: "Zo",
     venue: "Misca Festival Ed. II",
-    with: ["Kodaclips", "Khoei", "Lenore", "Leadtogold", "Zzanne"],
+    with: ["Kodaclips", "Lenore", "Leadtogold", "Zzanne"],
     date: "2026-05-02",
   },
   {
